@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice engine — ElevenLabs vs local</title>
+<style>
+/* ————————————————————————————————————————————————————————————————
+   Voice engine comparison. Same dialect as architecture.html:
+   static hue 193, oklch ink ramp, hairlines at low alpha, mono everything.
+   Self-contained — no webfonts, no JS, works offline from disk.
+
+   Charts are hand-rolled CSS bars (the .tl-seg idiom from
+   public/how-it-works.html) with the fill driven by animation-delay rather
+   than an IntersectionObserver, so the page stays script-free.
+   ———————————————————————————————————————————————————————————————— */
+
+:root {
+  --hue: 193; /* static — the HUD no longer rotates hue, neither do its docs */
+  --bg: oklch(0.13 0.004 270);
+  --ink: oklch(0.9 0.004 270);
+  --dim: oklch(0.62 0.005 270);
+  --faint: oklch(0.43 0.004 270);
+  --ember: hsl(var(--hue) 50% 62%);
+  --hot: hsl(var(--hue) 65% 72%);
+  --line: hsl(var(--hue) 50% 60% / 0.25);
+  --line-faint: hsl(var(--hue) 50% 60% / 0.10);
+  --wash: hsl(var(--hue) 60% 60% / 0.05);
+  --gold: #d9a441;   /* the one "winner" marker, as in the app */
+  --warn: oklch(0.78 0.13 80);
+  --mono: "Cascadia Code", "JetBrains Mono", "Fira Code", Consolas, "SF Mono", monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.55;
+  padding: 48px 24px 96px;
+  position: relative;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, hsl(var(--hue) 60% 55% / 0.06), transparent 65%),
+    repeating-linear-gradient(0deg, transparent 0 47px, var(--line-faint) 47px 48px),
+    repeating-linear-gradient(90deg, transparent 0 47px, var(--line-faint) 47px 48px);
+  mask-image: radial-gradient(ellipse 90% 90% at 50% 30%, black 30%, transparent 95%);
+}
+main { max-width: 1060px; margin: 0 auto; position: relative; z-index: 1; }
+
+/* boot cascade, same trick as architecture.html */
+.boot { opacity: 0; animation: boot-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
+@keyframes boot-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.d1 { animation-delay: 0.05s } .d2 { animation-delay: 0.15s } .d3 { animation-delay: 0.25s }
+.d4 { animation-delay: 0.35s } .d5 { animation-delay: 0.45s } .d6 { animation-delay: 0.55s }
+.d7 { animation-delay: 0.65s } .d8 { animation-delay: 0.75s }
+
+/* ——— header ——— */
+header { margin-bottom: 44px; }
+.tick-line { display: flex; align-items: baseline; gap: 14px; color: var(--faint); font-size: 11px; letter-spacing: 0.18em; }
+.tick-line::before, .tick-line::after { content: ""; height: 1px; background: var(--line); flex: 1; align-self: center; }
+h1 {
+  font-size: clamp(26px, 4.5vw, 42px);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 18px 0 10px;
+  color: var(--hot);
+  text-shadow: 0 0 18px hsl(var(--hue) 70% 62% / 0.45);
+}
+.sub { color: var(--dim); max-width: 66ch; }
+.sub b { color: var(--ink); font-weight: 600; }
+
+/* ——— the standing caveat ——— */
+.caveat {
+  margin: 26px 0 0;
+  border: 1px dashed var(--warn);
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding: 13px 17px;
+  background: oklch(0.78 0.13 80 / 0.05);
+  font-size: 12.5px;
+  color: var(--dim);
+  max-width: 78ch;
+}
+.caveat b { color: var(--warn); letter-spacing: 0.1em; text-transform: uppercase; font-size: 11px; }
+
+/* ——— sections ——— */
+section { margin-bottom: 58px; }
+h2 {
+  display: flex; align-items: baseline; gap: 14px;
+  font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ember); font-weight: 600; margin-bottom: 14px;
+}
+h2::after { content: ""; height: 1px; background: var(--line); flex: 1; align-self: center; }
+h2 .n { color: var(--faint); }
+.lede { color: var(--dim); max-width: 74ch; margin-bottom: 22px; }
+.lede b { color: var(--ink); font-weight: 600; }
+
+.panel {
+  position: relative;
+  border: 1px solid var(--line-faint);
+  background: linear-gradient(180deg, var(--wash), transparent 55%);
+  padding: 24px 26px;
+}
+.panel::before, .panel::after,
+.panel .corner::before, .panel .corner::after {
+  content: ""; position: absolute; width: 9px; height: 9px; border: 1px solid var(--line);
+}
+.panel::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+.panel::after { top: -1px; right: -1px; border-left: 0; border-bottom: 0; }
+.panel .corner::before { bottom: -1px; left: -1px; border-right: 0; border-top: 0; }
+.panel .corner::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+
+/* ——— THE CHART ———
+   One .row per option. .bar is the track, .bar i the proportional fill.
+   Width is authored inline as a % of that chart's stated max. */
+.chart { display: flex; flex-direction: column; gap: 3px; margin-top: 6px; }
+.row { display: grid; grid-template-columns: 250px 1fr; gap: 16px; align-items: center; padding: 7px 0; }
+.row .who { font-size: 12px; color: var(--ink); line-height: 1.35; }
+.row .who small { display: block; color: var(--faint); font-size: 10.5px; letter-spacing: 0.06em; }
+.bar { position: relative; height: 30px; background: hsl(var(--hue) 30% 50% / 0.06); border-left: 1px solid var(--line-faint); }
+.bar i {
+  position: absolute; inset: 0 auto 0 0; display: block;
+  transform-origin: left; transform: scaleX(0);
+  background: linear-gradient(90deg, hsl(var(--hue) 55% 32% / 0.85), hsl(var(--hue) 60% 52% / 0.9));
+  animation: fill 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--fd, 0s);
+}
+@keyframes fill { to { transform: scaleX(1); } }
+.bar .v {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  left: calc(100% + 10px); white-space: nowrap;
+  font-size: 12.5px; color: var(--ink);
+}
+.bar .v em { font-style: normal; color: var(--faint); font-size: 10.5px; letter-spacing: 0.08em; }
+/* the fastest/cheapest row in each chart */
+.row.best .bar i { background: linear-gradient(90deg, hsl(var(--hue) 55% 34% / 0.9), var(--gold)); }
+.row.best .bar .v { color: var(--gold); }
+/* a row whose number is not directly comparable to the others */
+.row.caveated .bar i { background: repeating-linear-gradient(45deg, hsl(var(--hue) 50% 45% / 0.55) 0 6px, hsl(var(--hue) 50% 30% / 0.4) 6px 12px); }
+/* stacked variant: segments sit side by side inside one track */
+.bar.stack { display: flex; }
+.bar.stack i { position: relative; inset: auto; flex: none; }
+.bar.stack i + i { border-left: 1px solid oklch(0.13 0.004 270 / 0.6); }
+.zero { display: flex; align-items: center; height: 30px; font-size: 12.5px; color: var(--gold); letter-spacing: 0.06em; }
+.zero::before { content: ""; width: 3px; height: 18px; background: var(--gold); margin-right: 10px; box-shadow: 0 0 8px hsl(43 66% 55% / 0.5); }
+.scale { display: flex; justify-content: space-between; color: var(--faint); font-size: 10px; letter-spacing: 0.16em; margin-top: 12px; padding-left: 266px; border-top: 1px solid var(--line-faint); padding-top: 8px; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; font-size: 11px; color: var(--faint); }
+.legend span { display: flex; align-items: center; gap: 7px; }
+.legend i { width: 16px; height: 8px; display: block; }
+.legend i.solid { background: hsl(var(--hue) 60% 52% / 0.9); }
+.legend i.gold { background: var(--gold); }
+.legend i.hatch { background: repeating-linear-gradient(45deg, hsl(var(--hue) 50% 45% / 0.55) 0 4px, hsl(var(--hue) 50% 30% / 0.4) 4px 8px); }
+
+/* ——— KPI stats ——— */
+.stats { display: flex; gap: 54px; flex-wrap: wrap; margin: 30px 0 4px; }
+.stat .n { font-size: clamp(34px, 5vw, 54px); font-weight: 600; line-height: 1; color: var(--ink); letter-spacing: 0.01em; }
+.stat .n em { font-style: normal; color: var(--ember); font-size: 0.45em; margin-left: 3px; }
+.stat .l { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dim); margin-top: 9px; }
+
+/* ——— tables ——— */
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { text-align: left; font-size: 10px; letter-spacing: 0.2em; color: var(--faint); text-transform: uppercase; font-weight: 600; padding: 0 12px 10px 0; }
+td { padding: 9px 12px 9px 0; border-top: 1px solid var(--line-faint); color: var(--dim); vertical-align: top; }
+td:first-child { color: var(--ink); white-space: nowrap; }
+td b { color: var(--ink); font-weight: 600; }
+.where { font-size: 10px; letter-spacing: 0.12em; padding: 2px 9px; border: 1px solid var(--line); white-space: nowrap; }
+.where.local { color: var(--hot); }
+.where.cloud { color: var(--dim); border-style: dashed; }
+
+/* ——— verdict + notes ——— */
+.verdict {
+  border-left: 2px solid var(--ember); padding: 14px 18px;
+  background: var(--wash); color: var(--ink); font-size: 13.5px; max-width: 80ch;
+}
+.verdict b { color: var(--hot); }
+.note { margin-top: 16px; font-size: 11.5px; color: var(--faint); max-width: 80ch; }
+.note code, code { font-family: inherit; color: var(--ember); }
+ul { margin: 10px 0 0 18px; color: var(--dim); font-size: 12.5px; }
+li { margin-bottom: 7px; }
+li b { color: var(--ink); font-weight: 600; }
+
+.src { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 5px 26px; font-size: 11px; }
+.src div { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dotted var(--line-faint); padding: 5px 0; color: var(--dim); }
+.src span { color: var(--faint); text-align: right; }
+
+footer { margin-top: 56px; color: var(--faint); font-size: 11px; letter-spacing: 0.14em; display: flex; gap: 14px; align-items: center; }
+footer::before, footer::after { content: ""; height: 1px; background: var(--line); flex: 1; }
+
+@media (max-width: 860px) {
+  .row { grid-template-columns: 1fr; gap: 6px; }
+  .bar .v { left: auto; right: 8px; }
+  .scale { padding-left: 0; }
+  .stats { gap: 30px; }
+}
+
+/* Reduced motion: architecture.html kills all animation, which would leave
+   every bar at scaleX(0) and every .boot at opacity 0 — i.e. a blank page.
+   Restore both to their finished state explicitly. */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; }
+  .boot { opacity: 1; transform: none; }
+  .bar i { transform: scaleX(1); }
+}
+</style>
+</head>
+<body>
+<main>
+
+<header class="boot d1">
+  <div class="tick-line">SYS // VOICE ENGINE EVALUATION</div>
+  <h1>ELEVENLABS VS LOCAL</h1>
+  <p class="sub">Should the HUD's voice come from the cloud instead of the two models running on
+  your machine? This compares <b>speed</b> and <b>cost</b> against the current stack —
+  Kokoro for speech, faster-whisper for listening.</p>
+  <div class="caveat">
+    <b>Read this first</b><br>
+    Every number here is <b>published by a vendor or already written in this repo's docs</b>.
+    Nothing was benchmarked on this machine. Vendor latency figures are best-case marketing
+    numbers measured in the vendor's own datacentre; the repo's local figures describe an
+    NVIDIA GPU that this Mac does not have. Treat the shape of the comparison as sound and
+    any single number as approximate.
+  </div>
+</header>
+
+<section class="boot d2">
+  <h2><span class="n">00</span> The finding that matters most</h2>
+  <div class="verdict">
+    <b>ElevenLabs was already wired into this codebase — and removed on 2026-06-12.</b>
+    The evidence is still in the source: <code>lib/tts.ts</code> and <code>lib/stt.ts</code> both
+    carry a comment saying the cloud fallback was taken out, <code>app/api/speak/route.ts</code>
+    still describes an <code>audio/mpeg</code> response and quotes Flash v2.5's 75ms first byte,
+    and <code>lib/voiceClient.ts</code> still refers to Scribe for transcription. Where the cloud
+    call used to be, the code now throws a configuration error.
+    <br><br>
+    So this is not a new decision. It is a reversal of a reversal — and whatever drove the
+    original removal is not recorded anywhere in the repo or its git history (a single squashed
+    commit). Worth recovering that reasoning before spending money to undo it.
+  </div>
+</section>
+
+<section class="boot d3">
+  <h2><span class="n">01</span> Speed — time to first audio</h2>
+  <p class="lede">The only latency that matters perceptually is <b>how long after you stop talking
+  until you hear a voice</b>. Comparing like with like: this is the text-to-speech leg only, so the
+  cloud rows are not carrying the STT and routing time the full loop also spends.</p>
+  <div class="panel"><div class="corner"></div>
+    <div class="chart">
+      <div class="row best">
+        <div class="who">ElevenLabs Flash v2.5<small>model inference only</small></div>
+        <div class="bar"><i style="width:7.5%; --fd:0.1s"></i><span class="v">75<em> MS</em></span></div>
+      </div>
+      <div class="row">
+        <div class="who">ElevenLabs Flash v2.5<small>streaming, typical real-world</small></div>
+        <div class="bar"><i style="width:15%; --fd:0.2s"></i><span class="v">~150<em> MS</em></span></div>
+      </div>
+      <div class="row">
+        <div class="who">Kokoro — local<small>NVIDIA GPU (what the repo docs describe)</small></div>
+        <div class="bar"><i style="width:27%; --fd:0.3s"></i><span class="v">~270<em> MS</em></span></div>
+      </div>
+      <div class="row caveated">
+        <div class="who">ElevenLabs Flash v2.5<small>streaming, worst reported (India, Jan 2026)</small></div>
+        <div class="bar"><i style="width:47.8%; --fd:0.4s"></i><span class="v">478<em> MS</em></span></div>
+      </div>
+      <div class="row caveated">
+        <div class="who">Kokoro — local<small>Apple Silicon CPU — this machine</small></div>
+        <div class="bar"><i style="width:100%; --fd:0.5s"></i><span class="v">~1,000<em> MS</em></span></div>
+      </div>
+    </div>
+    <div class="scale"><span>0 ms</span><span>500 ms</span><span>1,000 ms</span></div>
+    <div class="legend">
+      <span><i class="gold"></i> fastest published figure</span>
+      <span><i class="solid"></i> directly comparable</span>
+      <span><i class="hatch"></i> derived or worst-case — read the note</span>
+    </div>
+    <p class="note">
+      <b>The 75ms bar is not a number you would ever experience.</b> ElevenLabs footnotes it as
+      "excluding application &amp; network latency" — it is inference time inside their datacentre
+      with the round trip from your house removed. The ~150ms streaming row is the honest
+      cloud comparison, and the 478ms row shows how far it moves on a poor route.
+      <br><br>
+      <b>The CPU row is derived, not measured.</b> The README states CPU runs "~4x slower" than the
+      ~250ms/sentence GPU figure, which lands around 1,000ms. Separately, CLAUDE.md puts the whole
+      voice pipeline at ~2.7s end-to-end on CPU. Both are repo claims, neither was verified here.
+    </p>
+  </div>
+</section>
+
+<section class="boot d4">
+  <h2><span class="n">02</span> Speed — the whole loop</h2>
+  <p class="lede">First audio is one leg of three. The published end-to-end figures, for the local
+  stack only — <b>no equivalent full-loop number exists for a cloud build</b>, because it would add a
+  network round trip to both the listening and the speaking leg.</p>
+  <div class="panel"><div class="corner"></div>
+    <div class="chart">
+      <div class="row best">
+        <div class="who">Local — NVIDIA GPU<small>whisper → router → first audio</small></div>
+        <div class="bar stack">
+          <i style="width:4.8%; --fd:0.1s"></i><i style="width:0.8%; --fd:0.25s"></i><i style="width:10%; --fd:0.4s"></i>
+          <span class="v">~420<em> MS TOTAL</em></span>
+        </div>
+      </div>
+      <div class="row caveated">
+        <div class="who">Local — Apple Silicon CPU<small>this machine, per CLAUDE.md</small></div>
+        <div class="bar"><i style="width:100%; --fd:0.55s"></i><span class="v">~2,700<em> MS</em></span></div>
+      </div>
+    </div>
+    <div class="scale"><span>0 ms</span><span>1,350 ms</span><span>2,700 ms</span></div>
+    <p class="note">
+      Segments in the top bar: <b>~130ms</b> transcription, <b>~20ms</b> routing, <b>~270ms</b> to first
+      spoken audio. The README quotes the same loop as a 175–500ms range.
+      <br><br>
+      This is the chart that actually argues for the cloud. On <b>your</b> hardware the local loop is
+      roughly six times slower than the GPU numbers this project's docs advertise — and a cloud TTS
+      leg at ~150ms would be genuinely faster than a local CPU leg at ~1,000ms. The speed case for
+      switching is real, but it is a case against <em>CPU inference</em>, not against local inference.
+    </p>
+  </div>
+</section>
+
+<section class="boot d5">
+  <h2><span class="n">03</span> Cost — per month, at three usage levels</h2>
+  <p class="lede">Local is free at every volume; the only cost is the one-time ~353MB model download.
+  Cloud cost scales with how much you talk to it. Modelled at
+  <b>$0.05/1,000 characters</b> (Flash/Turbo TTS) plus <b>$0.22/hour</b> (Scribe v2 STT).</p>
+  <div class="panel"><div class="corner"></div>
+    <div class="chart">
+      <div class="row best">
+        <div class="who">Local — any volume<small>Kokoro + faster-whisper</small></div>
+        <div class="zero">$0.00 &nbsp;<em style="font-style:normal;color:var(--faint);font-size:10.5px;letter-spacing:.08em">— FOREVER, AT EVERY VOLUME</em></div>
+      </div>
+      <div class="row">
+        <div class="who">ElevenLabs — light<small>20 replies/day · ~200 chars each</small></div>
+        <div class="bar"><i style="width:9%; --fd:0.2s"></i><span class="v">$6.27<em> /MO</em></span></div>
+      </div>
+      <div class="row">
+        <div class="who">ElevenLabs — typical<small>60 replies/day · ~250 chars each</small></div>
+        <div class="bar"><i style="width:33.5%; --fd:0.32s"></i><span class="v">$23.36<em> /MO</em></span></div>
+      </div>
+      <div class="row">
+        <div class="who">ElevenLabs — heavy<small>150 replies/day · ~300 chars each</small></div>
+        <div class="bar"><i style="width:100%; --fd:0.44s"></i><span class="v">$69.79<em> /MO</em></span></div>
+      </div>
+    </div>
+    <div class="scale"><span>$0</span><span>$35</span><span>$70</span></div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">$0<em>/mo</em></div><div class="l">local, all volumes</div></div>
+      <div class="stat"><div class="n">~$23<em>/mo</em></div><div class="l">cloud at typical use</div></div>
+      <div class="stat"><div class="n">$280<em>/yr</em></div><div class="l">typical use, annualised</div></div>
+    </div>
+
+    <p class="note">
+      Assumptions are stated so you can re-run them: 30.4 days/month, and each push-to-talk clip
+      about 5 seconds for the transcription side. Replies are capped at 900 characters server-side
+      and 800 client-side in this codebase, so ~200–300 characters is a realistic average for the
+      short spoken answers the router produces.
+      <br><br>
+      <b>Pay-as-you-go beats a subscription at these volumes.</b> Typical use is ~456,000 characters
+      a month; the $22/mo Creator plan includes 220,000 and the $99/mo Pro plan 440,000 — so the
+      metered rate (~$23) is cheaper than the plan that would actually cover it.
+      <br><br>
+      <b>One unverified risk.</b> A third-party guide claims ElevenLabs bills a 1,000-character
+      minimum per request. Nothing on ElevenLabs' own pricing or docs pages confirms this, so it is
+      excluded from the figures above — but if it were true, ~200-character HUD replies would each
+      bill as 1,000 and the real cost would be roughly <b>5× the numbers shown</b>. Check a live
+      invoice before committing.
+    </p>
+  </div>
+</section>
+
+<section class="boot d6">
+  <h2><span class="n">04</span> What the swap would actually cost to build</h2>
+  <p class="lede">The charts above hide the engineering. The seams are clean, but three specific
+  properties of the current design would break if you routed around the local server carelessly.</p>
+  <div class="panel"><div class="corner"></div>
+    <ul>
+      <li><b>The easy part is genuinely easy.</b> Three function bodies —
+        <code>speak()</code>, <code>ttsStatus()</code>, <code>transcribe()</code> — each with exactly
+        one caller. Everything downstream is untouched if the return contract holds.</li>
+      <li><b>There is no provider abstraction to slot into.</b> The stack is hardcoded to Kokoro down
+        to the TypeScript type, which literally reads <code>engine: "kokoro"</code>. A switchable
+        build means writing that seam first.</li>
+      <li><b>Streaming is the real risk.</b> Speech starts fast because the Python server splits the
+        reply into sentences and ships the first one immediately under a fake-length WAV header.
+        Using ElevenLabs' non-streaming endpoint would replace "first audio in ~270ms" with "first
+        audio once the entire reply has been generated" — losing the exact property the interface
+        was designed around.</li>
+      <li><b>The orb would go flat if wired directly.</b> Its animation reads amplitude from a
+        WebAudio analyser fed by the audio element. Point that element at a cross-origin URL and the
+        browser feeds the analyser silence. The cloud audio must keep being proxied through
+        <code>/api/speak</code>.</li>
+      <li><b>The wake word cannot move to the cloud.</b> It runs whisper in-process inside the Python
+        server and never touches the swappable transcription seam. Switching STT to the cloud leaves
+        two different engines on the two input paths — and the Python server still has to run, so
+        nothing is actually simplified.</li>
+      <li><b>The response format is hardcoded.</b> The TTS seam always reports <code>audio/wav</code>
+        no matter what the upstream actually sent; ElevenLabs returns MP3. Chrome usually sniffs
+        past that, Safari may not.</li>
+      <li><b>Reveal timing is calibrated to the current voice.</b> Document cards are scheduled off a
+        constant of 13 characters per second, measured from Kokoro at speed 1.0. A different voice
+        desynchronises the cards from the speech until it is re-measured.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="boot d7">
+  <h2><span class="n">05</span> What the money doesn't measure</h2>
+  <div class="panel"><div class="corner"></div>
+    <table>
+      <tr><th>Property</th><th>Local (now)</th><th>ElevenLabs</th><th style="width:118px">Runs</th></tr>
+      <tr>
+        <td>Privacy</td>
+        <td>Every utterance stays on the machine</td>
+        <td>Every utterance is sent to a third party</td>
+        <td><span class="where local">LOCAL</span></td>
+      </tr>
+      <tr>
+        <td>Works offline</td>
+        <td>Fully — no network in the hot path</td>
+        <td>No — voice dies with the connection</td>
+        <td><span class="where local">LOCAL</span></td>
+      </tr>
+      <tr>
+        <td>Voice quality</td>
+        <td>Good; 4 British male voices, fixed</td>
+        <td>Substantially better; large voice library, cloning</td>
+        <td><span class="where cloud">CLOUD</span></td>
+      </tr>
+      <tr>
+        <td>Latency on this Mac</td>
+        <td>~1,000ms to first audio (CPU)</td>
+        <td>~150ms typical, network permitting</td>
+        <td><span class="where cloud">CLOUD</span></td>
+      </tr>
+      <tr>
+        <td>Latency on a GPU box</td>
+        <td>~270ms to first audio</td>
+        <td>~150ms typical, plus a dependency</td>
+        <td><span class="where cloud">CLOUD</span></td>
+      </tr>
+      <tr>
+        <td>Cost at scale</td>
+        <td>$0 forever</td>
+        <td>Grows with every sentence spoken</td>
+        <td><span class="where local">LOCAL</span></td>
+      </tr>
+      <tr>
+        <td>Failure mode</td>
+        <td>Server down → clean 503, HUD runs silent</td>
+        <td>Outage, rate limit, expired key, or bill</td>
+        <td><span class="where local">LOCAL</span></td>
+      </tr>
+    </table>
+    <p class="note">
+      Switching also falsifies a claim this project makes about itself: the architecture brief
+      states "No telemetry, no third-party voice cloud." That line would have to change, and the
+      README's "voice never leaves your machine" with it.
+    </p>
+  </div>
+</section>
+
+<section class="boot d8">
+  <h2><span class="n">06</span> Reading of the evidence</h2>
+  <div class="verdict">
+    <b>The strongest argument for switching is not cloud-vs-local — it is GPU-vs-CPU.</b>
+    Your slow voice is a hardware symptom: the same code answers in ~270ms on the GPU this project
+    was built against, and ~1,000ms here. ElevenLabs at ~150ms would fix the symptom for around
+    $23/month at typical use, plus a network dependency, an outbound copy of everything you say,
+    and the loss of offline operation.
+    <br><br>
+    Before paying for that, two cheaper experiments are worth running: <b>measure the actual local
+    latency on this Mac</b> — every figure here is published rather than observed, and the real
+    number may be better or worse than the derived ~1,000ms — and <b>find out why the previous
+    ElevenLabs integration was removed</b>, since someone already made this trade once and reversed it.
+  </div>
+</section>
+
+<section class="boot d8">
+  <h2><span class="n">07</span> Sources</h2>
+  <div class="src">
+    <div>ElevenLabs API pricing<span>elevenlabs.io/pricing/api</span></div>
+    <div>Flash v2.5 latency + footnote<span>elevenlabs.io/docs/models</span></div>
+    <div>Multi-region TTFB claims<span>elevenlabs.io/blog</span></div>
+    <div>478ms real-world measurement<span>third-party, Jan 2026</span></div>
+    <div>Local GPU latency, CPU multiplier<span>README.md</span></div>
+    <div>CPU end-to-end ~2.7s<span>CLAUDE.md</span></div>
+    <div>Loop segment timings<span>docs/architecture.html</span></div>
+    <div>Caps, seams, constants<span>this repo's source</span></div>
+  </div>
+</section>
+
+<footer class="boot d8">PUBLISHED FIGURES, NOT MEASUREMENTS · NOTHING BENCHMARKED ON THIS MACHINE</footer>
+
+</main>
+</body>
+</html>

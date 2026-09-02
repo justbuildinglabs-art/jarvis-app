@@ -1,0 +1,28 @@
+{
+  "name": "jarvis-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "tsx scripts/test-router.ts",
+    "setup": "node scripts/setup.mjs",
+    "setup:voice": "node scripts/setup.mjs --voice",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.176.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.8.0"
+  }
+}

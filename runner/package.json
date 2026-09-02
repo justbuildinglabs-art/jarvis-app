@@ -1,0 +1,10 @@
+{
+  "name": "jarvis-app-runner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Background skill executor for Jarvis App \u2014 watches the vault queue, runs headless Claude, writes results back.",
+  "scripts": {
+    "start": "node runner.js"
+  }
+}

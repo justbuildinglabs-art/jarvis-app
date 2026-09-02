@@ -1,0 +1,25 @@
+node_modules/
+.next/
+out/
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+.playwright-cli/
+voice-server/.venv/
+voice-server/*.onnx
+voice-server/*.bin
+voice-server/samples/
+voice-server/__pycache__/
+runner/runner.log
+runner/runner.pid
+.jarvis-config.json
+starter-vault/system/queue/*.json
+starter-vault/system/voice/
+starter-vault/system/runner-status.json
+
+# generated at runtime — should never travel with a copied project
+.DS_Store
+starter-vault/system/runs/
+starter-vault/inbox/voice/
+starter-vault/inbox/reports/*/
+!starter-vault/inbox/reports/morning/2026-06-01-morning-report-sample.md
