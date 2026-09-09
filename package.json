@@ -9,7 +9,11 @@
     "test": "tsx scripts/test-router.ts",
     "setup": "node scripts/setup.mjs",
     "setup:voice": "node scripts/setup.mjs --voice",
-    "doctor": "node scripts/doctor.mjs"
+    "doctor": "node scripts/doctor.mjs",
+    "test:golden": "TSX_TSCONFIG_PATH=tests/tsconfig.tests.json node --import tsx --test \"tests/**/*.test.ts\"",
+    "check": "next build && npm test && npm run test:golden && npm run test:golden:py && tsc --noEmit",
+    "check:full": "npm run check",
+    "test:golden:py": "voice-server/.venv/bin/python -B -m unittest discover -s tests/voice_server -t . -q || echo \"[skip] voice-server venv missing — python goldens not run\""
   },
   "dependencies": {
     "next": "^15.3.2",

@@ -1,0 +1,12 @@
+{
+  "log": [
+    ">> ws#1 message {\"type\":\"wake\"}",
+    "onListening(true)",
+    "onLog[sys] wake — listening …",
+    ">> ws#1 message {\"type\":\"wake_timeout\"}",
+    "onListening(false)",
+    ">> ws#1 message {\"type\":\"wake_error\"}",
+    "onListening(false)",
+    "onLog[err] wake capture failed"
+  ]
+}

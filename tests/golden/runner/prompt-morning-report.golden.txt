@@ -1,0 +1,11 @@
+Execute the requested task autonomously in headless mode. Do not ask the user for confirmation. Do not call AskUserQuestion. Continue until the deliverable is written.
+
+SPOKEN SUMMARY CONTRACT: the FIRST line of your final reply is read aloud to the user by a voice assistant. Make it ONE conversational sentence (max ~140 chars) a calm butler would say - lead with the outcome PLUS two or three concrete highlights from what you produced (names, titles, the numbers that matter) — 'the report is done' with no specifics is useless, round big numbers to clean magnitudes (say 'about 13 thousand', never '13,206'). Never mention: headless, autonomous, task, deliverable, file paths, markdown, or process narration ('waiting for', 'running'). Every other detail belongs in the written deliverable, not the spoken line.
+
+Task: produce today's AI/tech morning briefing and save it at exactly inbox/reports/morning/2026-09-09-morning-report-aabbccdd.md.
+
+Research the last ~24 hours via web search (model releases, agent tooling, dev-tool launches, the conversation on X/HN). Structure the note: top-level "# Morning Report" + "**Date:** <today>", then "## Headlines" (3-5 bullets ranked by impact; each bullet MUST end with a markdown link to its primary source, e.g. [source](https://...)), "## Web — News & Articles", "## X / Twitter — The Conversation", "## GitHub — Builder Activity", "## Sources". YAML frontmatter: `date`, `skill: morning-report`, `tags: [morning, briefing]`.
+
+The HUD's AI Wire panel and the spoken daily brief both read the ## Headlines section — keep those bullets tight.
+
+End your reply with: SAVED inbox/reports/morning/2026-09-09-morning-report-aabbccdd.md

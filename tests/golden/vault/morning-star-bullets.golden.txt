@@ -1,0 +1,13 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "First star bullet s",
+    "Second star bullet",
+    "Third, dash bullet"
+  ],
+  "links": [
+    "https://example.com/1",
+    null,
+    null
+  ]
+}

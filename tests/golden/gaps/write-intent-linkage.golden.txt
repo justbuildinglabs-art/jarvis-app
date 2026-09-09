@@ -1,0 +1,13 @@
+{
+  "fileNamedById": true,
+  "idFieldMatches": true,
+  "body": {
+    "id": "<SAME-AS-FILENAME>",
+    "skill": "vault-cleanup",
+    "args": {
+      "note": "linkage"
+    },
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "unit-test"
+  }
+}

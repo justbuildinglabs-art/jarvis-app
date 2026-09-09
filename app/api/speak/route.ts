@@ -1,23 +1,25 @@
-import { NextResponse } from "next/server";
 import { speak, ttsStatus, VoiceConfigError } from "@/lib/tts";
+import { fail, ok, readJsonBody, unavailable } from "@/lib/http/respond";
 
 // ---------------------------------------------------------------------------
-// GET /api/speak?text=...  → audio/mpeg stream (used as <audio src> so the
-//   browser starts playback before the file finishes — Flash v2.5 first
-//   byte lands in ~75ms).
-// GET /api/speak           → config probe: 200 {ok:true} | 503 {ok:false}
-// POST {text}              → same stream, for callers that outgrow URLs.
-// P1 note: lives as a Next route per the handoff exception (announce-only,
-// nothing persistent). Moves into voice-server in P2.
+// GET  /api/speak?text=…  → an audio/mpeg stream
+// GET  /api/speak         → a config probe: 200 {ok:true} or 503 {ok:false}
+// POST /api/speak {text}  → the same stream, for text too long for a URL
+//
+// The response is a STREAM, consumed as an <audio src>, so the browser starts
+// playing after the first sentence is generated rather than waiting for the
+// whole reply. That is most of why the voice feels responsive.
 // ---------------------------------------------------------------------------
 
+// Must be a literal: Next statically analyses segment config, so it cannot
+// be imported from a shared module.
 export const dynamic = "force-dynamic";
 
 const MAX_CHARS = 900;
 
 async function stream(text: string): Promise<Response> {
   const trimmed = text.trim().slice(0, MAX_CHARS);
-  if (!trimmed) return NextResponse.json({ error: "empty text" }, { status: 400 });
+  if (!trimmed) return fail("empty text", 400);
   try {
     const out = await speak(trimmed);
     return new Response(out.stream, {
@@ -28,31 +30,24 @@ async function stream(text: string): Promise<Response> {
       },
     });
   } catch (e) {
-    if (e instanceof VoiceConfigError) {
-      return NextResponse.json({ ok: false, error: e.message }, { status: 503 });
-    }
-    return NextResponse.json({ error: String(e) }, { status: 502 });
+    // a missing engine is a setup problem (503); a failing one is upstream (502)
+    if (e instanceof VoiceConfigError) return unavailable(e.message);
+    return fail(String(e), 502);
   }
 }
 
 export async function GET(req: Request) {
   const text = new URL(req.url).searchParams.get("text");
   if (text === null) {
-    // probe — lets the client find out which engine (if any) is live
+    // no text = the client asking which engine, if any, is live
     const status = await ttsStatus();
-    return status.ok
-      ? NextResponse.json(status)
-      : NextResponse.json({ ok: false, error: "no TTS engine available" }, { status: 503 });
+    return status.ok ? ok(status) : unavailable("no TTS engine available");
   }
   return stream(text);
 }
 
 export async function POST(req: Request) {
-  let body: { text?: string };
-  try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json({ error: "bad json" }, { status: 400 });
-  }
+  const body = await readJsonBody<{ text?: string }>(req);
+  if (!body) return fail("bad json", 400);
   return stream(String(body.text ?? ""));
 }

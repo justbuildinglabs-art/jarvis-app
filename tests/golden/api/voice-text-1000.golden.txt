@@ -1,0 +1,73 @@
+{
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": null,
+      "x-voice-engine": null
+    },
+    "body": {
+      "transcript": "summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in",
+      "tier": 3,
+      "skill": "voice-ask",
+      "queued": "<UUID>",
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "panels": [],
+      "deliverable": null,
+      "reveal": null,
+      "reveals": []
+    }
+  },
+  "intents": [
+    {
+      "file": "<UUID>.json",
+      "intent": {
+        "id": "<UUID>",
+        "skill": "voice-ask",
+        "args": {
+          "prompt": "summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in",
+          "context": "User: what's in the queue\nJarvis: Two things waiting: the inbox brief and a voice ask.\nUser: run the morning report\nJarvis: On it — morning report coming up.\nUser: give me the rundown\nJarvis: Good morning. Two of three goals still open. Want me to run the inbox audit?\n\nBackground results recently delivered (these are what \"that\"/\"it\" may refer to):\n[voice-ask] Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless). (doc: inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md)\n[morning-report] Morning briefing is ready — five headlines, Anthropic profit leads. SAVED inbox/reports/morning/2026-09-09-morning-report-deadbeef.md (doc: inbox/reports/morning/2026-09-09-morning-report-deadbeef.md)\n\nStill working in the background (\"where's that X?\" refers to these — they are IN PROGRESS, not lost):\n[inbox-brief] (running 2 min)"
+        },
+        "ts": "2026-09-09T15:30:00.000Z",
+        "source": "voice-wake"
+      }
+    }
+  ],
+  "memory": [
+    {
+      "ts": "2026-09-09T15:00:00.000Z",
+      "you": "any news on fable",
+      "jarvis": "Working on it — I'll speak up when it lands.",
+      "tier": 3,
+      "skill": "voice-ask"
+    },
+    "<unparseable> {oops not json",
+    {
+      "ts": "2026-09-09T15:21:00.000Z",
+      "you": "what's in the queue",
+      "jarvis": "Two things waiting: the inbox brief and a voice ask.",
+      "tier": 2
+    },
+    {
+      "ts": "2026-09-09T15:25:00.000Z",
+      "you": "run the morning report",
+      "jarvis": "On it — morning report coming up.",
+      "tier": 1,
+      "skill": "morning-report"
+    },
+    {
+      "ts": "2026-09-09T15:29:00.000Z",
+      "you": "give me the rundown",
+      "jarvis": "Good morning. Two of three goals still open. Want me to run the inbox audit?",
+      "tier": 2
+    },
+    {
+      "ts": "2026-09-09T15:30:00.000Z",
+      "you": "summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in detail summarize my week in",
+      "jarvis": "Working on it — I'll speak up when it lands.",
+      "tier": 3,
+      "skill": "voice-ask"
+    }
+  ]
+}

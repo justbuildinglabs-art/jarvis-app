@@ -1,0 +1,109 @@
+/* The North Star board at the bottom centre. */
+
+/* --- primary objective (bottom center) ------------------------------------------- */
+
+.objective {
+  min-width: 480px;
+  max-width: 620px;
+  text-align: center;
+}
+
+.obj-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 8px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 8px;
+}
+
+.objective .big {
+  position: relative;
+  font-family: var(--font-display), sans-serif;
+  font-size: 84px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--white-hot);
+  font-variant-numeric: tabular-nums;
+  line-height: 0.95;
+}
+
+.objective .big .currency {
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--ember);
+  vertical-align: 24px;
+  margin-right: 4px;
+}
+
+.objective .big .unit {
+  /* absolute w/o offsets = stays at its inline spot but leaves the flow, so
+     the digits center true instead of being pushed left by the unit's width */
+  position: absolute;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  color: var(--ink-dim);
+  margin-left: 12px;
+  bottom: 10px;
+}
+
+.objective .progress {
+  margin: 16px auto 0;
+  height: 2px;
+  max-width: 460px;
+  background: var(--line-faint);
+  position: relative;
+  overflow: hidden;
+}
+
+.objective .progress i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: linear-gradient(90deg, var(--ember-deep), var(--ember-hot), var(--white-hot));
+  transition: width 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.objective .sub {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 10px;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+.objective .sub b {
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+
+.video-title {
+  margin-top: 12px;
+  font-size: 9.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video-title b {
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+.video-title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--line);
+  transition: border-color 0.2s;
+}
+.video-title a:hover b {
+  color: var(--ember-hot);
+}
+.video-title a:hover {
+  border-bottom-color: var(--ember);
+}

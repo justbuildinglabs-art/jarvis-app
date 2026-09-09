@@ -1,0 +1,4386 @@
+[
+  {
+    "transcript": "morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "am report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "run the morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "the morning report please",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "morning report please jarvis",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "pull the am report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "jarvis run the morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox audit",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "run the inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "check my inbox",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "the inbox brief please",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "please run the inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "cleanup",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "clean up",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "vault clean",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "vault cleanup",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "run the cleanup",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "clean up the vault",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan the day",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan my day",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "run plan today",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan tomorrow",
+    "result": {
+      "tier": 1,
+      "skill": "plan-tomorrow",
+      "reply": "On it — plan tomorrow coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "AM Report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Morning Report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Inbox Summary",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox summary",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Triage Today",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "triage today",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Triage Tomorrow",
+    "result": {
+      "tier": 1,
+      "skill": "plan-tomorrow",
+      "reply": "On it — plan tomorrow coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "triage tomorrow",
+    "result": {
+      "tier": 1,
+      "skill": "plan-tomorrow",
+      "reply": "On it — plan tomorrow coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "triage tmrw",
+    "result": {
+      "tier": 1,
+      "skill": "plan-tomorrow",
+      "reply": "On it — plan tomorrow coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "AI Clean",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "ai clean",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "MORNING REPORT!!!",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "hey jarvis run the morning report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "can you run the morning report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "hey jarvis could you please run the inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "jarvis go ahead and run the vault cleanup now",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "please run the inbox brief now",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "run the inbox brief now please",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "i think we should triage tomorrow now",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "inbox cleanup",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "clean up the inbox",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "spam report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "steam report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan for tomorrow",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "trend scan",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "github trending",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "ünïcödé report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what morning report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "how is the inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "is the cleanup done",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "are the inbox briefs done",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "was the morning report run",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "did plan today finish",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "when did the morning report run",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "who ran the cleanup",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "where is the inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "why did plan today fail",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "any inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "do i have a morning report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "does the inbox brief run",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "tell me about the am report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "inbox brief?",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "Morning report?",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "cleanup?",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "whatever inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "isn't the inbox brief done",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "how's the inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "run the inbox brief what",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "the rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "my briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "give me the rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "read me the briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "run the briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "daily rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "morning briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "full rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "give me the daily briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "what's the rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "whats the rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "what's my briefing",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "catch me up",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "good morning",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "morning jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "morning, jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "hey jarvis give me the rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "ok jarvis brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "okay jarvis, catch me up",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "so jarvis, good morning",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "jarvis brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "jarvis, brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "brief me please",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "give me the rundown for today",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "rundown on today",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "brief me today",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "brief me today please",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "brief me, jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "give me the rundown please jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "good morning jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "hey good morning",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "can you give me the rundown",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "could you read me the morning briefing please",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "hey hey jarvis brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "Give me the rundown!",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "give me a rundown",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what's going on today",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "brief me on the inbox",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "give me the rundown and the inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "the rundown for tomorrow",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "hey",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "hi",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "hello",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "yo",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "sup",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "hey there",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "hey jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "hey what's up",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "what's up jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "wassup",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "good afternoon",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "good evening",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "how are you",
+    "result": {
+      "tier": 2,
+      "reply": "Running smooth — all systems green. What do you need?",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "how's it going",
+    "result": {
+      "tier": 2,
+      "reply": "Running smooth — all systems green. What do you need?",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "you good",
+    "result": {
+      "tier": 2,
+      "reply": "Running smooth — all systems green. What do you need?",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "can you hear me",
+    "result": {
+      "tier": 2,
+      "reply": "Loud and clear.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "are you there",
+    "result": {
+      "tier": 2,
+      "reply": "Loud and clear.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "mic check",
+    "result": {
+      "tier": 2,
+      "reply": "Loud and clear.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "testing testing",
+    "result": {
+      "tier": 2,
+      "reply": "Loud and clear.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Anytime.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "thank you jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Anytime.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "appreciate it",
+    "result": {
+      "tier": 2,
+      "reply": "Anytime.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "good night",
+    "result": {
+      "tier": 2,
+      "reply": "Goodnight. I'll keep watch.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "goodnight",
+    "result": {
+      "tier": 2,
+      "reply": "Goodnight. I'll keep watch.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "i'm off",
+    "result": {
+      "tier": 2,
+      "reply": "Goodnight. I'll keep watch.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "heading to bed",
+    "result": {
+      "tier": 2,
+      "reply": "Goodnight. I'll keep watch.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "signing off",
+    "result": {
+      "tier": 2,
+      "reply": "Goodnight. I'll keep watch.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "see you tomorrow",
+    "result": {
+      "tier": 2,
+      "reply": "Goodnight. I'll keep watch.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "ok",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "okay cool",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "nice one jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "got it",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "great",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "perfect",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "alright",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "sweet",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "cool cool cool",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "one man",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "then",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "ok ok ok ok ok",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "thanks for the queue update",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "ok thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Anytime.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "no thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "what's the mrr",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "mrr",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "m r r",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "m r are",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "M.R.R.",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "how's revenue",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "recurring revenue",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "how much money are we making",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "what's the mrr?",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "is the runner alive",
+    "result": {
+      "tier": 2,
+      "reply": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+      "engine": "rules",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "how's the daemon",
+    "result": {
+      "tier": 2,
+      "reply": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+      "engine": "rules",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "runner status",
+    "result": {
+      "tier": 2,
+      "reply": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+      "engine": "rules",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "runner queue",
+    "result": {
+      "tier": 2,
+      "reply": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+      "engine": "rules",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "how many subscribers",
+    "result": {
+      "tier": 2,
+      "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "subscriber count",
+    "result": {
+      "tier": 2,
+      "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "subs",
+    "result": {
+      "tier": 2,
+      "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "youtube subs",
+    "result": {
+      "tier": 2,
+      "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "substantial",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "subscribers and tiktok",
+    "result": {
+      "tier": 2,
+      "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "youtube views",
+    "result": {
+      "tier": 2,
+      "reply": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "views on youtube",
+    "result": {
+      "tier": 2,
+      "reply": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "28 day views",
+    "result": {
+      "tier": 2,
+      "reply": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "how many views over 28 days",
+    "result": {
+      "tier": 2,
+      "reply": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "views",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "instagram",
+    "result": {
+      "tier": 2,
+      "reply": "Instagram's at 234 thousand followers.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "how's instagram doing",
+    "result": {
+      "tier": 2,
+      "reply": "Instagram's at 234 thousand followers.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "instagram followers",
+    "result": {
+      "tier": 2,
+      "reply": "Instagram's at 234 thousand followers.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "tiktok",
+    "result": {
+      "tier": 2,
+      "reply": "TikTok's at 4 thousand followers — up about 840 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "how is tiktok",
+    "result": {
+      "tier": 2,
+      "reply": "TikTok's at 4 thousand followers — up about 840 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "how's the latest video",
+    "result": {
+      "tier": 2,
+      "reply": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "engine": "rules",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "last video",
+    "result": {
+      "tier": 2,
+      "reply": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "engine": "rules",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "how's the video doing",
+    "result": {
+      "tier": 2,
+      "reply": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "engine": "rules",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "latest video stats",
+    "result": {
+      "tier": 2,
+      "reply": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "engine": "rules",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "tokens",
+    "result": {
+      "tier": 2,
+      "reply": "You've used 391 thousand Claude tokens in the current five-hour window.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "claude usage",
+    "result": {
+      "tier": 2,
+      "reply": "You've used 391 thousand Claude tokens in the current five-hour window.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "how many tokens have i used",
+    "result": {
+      "tier": 2,
+      "reply": "You've used 391 thousand Claude tokens in the current five-hour window.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "token count",
+    "result": {
+      "tier": 2,
+      "reply": "You've used 391 thousand Claude tokens in the current five-hour window.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "revenue tokens",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "what's in the queue",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "queue",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "queue status",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "what's queued",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "top 3",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "top three",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "priorities",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "what are my priorities",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "directives",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "goals",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "how are my goals",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "what's my top priority",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "what are today's goals",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "schedule",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what's on the schedule",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what's next today",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "whats next",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what's next",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "next up",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what's next on the schedule",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "focus",
+    "result": {
+      "tier": 2,
+      "reply": "Today's focus is Land the characterization suite, then start the seams..",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what's my focus",
+    "result": {
+      "tier": 2,
+      "reply": "Today's focus is Land the characterization suite, then start the seams..",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what should i focus on",
+    "result": {
+      "tier": 2,
+      "reply": "Today's focus is Land the characterization suite, then start the seams..",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "last run",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "what was the last run",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "last fail",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "recent run",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "recent runs",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "what did the last run say",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "morning headlines",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what are the headlines",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what's in the morning report",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what did the morning report say",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "where's that inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "where's the fable five thing",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "is the inbox brief done yet",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what's the run status",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "documents",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "open the documents",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what documents do i have",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "show me the morning report",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "open the inbox brief",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the morning report from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "bring up that",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "pull up the html",
+    "result": {
+      "tier": 2,
+      "reply": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "show me the cleanup",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the vault cleanup from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "open the fable five doc",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "show me the weather",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-06-whats-the-weather-77777777.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "display the trend scan",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "show me",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "open it",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "show me the report",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "show me the morning",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "pull up the results",
+    "result": {
+      "tier": 2,
+      "reply": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "open the rundown",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "show me the briefing",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "show me this morning's report",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "put up the last one",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "show us the vault cleanup report",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the vault cleanup from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "open that again",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "bring up the explainer",
+    "result": {
+      "tier": 2,
+      "reply": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "open my daily note",
+    "result": {
+      "tier": 2,
+      "reply": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "show me the inbox report",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the morning report from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yeah",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yep",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "sure",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "absolutely",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "go ahead",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "do it",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "let's do it",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "lets do it",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "please do",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes please",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "go for it",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "sounds good",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes please jarvis",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes, jarvis",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "sure please",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Yes!",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "  yes  ",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "no",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "nope",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "nah",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "not now",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "not right now",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "not yet",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "later",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "maybe later",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "hold off",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "skip it",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "no thank you",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "nope, jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "no thanks jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "yes run it",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "yes do the inbox",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes yes",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "yeah go ahead",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "   ",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "\n\t",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "?",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "!!!",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "...",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "—",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "🎉",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "こんにちは",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "¿qué?",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "$",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "ok!",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "tell me a joke",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "what's the weather like in austin",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "write me a haiku about the vault",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "once you're done with that inbox brief tell me about fable five",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  }
+]

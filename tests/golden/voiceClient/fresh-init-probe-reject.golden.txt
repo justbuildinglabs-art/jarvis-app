@@ -1,0 +1,8 @@
+{
+  "log": [
+    "window'4.addEventListener(pointerdown)",
+    "window'4.addEventListener(keydown)",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#8"
+  ]
+}

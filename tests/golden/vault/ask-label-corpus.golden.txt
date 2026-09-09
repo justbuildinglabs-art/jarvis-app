@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ask-fixture",
+    "skill": "voice-ask",
+    "label": "fable five launch",
+    "ts": "2026-09-08T15:30:00.000Z"
+  },
+  {
+    "id": "ask-all-stopwords",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:01.000Z"
+  },
+  {
+    "id": "ask-empty",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:02.000Z"
+  },
+  {
+    "id": "ask-spaces-only",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:03.000Z"
+  },
+  {
+    "id": "ask-punct-only",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:04.000Z"
+  },
+  {
+    "id": "ask-apostrophe",
+    "skill": "voice-ask",
+    "label": "s weather",
+    "ts": "2026-09-08T15:30:05.000Z"
+  },
+  {
+    "id": "ask-contractions",
+    "skill": "voice-ask",
+    "label": "don t forget",
+    "ts": "2026-09-08T15:30:06.000Z"
+  },
+  {
+    "id": "ask-three-words",
+    "skill": "voice-ask",
+    "label": "fix login bug",
+    "ts": "2026-09-08T15:30:07.000Z"
+  },
+  {
+    "id": "ask-two-words",
+    "skill": "voice-ask",
+    "label": "fix bug",
+    "ts": "2026-09-08T15:30:08.000Z"
+  },
+  {
+    "id": "ask-one-word",
+    "skill": "voice-ask",
+    "label": "status",
+    "ts": "2026-09-08T15:30:09.000Z"
+  },
+  {
+    "id": "ask-many-words",
+    "skill": "voice-ask",
+    "label": "summarize week three",
+    "ts": "2026-09-08T15:30:10.000Z"
+  },
+  {
+    "id": "ask-upper",
+    "skill": "voice-ask",
+    "label": "email john q3",
+    "ts": "2026-09-08T15:30:11.000Z"
+  },
+  {
+    "id": "ask-email-addr",
+    "skill": "voice-ask",
+    "label": "email john example",
+    "ts": "2026-09-08T15:30:12.000Z"
+  },
+  {
+    "id": "ask-unicode",
+    "skill": "voice-ask",
+    "label": "caf r sum",
+    "ts": "2026-09-08T15:30:13.000Z"
+  },
+  {
+    "id": "ask-digits",
+    "skill": "voice-ask",
+    "label": "1 2 3",
+    "ts": "2026-09-08T15:30:14.000Z"
+  },
+  {
+    "id": "ask-dupes",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:15.000Z"
+  },
+  {
+    "id": "ask-whitespace-kinds",
+    "skill": "voice-ask",
+    "label": "first second third",
+    "ts": "2026-09-08T15:30:16.000Z"
+  },
+  {
+    "id": "ask-stopword-substring",
+    "skill": "voice-ask",
+    "label": "runner running runs",
+    "ts": "2026-09-08T15:30:17.000Z"
+  },
+  {
+    "id": "ask-prompt-number",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:18.000Z"
+  },
+  {
+    "id": "ask-prompt-null",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:19.000Z"
+  },
+  {
+    "id": "ask-prompt-missing",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:20.000Z"
+  },
+  {
+    "id": "ask-args-null",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:21.000Z"
+  },
+  {
+    "id": "ask-args-string",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:22.000Z"
+  },
+  {
+    "id": "ask-args-array",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:23.000Z"
+  },
+  {
+    "id": "ask-args-missing",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:24.000Z"
+  },
+  {
+    "id": "ask-other-skill",
+    "skill": "inbox-brief",
+    "label": null,
+    "ts": "2026-09-08T15:30:25.000Z"
+  },
+  {
+    "id": "ask-skill-case",
+    "skill": "Voice-Ask",
+    "label": null,
+    "ts": "2026-09-08T15:30:26.000Z"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "now": "2026-09-09T19:00:00.000Z",
+  "briefing": {
+    "text": "Good afternoon. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 9 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 117
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 195
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/anthropic-profit",
+        "label": "source",
+        "at": 195
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 321
+      }
+    ]
+  }
+}

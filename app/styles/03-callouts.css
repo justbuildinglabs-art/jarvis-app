@@ -1,0 +1,377 @@
+/* Report reveals — the cards that branch off the core.
+   
+   Four anchor slots, and a live task card that morphs in place into its
+   document card when the run lands (same slot, no jump). */
+
+/* --- report reveal: doc callouts -------------------------------------------
+   Cards branch off the core into four anchor slots around the orb — a
+   hairline elbow draws out from the core side, the card materializes at its
+   end, the label streams in. Same language as the center graph. */
+
+.callout {
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+}
+.callout .br {
+  position: absolute;
+  background: var(--line);
+  box-shadow: 0 0 6px hsl(0 0% 60% / 0.3);
+}
+/* branch runs core → card: br-a = horizontal reach from the core side (draws
+   first), br-b = vertical riser into the card's edge midpoint (draws second) */
+.callout .br-a { height: 1px; width: 4vw; animation: br-grow-x 0.3s ease 0.05s both; }
+.callout .br-b { width: 1px; height: 7vh; animation: br-grow-y 0.24s ease 0.36s both; }
+@keyframes br-grow-y { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes br-grow-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+.callout-box {
+  pointer-events: auto;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 160px;
+  max-width: 215px;
+  padding: 10px 12px;
+  /* rounded holo-card: blue-tinted translucent fill inside a glowing cyan
+     ring — the popup is a highlight object, not a flat panel */
+  background: rgba(13, 42, 60, 0.66);
+  border: 1.5px solid rgba(111, 216, 245, 0.6);
+  border-radius: 11px;
+  backdrop-filter: blur(6px);
+  box-shadow:
+    0 0 22px rgba(111, 216, 245, 0.26),
+    inset 0 0 16px rgba(111, 216, 245, 0.07);
+  cursor: pointer;
+  /* --box-t set per slot: card hangs above (top slots) or below (lower slots)
+     the point where the riser meets its edge midpoint */
+  animation: callout-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+.callout-box:hover {
+  background: rgba(23, 66, 92, 0.78);
+  border-color: rgba(165, 233, 255, 0.85);
+}
+@keyframes callout-in {
+  from { opacity: 0; transform: var(--box-t, translate(-50%, -100%)) scale(0.85); filter: blur(5px); }
+  to { opacity: 1; transform: var(--box-t, translate(-50%, -100%)) scale(1); filter: blur(0); }
+}
+
+.callout-dot {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--ember);
+  transform: rotate(45deg);
+  background: hsl(0 0% 60% / 0.35);
+  animation: voice-hot-pulse 1.6s ease-in-out infinite;
+}
+.callout-text { overflow: hidden; flex: 1; }
+.callout-label {
+  display: block;
+  font-size: 9.5px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--white-hot);
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  animation: callout-type 0.6s steps(20, end) 0.8s forwards;
+}
+@keyframes callout-type { to { max-width: 200px; } }
+.callout-file {
+  display: block;
+  font-size: 8px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  animation: callout-fade 0.35s ease 1.35s forwards;
+}
+@keyframes callout-fade { to { opacity: 1; } }
+.callout-x {
+  flex: none;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--ink-faint);
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.callout-x:hover { color: var(--ember-hot); }
+
+/* task callouts — a live run working off the core. Accent palette like all
+   chrome (motion says "working": fast pulse + filling bar + ticking clock);
+   progress bar fed by elapsed/eta, no eta history → indeterminate sweep.
+   done = ok flash, failed = err (the only semantic hues). */
+.callout-box.task { cursor: default; }
+.callout-box.task:hover {
+  background: rgba(13, 42, 60, 0.66);
+  border-color: rgba(111, 216, 245, 0.6);
+}
+.callout-box.task .callout-dot {
+  animation: voice-hot-pulse 0.9s ease-in-out infinite;
+}
+.task-meta {
+  display: block;
+  opacity: 0;
+  animation: callout-fade 0.35s ease 1.35s forwards;
+}
+.task-bar {
+  position: relative;
+  display: block;
+  height: 2px;
+  margin: 6px 0 4px;
+  background: var(--line-faint);
+  overflow: hidden;
+}
+.task-bar i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background: var(--ember);
+  box-shadow: 0 0 6px hsl(0 0% 60% / 0.5);
+  transition: width 1s linear;
+}
+.task-bar.indet i {
+  width: 35%;
+  animation: task-sweep 1.6s ease-in-out infinite;
+  transition: none;
+}
+@keyframes task-sweep {
+  from { left: -35%; }
+  to { left: 100%; }
+}
+.task-time {
+  display: block;
+  font-size: 8px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.callout-box.task.done { border-color: var(--ok); }
+.callout-box.task.done .callout-dot {
+  border-color: var(--ok);
+  background: var(--ok);
+  animation: none;
+}
+.callout-box.task.done .task-bar i { background: var(--ok); box-shadow: none; }
+.callout-box.task.failed { border-color: oklch(0.62 0.22 30 / 0.75); }
+.callout-box.task.failed .callout-dot {
+  border-color: var(--err);
+  background: oklch(0.62 0.22 30 / 0.4);
+  animation: none;
+}
+.callout-box.task.failed .task-bar i { background: var(--err); box-shadow: none; }
+
+/* anchor slots — the container point is where the riser meets the card's edge
+   midpoint. The horizontal reach (br-a) starts on the CORE side and runs out,
+   the riser (br-b) climbs into the card's bottom-center (top slots) or drops
+   into its top-center (lower slots). Cards stay clear of both rails.
+   0: top-right · 1: top-left · 2: lower-right · 3: lower-left */
+.callout.slot-0 { left: 66%; top: 17vh; }
+.callout.slot-0 .br-b { top: 0; left: 0; transform-origin: bottom; }
+.callout.slot-0 .br-a { top: 7vh; right: 0; transform-origin: left; }
+.callout.slot-0 .callout-box { --box-t: translateX(-50%); bottom: 0; }
+
+.callout.slot-1 { left: 34%; top: 17vh; }
+.callout.slot-1 .br-b { top: 0; left: 0; transform-origin: bottom; }
+.callout.slot-1 .br-a { top: 7vh; left: 0; transform-origin: right; }
+.callout.slot-1 .callout-box { --box-t: translateX(-50%); bottom: 0; }
+
+.callout.slot-2 { left: 66%; top: 70vh; }
+.callout.slot-2 .br-b { bottom: 0; left: 0; transform-origin: top; }
+.callout.slot-2 .br-a { bottom: 7vh; right: 0; transform-origin: left; }
+.callout.slot-2 .callout-box { --box-t: translateX(-50%); top: 0; }
+
+.callout.slot-3 { left: 34%; top: 70vh; }
+.callout.slot-3 .br-b { bottom: 0; left: 0; transform-origin: top; }
+.callout.slot-3 .br-a { bottom: 7vh; left: 0; transform-origin: right; }
+.callout.slot-3 .callout-box { --box-t: translateX(-50%); top: 0; }
+
+.callout-clear {
+  pointer-events: auto;
+  position: fixed;
+  top: 7.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  background: rgba(13, 42, 60, 0.55);
+  border: 1px solid rgba(111, 216, 245, 0.4);
+  border-radius: 999px;
+  color: var(--ink-dim);
+  font-family: inherit;
+  font-size: 8.5px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.callout-clear:hover { color: var(--white-hot); border-color: var(--ember); }
+
+/* bottom-left transcript button — opens the voice conversation in the
+   report overlay. Same micro-label language as callout-clear. */
+.transcript-btn {
+  pointer-events: auto;
+  position: fixed;
+  left: 28px;
+  bottom: 28px;
+  z-index: 6;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+  font-family: inherit;
+  font-size: 8.5px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.transcript-btn:hover { color: var(--white-hot); border-color: var(--ember); }
+
+.report-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* light dim only — the core stays visible behind the report */
+  background: oklch(0.08 0.01 270 / 0.38);
+  backdrop-filter: blur(1.5px);
+  animation: tline-in 0.2s ease both;
+}
+
+.report-panel {
+  width: min(720px, 86vw);
+  max-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  /* same holo-card language as .callout-box, scaled up */
+  background: rgba(13, 42, 60, 0.9);
+  border: 1.5px solid rgba(111, 216, 245, 0.5);
+  border-radius: 14px;
+  box-shadow:
+    0 0 60px rgba(111, 216, 245, 0.2),
+    inset 0 0 24px rgba(111, 216, 245, 0.05);
+  animation: chip-out 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.report-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.report-title {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ember);
+}
+
+.report-path {
+  flex: 1;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.report-obsidian {
+  flex: none;
+  font-size: 8.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cobalt);
+  text-decoration: none;
+}
+
+.report-obsidian:hover {
+  color: var(--white-hot);
+}
+
+/* header action button (transcript reset) — same micro-label voice as the
+   obsidian link, but it's a destructive-ish action so it leans warm */
+.report-action {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+  font-family: inherit;
+  cursor: pointer;
+  padding: 3px 8px;
+}
+.report-action:hover {
+  color: var(--err);
+  border-color: var(--err);
+}
+
+.report-close {
+  background: none;
+  border: none;
+  color: var(--ink-dim);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.report-close:hover {
+  color: var(--white-hot);
+}
+
+.report-body {
+  padding: 16px 22px 22px;
+  overflow-y: auto;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.report-body h2, .report-body h3, .report-body h4, .report-body h5 {
+  color: var(--ember);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 16px 0 6px;
+}
+
+.report-body ul {
+  margin: 4px 0;
+  padding-left: 18px;
+}
+
+.report-body p {
+  margin: 6px 0;
+}
+
+.report-body a {
+  color: var(--cobalt);
+}
+
+.report-body code {
+  font-size: 10px;
+  color: var(--ember-hot);
+}
+
+.report-body hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 12px 0;
+}
+
+.hud-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}

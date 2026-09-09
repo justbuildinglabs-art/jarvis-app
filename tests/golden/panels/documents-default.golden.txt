@@ -1,0 +1,26 @@
+<section class="block boot-stagger " style="animation-delay:0.26s">
+<div class="sec-title">
+<span>Paper Trail</span>
+<span class="tick">LATEST.DROPS</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">fable five launch</span>
+<span class="doc-age">11m</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">32m</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">24h</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">vault cleanup</span>
+<span class="doc-age">47h</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">s weather</span>
+<span class="doc-age">2d</span>
+</div>
+</section>

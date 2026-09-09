@@ -1,0 +1,100 @@
+[
+  {
+    "source": "youtube",
+    "metric": "subscribers",
+    "value": -5.5,
+    "status": "stale",
+    "timestamp": "2026-09-09T14:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 100,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 12,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 1000,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 42,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": null,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": -5.5,
+        "status": "stale"
+      }
+    ],
+    "delta": null,
+    "deltaWeek": -105.5
+  },
+  {
+    "source": "youtube",
+    "metric": " views",
+    "value": 7,
+    "status": "ok",
+    "timestamp": "2026-09-09T14:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 7,
+        "status": "ok"
+      }
+    ],
+    "delta": null,
+    "deltaWeek": null
+  },
+  {
+    "source": "stripe",
+    "metric": "mrr",
+    "value": 14,
+    "status": "ok",
+    "timestamp": "2026-09-09T14:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 10,
+        "status": "error"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 12,
+        "status": ""
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 0,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 0.5,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 13,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T14:30:00.000Z",
+        "value": 14,
+        "status": "ok"
+      }
+    ],
+    "delta": 1,
+    "deltaWeek": 4
+  }
+]

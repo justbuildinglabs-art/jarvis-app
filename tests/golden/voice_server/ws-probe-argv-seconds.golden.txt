@@ -1,0 +1,35 @@
+{
+  "expr": "float(sys.argv[1]) if len(sys.argv) > 1 else 15.0",
+  "table": {
+    "[]": {
+      "seconds": "15.0"
+    },
+    "[\"ws_probe.py\"]": {
+      "seconds": "15.0"
+    },
+    "[\"ws_probe.py\", \"3\"]": {
+      "seconds": "3.0"
+    },
+    "[\"ws_probe.py\", \"2.5\", \"extra\"]": {
+      "seconds": "2.5"
+    },
+    "[\"ws_probe.py\", \"1e2\"]": {
+      "seconds": "100.0"
+    },
+    "[\"ws_probe.py\", \"-1\"]": {
+      "seconds": "-1.0"
+    },
+    "[\"ws_probe.py\", \" 7 \"]": {
+      "seconds": "7.0"
+    },
+    "[\"ws_probe.py\", \"inf\"]": {
+      "seconds": "inf"
+    },
+    "[\"ws_probe.py\", \"abc\"]": {
+      "error": "ValueError: could not convert string to float: 'abc'"
+    },
+    "[\"ws_probe.py\", \"\"]": {
+      "error": "ValueError: could not convert string to float: ''"
+    }
+  }
+}

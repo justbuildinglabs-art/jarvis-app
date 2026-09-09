@@ -1,0 +1,10 @@
+{
+  "eveningWrite": true,
+  "nextDayWrite": false,
+  "noteUnchangedAcrossRolledDay": true,
+  "top3AfterEveningWrite": [
+    "1. [x] Pin every behavior the HUD reads",
+    "2. [x] Rewrite the router behind the suite",
+    "3. [ ] Reply to the sponsor email — $4,200 offer"
+  ]
+}

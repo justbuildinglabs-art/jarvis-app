@@ -1,0 +1,33 @@
+{
+  "tier-1 alias": {
+    "fileNamedByReturnedId": true,
+    "fileIdMatchesReturnedId": true,
+    "skill": "morning-report",
+    "source": "voice-ptt",
+    "ts": "2026-09-09T15:30:00.000Z",
+    "argKeys": []
+  },
+  "tier-3 voice ask": {
+    "fileNamedByReturnedId": true,
+    "fileIdMatchesReturnedId": true,
+    "skill": "voice-ask",
+    "source": "voice-wake",
+    "ts": "2026-09-09T15:30:00.000Z",
+    "argKeys": [
+      "context",
+      "prompt"
+    ]
+  },
+  "tier-3 with model override": {
+    "fileNamedByReturnedId": true,
+    "fileIdMatchesReturnedId": true,
+    "skill": "voice-ask",
+    "source": "voice-ptt",
+    "ts": "2026-09-09T15:30:00.000Z",
+    "argKeys": [
+      "context",
+      "model",
+      "prompt"
+    ]
+  }
+}

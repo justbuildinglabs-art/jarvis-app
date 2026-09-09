@@ -1,0 +1,27 @@
+[
+  {
+    "value": 0,
+    "compact": "0",
+    "full": "0"
+  },
+  {
+    "value": 42,
+    "compact": "0",
+    "full": "0"
+  },
+  {
+    "value": 1234,
+    "compact": "0",
+    "full": "0"
+  },
+  {
+    "value": 50405,
+    "compact": "0",
+    "full": "0"
+  },
+  {
+    "value": 1437000,
+    "compact": "0",
+    "full": "0"
+  }
+]

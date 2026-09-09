@@ -1,0 +1,10 @@
+[
+  {
+    "url": "http://127.0.0.1:1/speak?text=Revenue's%20at%20two%20hundred%20million%20dollars%20%E2%80%94%201.4%20million%20views.",
+    "method": "GET",
+    "headers": {},
+    "bodyBytes": null,
+    "signal": false,
+    "speakText": "Revenue's at two hundred million dollars — 1.4 million views."
+  }
+]

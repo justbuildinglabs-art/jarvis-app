@@ -1,0 +1,19 @@
+youtube.subscribers = 50405 (ok, week delta 805)
+youtube.views_28d = 436900 (ok, week delta 24850)
+instagram.followers = 233600 (ok)
+tiktok.followers = 3960 (ok, week delta 840)
+stripe.mrr = 4200 (mock)
+claude_code.tokens_5h = 391022 (ok)
+runner: alive, busy=true, pending=1
+latest video: "Fixture Upload — golden vault" views=18400
+top3: [x] Pin every behavior the HUD reads; [ ] Rewrite the router behind the suite; [ ] Reply to the sponsor email — $4,200 offer
+schedule: 09:00 Deep work (locked); 13:00 Edit session; 16:30 Weekly sync (Google Meet); 20:00 Stream: building in public
+focus: Land the characterization suite, then start the seams.
+queue: inbox-brief, summarize week three
+recent runs (newest first):
+  inbox-brief [running]
+  voice-ask "fable five launch" [ok] — Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).
+  morning-report [ok] — Morning briefing is ready — five headlines, Anthropic profit leads. SAVED inbox/reports/morning/2026-09-09-morning-report-deadbeef.md
+  plan-today [error] — [runner: hard timeout 10m — killed]
+  morning-report [ok] — Morning briefing is ready.
+  vault-cleanup [ok] — Archived 4 stale files; nothing else moved.

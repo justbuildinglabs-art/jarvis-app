@@ -1,0 +1,107 @@
+/* Telemetry rows: label, value, weekly delta, sparkline. */
+
+/* --- vitals ------------------------------------------------------------------ */
+
+.vital {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 16px; /* keep the age chip off the delta stat */
+  grid-template-areas:
+    "label delta"
+    "value value"
+    "spark spark";
+  align-items: baseline;
+  padding: 6px 0 7px;
+  border-bottom: 1px solid var(--line-faint);
+}
+.vital:last-child {
+  border-bottom: none;
+}
+
+.vital .label {
+  grid-area: label;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.vital .value {
+  grid-area: value;
+  font-family: var(--font-display), sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  margin-top: 4px;
+}
+
+.vital .delta {
+  grid-area: delta;
+  font-size: 9px;
+  color: var(--ember-hot);
+  letter-spacing: 0.1em;
+}
+.vital .delta.neg { color: var(--err); }
+.vital .delta.zero { color: var(--ink-faint); }
+
+.spark-row {
+  grid-area: spark;
+  margin-top: 6px;
+}
+
+.spark {
+  display: block;
+  width: 100%;
+  height: 16px;
+  color: var(--ember-hot);
+  opacity: 0.85;
+}
+
+.spark-flat {
+  height: 16px;
+  background: linear-gradient(transparent 48%, var(--line-faint) 50%, transparent 52%);
+}
+
+.status-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--ok);
+  box-shadow: 0 0 6px var(--ok);
+  flex: none;
+}
+.status-dot.stale { background: var(--warn); box-shadow: 0 0 6px var(--warn); }
+.status-dot.error { background: var(--err); box-shadow: 0 0 6px var(--err); }
+.status-dot.mock { background: var(--mock); box-shadow: none; }
+
+.sim-tag {
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  color: var(--mock);
+  border: 1px solid var(--mock);
+  padding: 0 3px;
+}
+
+/* data age tag — sits at the end of a vital label */
+.age {
+  margin-left: auto;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+.age.stale {
+  color: var(--warn);
+}
+
+.vital.is-stale .value,
+.vital.is-stale .delta,
+.vital.is-stale .spark {
+  opacity: 0.45;
+}

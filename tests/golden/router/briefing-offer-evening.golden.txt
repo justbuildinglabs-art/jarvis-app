@@ -1,0 +1,4 @@
+{
+  "withReport": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+  "withoutReport": "Want me to run the daily inbox audit, or do you have anything else in mind?"
+}

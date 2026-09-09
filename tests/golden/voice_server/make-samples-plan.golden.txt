@@ -1,0 +1,239 @@
+{
+  "default": {
+    "PREFIXES": [
+      "bm_",
+      "am_"
+    ],
+    "voices": [
+      "am_adam",
+      "am_echo",
+      "am_michael",
+      "bm_daniel",
+      "bm_fable",
+      "bm_george",
+      "bm_lewis"
+    ],
+    "plan": [
+      {
+        "voice": "am_adam",
+        "speed": 1.0,
+        "lang": "en-us",
+        "file": "am_adam_x1.00.wav"
+      },
+      {
+        "voice": "am_echo",
+        "speed": 1.0,
+        "lang": "en-us",
+        "file": "am_echo_x1.00.wav"
+      },
+      {
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "file": "am_michael_x1.00.wav"
+      },
+      {
+        "voice": "bm_daniel",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_daniel_x0.95.wav"
+      },
+      {
+        "voice": "bm_daniel",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_daniel_x1.00.wav"
+      },
+      {
+        "voice": "bm_daniel",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_daniel_x1.08.wav"
+      },
+      {
+        "voice": "bm_fable",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_fable_x0.95.wav"
+      },
+      {
+        "voice": "bm_fable",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_fable_x1.00.wav"
+      },
+      {
+        "voice": "bm_fable",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_fable_x1.08.wav"
+      },
+      {
+        "voice": "bm_george",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_george_x0.95.wav"
+      },
+      {
+        "voice": "bm_george",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_george_x1.00.wav"
+      },
+      {
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_george_x1.08.wav"
+      },
+      {
+        "voice": "bm_lewis",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_lewis_x0.95.wav"
+      },
+      {
+        "voice": "bm_lewis",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_lewis_x1.00.wav"
+      },
+      {
+        "voice": "bm_lewis",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_lewis_x1.08.wav"
+      }
+    ]
+  },
+  "SAMPLE_PREFIXES=bm_,bf_": {
+    "PREFIXES": [
+      "bm_",
+      "bf_"
+    ],
+    "voices": [
+      "bf_emma",
+      "bf_isabella",
+      "bm_daniel",
+      "bm_fable",
+      "bm_george",
+      "bm_lewis"
+    ],
+    "plan": [
+      {
+        "voice": "bf_emma",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bf_emma_x1.00.wav"
+      },
+      {
+        "voice": "bf_isabella",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bf_isabella_x1.00.wav"
+      },
+      {
+        "voice": "bm_daniel",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_daniel_x0.95.wav"
+      },
+      {
+        "voice": "bm_daniel",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_daniel_x1.00.wav"
+      },
+      {
+        "voice": "bm_daniel",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_daniel_x1.08.wav"
+      },
+      {
+        "voice": "bm_fable",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_fable_x0.95.wav"
+      },
+      {
+        "voice": "bm_fable",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_fable_x1.00.wav"
+      },
+      {
+        "voice": "bm_fable",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_fable_x1.08.wav"
+      },
+      {
+        "voice": "bm_george",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_george_x0.95.wav"
+      },
+      {
+        "voice": "bm_george",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_george_x1.00.wav"
+      },
+      {
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_george_x1.08.wav"
+      },
+      {
+        "voice": "bm_lewis",
+        "speed": 0.95,
+        "lang": "en-gb",
+        "file": "bm_lewis_x0.95.wav"
+      },
+      {
+        "voice": "bm_lewis",
+        "speed": 1.0,
+        "lang": "en-gb",
+        "file": "bm_lewis_x1.00.wav"
+      },
+      {
+        "voice": "bm_lewis",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "file": "bm_lewis_x1.08.wav"
+      }
+    ]
+  },
+  "SAMPLE_PREFIXES=af_": {
+    "PREFIXES": [
+      "af_"
+    ],
+    "voices": [
+      "af_bella",
+      "af_heart"
+    ],
+    "plan": [
+      {
+        "voice": "af_bella",
+        "speed": 1.0,
+        "lang": "en-us",
+        "file": "af_bella_x1.00.wav"
+      },
+      {
+        "voice": "af_heart",
+        "speed": 1.0,
+        "lang": "en-us",
+        "file": "af_heart_x1.00.wav"
+      }
+    ]
+  },
+  "SAMPLE_PREFIXES=zz_": {
+    "PREFIXES": [
+      "zz_"
+    ],
+    "voices": [],
+    "plan": []
+  }
+}

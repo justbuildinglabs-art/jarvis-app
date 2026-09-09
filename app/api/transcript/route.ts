@@ -1,25 +1,33 @@
-import { NextResponse } from "next/server";
 import { allExchanges, clearMemory } from "@/lib/voiceMemory";
+import { ok } from "@/lib/http/respond";
+import type { Exchange } from "@/lib/voiceMemory";
 
 // GET /api/transcript — the voice conversation so far, composed as markdown
-// for the report overlay. Source = system/voice/memory.jsonl (last 40
-// exchanges, survives restarts). Chronological: read top-to-bottom.
+// for the report overlay. Source is system/voice/memory.jsonl, so it survives
+// restarts and shows exchanges from before the page was opened.
+//
+// DELETE /api/transcript — wipe the ring. This also resets the router's
+// short-term memory and any pending offer, since both read the same file.
 
+// Must be a literal: Next statically analyses segment config, so it cannot
+// be imported from a shared module.
 export const dynamic = "force-dynamic";
 
+/** The synthetic path the overlay uses to recognise this as not-a-vault-note
+ *  (no Obsidian deep link, and a reset button instead). */
+const TRANSCRIPT_PATH = "system/voice/transcript";
+
 function hhmm(ts: string): string {
-  const d = new Date(ts);
-  return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  return new Date(ts).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
-export async function GET() {
-  const ex = allExchanges();
+function toMarkdown(exchanges: Exchange[]): string {
   const lines: string[] = ["# Voice Transcript", ""];
-  if (ex.length === 0) {
+  if (exchanges.length === 0) {
     lines.push("*No exchanges yet — hold Space and say something.*");
   }
   let lastDay = "";
-  for (const e of ex) {
+  for (const e of exchanges) {
     const day = e.ts.slice(0, 10);
     if (day !== lastDay) {
       lastDay = day;
@@ -29,12 +37,14 @@ export async function GET() {
     lines.push(`**${hhmm(e.ts)} — You:** ${e.you}`, "");
     lines.push(`**Jarvis:** ${e.jarvis}${skill}`, "");
   }
-  return NextResponse.json({ path: "system/voice/transcript", content: lines.join("\n") });
+  return lines.join("\n");
 }
 
-// DELETE /api/transcript — wipe the conversation ring (also resets the
-// router's short-term memory and any pending offer follow-through)
+export async function GET() {
+  return ok({ path: TRANSCRIPT_PATH, content: toMarkdown(allExchanges()) });
+}
+
 export async function DELETE() {
   clearMemory();
-  return NextResponse.json({ ok: true });
+  return ok({ ok: true });
 }

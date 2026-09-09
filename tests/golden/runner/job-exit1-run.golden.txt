@@ -1,0 +1,14 @@
+{
+  "id": "aabbccdd-exit1",
+  "skill": "vault-cleanup",
+  "args": {},
+  "ts_queued": "2026-09-09T15:29:30.000Z",
+  "ts_started": "2026-09-09T15:30:00.000Z",
+  "ts_completed": "2026-09-09T15:30:00.000Z",
+  "status": "error",
+  "exit_code": 1,
+  "summary": "Here is the spoken line.",
+  "md_path": "system/runs/aabbccdd-exit1.md",
+  "log_path": "system/runs/aabbccdd-exit1.md",
+  "deliverable_path": "inbox/reports/vault-cleanup/2026-09-09-cleanup-aabbccdd.md"
+}

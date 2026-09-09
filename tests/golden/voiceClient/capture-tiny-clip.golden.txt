@@ -1,0 +1,17 @@
+{
+  "started": true,
+  "log": [
+    "MediaRecorder.new(micStream#1) → recorder#1 mimeType=\"audio/webm;codecs=opus\"",
+    "recorder#1.addEventListener(dataavailable)",
+    "recorder#1.start()",
+    "performance.now() → 1200",
+    "perf +800ms",
+    "performance.now() → 2000",
+    "recorder#1.addEventListener(stop, once)",
+    "recorder#1.stop()",
+    ">> recorder#1 'dataavailable'(size=0) → 1 listener(s)",
+    ">> recorder#1 'dataavailable'(size=500) → 1 listener(s)",
+    ">> recorder#1 'stop' → 1 listener(s)",
+    "Blob.new(parts=1, type=\"audio/webm;codecs=opus\") → size=500 type=\"audio/webm;codecs=opus\""
+  ]
+}

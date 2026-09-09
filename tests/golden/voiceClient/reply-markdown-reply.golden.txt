@@ -1,0 +1,23 @@
+{
+  "spoke": true,
+  "log": [
+    ">> ws#1 message {\"type\":\"transcript\",\"text\":\"variant\"}",
+    "onListening(false)",
+    "fetch POST /api/voice/text {\"method\":\"POST\",\"headers\":{\"Content-Type\":\"application/json\"},\"body\":\"{\\\"transcript\\\":\\\"variant\\\"}\"}",
+    "res(200).json()",
+    "onLog[sys] you · x",
+    "onLog[ok] jarvis · **Fable 5** shipped — see https://example.com/fable `1M-token` context.",
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Fable%205%20shipped%20%E2%80%94%20see%201M-token%20context.) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    "-- ended --",
+    ">> audio#1 'ended' → 1 listener(s)",
+    "mediaSrc#1.disconnect()",
+    "onSpeaking(false)"
+  ]
+}

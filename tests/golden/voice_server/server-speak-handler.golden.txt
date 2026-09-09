@@ -1,0 +1,481 @@
+{
+  "empty": {
+    "response": {
+      "kind": "Response",
+      "status_code": 400,
+      "content": "empty text"
+    },
+    "kokoro_calls": []
+  },
+  "whitespace-only": {
+    "response": {
+      "kind": "Response",
+      "status_code": 400,
+      "content": "empty text"
+    },
+    "kokoro_calls": []
+  },
+  "one-sentence": {
+    "response": {
+      "kind": "StreamingResponse",
+      "media_type": "audio/wav",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "extra": {},
+      "stream": [
+        {
+          "len": 44,
+          "head_hex": "52494646ffffff7f57415645666d74201000000001000100c05d000080bb00000200100064617461dbffff7f",
+          "all_zero": false
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        }
+      ]
+    },
+    "kokoro_calls": [
+      {
+        "text": "Systems online.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      }
+    ]
+  },
+  "leading-trailing-ws": {
+    "response": {
+      "kind": "StreamingResponse",
+      "media_type": "audio/wav",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "extra": {},
+      "stream": [
+        {
+          "len": 44,
+          "head_hex": "52494646ffffff7f57415645666d74201000000001000100c05d000080bb00000200100064617461dbffff7f",
+          "all_zero": false
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        }
+      ]
+    },
+    "kokoro_calls": [
+      {
+        "text": "Hi there.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      }
+    ]
+  },
+  "three-short": {
+    "response": {
+      "kind": "StreamingResponse",
+      "media_type": "audio/wav",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "extra": {},
+      "stream": [
+        {
+          "len": 44,
+          "head_hex": "52494646ffffff7f57415645666d74201000000001000100c05d000080bb00000200100064617461dbffff7f",
+          "all_zero": false
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        }
+      ]
+    },
+    "kokoro_calls": [
+      {
+        "text": "One.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Two. Three.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      }
+    ]
+  },
+  "rundown-like": {
+    "response": {
+      "kind": "StreamingResponse",
+      "media_type": "audio/wav",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "extra": {},
+      "stream": [
+        {
+          "len": 44,
+          "head_hex": "52494646ffffff7f57415645666d74201000000001000100c05d000080bb00000200100064617461dbffff7f",
+          "all_zero": false
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        }
+      ]
+    },
+    "kokoro_calls": [
+      {
+        "text": "Good morning.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Two of three goals still open. Want me to run the inbox audit?",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      }
+    ]
+  },
+  "over-900": {
+    "response": {
+      "kind": "StreamingResponse",
+      "media_type": "audio/wav",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "extra": {},
+      "stream": [
+        {
+          "len": 44,
+          "head_hex": "52494646ffffff7f57415645666d74201000000001000100c05d000080bb00000200100064617461dbffff7f",
+          "all_zero": false
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        },
+        {
+          "len": 16,
+          "head_hex": "0000ff3f01c0ff7f0180ff7f0180ff1f",
+          "all_zero": false
+        },
+        {
+          "len": 5760,
+          "head_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "all_zero": true
+        }
+      ]
+    },
+    "kokoro_calls": [
+      {
+        "text": "Sentence number 1 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 2 is right here. Sentence number 3 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 4 is right here. Sentence number 5 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 6 is right here. Sentence number 7 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 8 is right here. Sentence number 9 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 10 is right here. Sentence number 11 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 12 is right here. Sentence number 13 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 14 is right here. Sentence number 15 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 16 is right here. Sentence number 17 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 18 is right here. Sentence number 19 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 20 is right here. Sentence number 21 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 22 is right here. Sentence number 23 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 24 is right here. Sentence number 25 is right here.",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      },
+      {
+        "text": "Sentence number 26 is right here. Sentence number 27 is rig",
+        "kwargs": {
+          "voice": "bm_george",
+          "speed": 1.0,
+          "lang": "en-gb"
+        }
+      }
+    ]
+  },
+  "default-arg": {
+    "response": {
+      "kind": "Response",
+      "status_code": 400,
+      "content": "empty text"
+    },
+    "kokoro_calls": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "log": [
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Broken%20one) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    "-- error --",
+    ">> audio#1 'error' → 1 listener(s)",
+    "mediaSrc#1.disconnect()",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "onLog[err] voice playback failed: Error: audio element error",
+    "onSpeaking(false)",
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Next%20one) → audio#2",
+    "audio#2.preload=auto",
+    "ctx#1.createMediaElementSource(audio#2) → mediaSrc#2",
+    "mediaSrc#2.connect(biquad#1)",
+    "audio#2.addEventListener(ended, once)",
+    "audio#2.addEventListener(error, once)",
+    "audio#2.play()",
+    "-- Next one ended --",
+    ">> audio#2 'ended' → 1 listener(s)",
+    "mediaSrc#2.disconnect()",
+    "onSpeaking(false)"
+  ]
+}

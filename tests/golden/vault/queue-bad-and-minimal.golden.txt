@@ -1,0 +1,50 @@
+[
+  {
+    "id": "empty-object",
+    "skill": "?",
+    "label": null,
+    "ts": ""
+  },
+  {
+    "id": "ts-number",
+    "skill": "?",
+    "label": null,
+    "ts": "123"
+  },
+  {
+    "id": "voice-ask-no-args",
+    "skill": "voice-ask",
+    "label": null,
+    "ts": ""
+  },
+  {
+    "id": "id-null",
+    "skill": "x",
+    "label": null,
+    "ts": "t"
+  },
+  {
+    "id": "7",
+    "skill": "x",
+    "label": null,
+    "ts": ""
+  },
+  {
+    "id": "scalar",
+    "skill": "?",
+    "label": null,
+    "ts": ""
+  },
+  {
+    "id": "array",
+    "skill": "?",
+    "label": null,
+    "ts": ""
+  },
+  {
+    "id": "string",
+    "skill": "?",
+    "label": null,
+    "ts": ""
+  }
+]

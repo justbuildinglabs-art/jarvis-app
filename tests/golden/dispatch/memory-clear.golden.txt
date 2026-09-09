@@ -1,0 +1,15 @@
+{
+  "afterClearWithFile": {
+    "exists": true,
+    "content": "",
+    "all": []
+  },
+  "afterClearWithoutFile": {
+    "exists": true,
+    "content": ""
+  },
+  "afterClearWithoutDir": {
+    "dirExists": false,
+    "fileExists": false
+  }
+}

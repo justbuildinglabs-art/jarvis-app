@@ -1,0 +1,9 @@
+{
+  "SR": 16000,
+  "FRAME": 1280,
+  "WAKE_MODEL": "hey_jarvis_v0.1",
+  "MAX_UTTERANCE_S": 8.0,
+  "NO_SPEECH_S": 2.5,
+  "TRAIL_SILENCE_FRAMES": 9,
+  "COOLDOWN_S": 1.5
+}

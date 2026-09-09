@@ -1,0 +1,11 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "Anthropic posts its first profit — $559M operating profit on $10.9B quarterly revenue. source",
+    "OpenAI eyes a $1T+ IPO as soon as September; Nvidia lining up ~$100B."
+  ],
+  "links": [
+    "https://example.com/anthropic-profit",
+    "https://example.com/openai-ipo"
+  ]
+}

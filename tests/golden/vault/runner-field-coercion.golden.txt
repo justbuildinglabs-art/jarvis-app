@@ -1,0 +1,68 @@
+{
+  "strings_and_odd_types": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": 4242,
+    "version": "1.5",
+    "busy": true,
+    "active": 2,
+    "max_concurrent": 0,
+    "pending": null,
+    "heartbeat_age_s": 20,
+    "alive": true
+  },
+  "busy_zero": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 20,
+    "alive": true
+  },
+  "busy_string_empty": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 20,
+    "alive": true
+  },
+  "empty_object": {
+    "ts": "",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "empty_array": {
+    "ts": "",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "nested": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": null,
+    "version": "1,2",
+    "busy": false,
+    "active": 3,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 20,
+    "alive": true
+  }
+}

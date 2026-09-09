@@ -1,0 +1,110 @@
+/* The core lab at /lab — a dev surface, not part of the HUD. */
+
+/* --- core lab (/lab) ----------------------------------------------------------------------- */
+
+.lab {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+}
+
+.lab-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lab-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 18px 28px 14px;
+}
+
+.lab-title {
+  font-family: var(--font-display), sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--white-hot);
+}
+
+.lab-sub {
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.lab-grid {
+  position: absolute;
+  inset: 58px 16px 16px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.lab-tile {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid var(--line-faint);
+  transition: border-color 0.2s ease;
+}
+
+.lab-tile:hover {
+  border-color: var(--line);
+}
+
+.lab-tile.is-solo {
+  position: fixed;
+  inset: 58px 16px 16px;
+  z-index: 4;
+  cursor: zoom-out;
+  border-color: var(--line);
+}
+
+.lab-tile.is-hidden {
+  display: none;
+}
+
+.lab-label {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  pointer-events: none;
+}
+
+.lab-label .idx {
+  font-family: var(--font-display), sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ember);
+}
+
+.lab-label .nm {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: var(--ink);
+}
+
+.lab-label .bl {
+  font-size: 7.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.lab-tile:hover .lab-label .nm {
+  color: var(--white-hot);
+}

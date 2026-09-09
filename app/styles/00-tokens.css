@@ -1,0 +1,71 @@
+/* Design tokens and the reset.
+   
+   White-on-near-black, and the chrome is deliberately monochrome: the orb at
+   the centre owns the only real colour, so every accent here is a white ramp.
+   Only warn/err carry hue, and they carry it as meaning. */
+
+/* ===========================================================================
+   V.A.U.L.T. — GRAPH CORE design system v4
+   Nocturnal instrument panel. Open composition: no panel boxes, text floats
+   on edge scrims over the 3D knowledge graph. Hairlines carry structure;
+   typography carries hierarchy (Michroma throughout — squared Eurostile-style
+   lettering).
+
+   White-on-near-black. The chrome is monochrome and STATIC — no hue rotation:
+   the orb keeps its own fixed color, and every accent here is a white ramp.
+   Only warn/err carry hue, as semantics. Corner brackets and tick rules add
+   instrument density without boxing anything in, so the graph stays the
+   centre of attention.
+   ======================================================================== */
+
+:root {
+  /* static chrome — a white ramp; --accent-h is retired (kept only so any
+     stray reference degrades to neutral gray instead of breaking) */
+  --accent-h: 0;
+  --bg: oklch(0.115 0.014 235);
+  --ink: #ffffff;
+  /* lifted from 0.66/0.44 — body copy sits over a live background, and the
+     old alphas were the other half of the "hard to read" problem */
+  --ink-dim: rgba(255, 255, 255, 0.84);
+  --ink-faint: rgba(255, 255, 255, 0.6);
+  /* Cyan is an ACCENT, not a body colour: it rides short uppercase labels,
+     ticks, dots and rules. Anything you actually read stays white — cyan has
+     lower luminance than white, so using it for prose costs contrast. */
+  --cyan: #6fd8f5;
+  --cyan-dim: rgba(111, 216, 245, 0.72);
+  --ember: var(--cyan);
+  --ember-hot: #a5e9ff;
+  --ember-deep: rgba(111, 216, 245, 0.32);
+  --white-hot: #ffffff;
+  --cobalt: var(--cyan);
+  /* gold — used in exactly four places, as a rare high-value marker */
+  --gold: #d9a441;
+  --ok: var(--ember);
+  --warn: oklch(0.78 0.13 80);
+  --err: oklch(0.62 0.22 30);
+  --mock: oklch(0.55 0 0);
+  --line: rgba(255, 255, 255, 0.28);
+  --line-faint: rgba(255, 255, 255, 0.13);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  overflow: hidden;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--bg);
+}

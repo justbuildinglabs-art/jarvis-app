@@ -1,0 +1,4 @@
+{
+  "file": "{\"ts\":\"2026-09-09T15:30:00.000Z\",\"you\":\"first after wipe\",\"jarvis\":\"hi\",\"tier\":2}\n",
+  "context": "User: first after wipe\nJarvis: hi\n\nBackground results recently delivered (these are what \"that\"/\"it\" may refer to):\n[voice-ask] Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless). (doc: inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md)\n[morning-report] Morning briefing is ready — five headlines, Anthropic profit leads. SAVED inbox/reports/morning/2026-09-09-morning-report-deadbeef.md (doc: inbox/reports/morning/2026-09-09-morning-report-deadbeef.md)\n\nStill working in the background (\"where's that X?\" refers to these — they are IN PROGRESS, not lost):\n[inbox-brief] (running 2 min)"
+}

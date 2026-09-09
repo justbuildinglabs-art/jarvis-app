@@ -1,0 +1,56 @@
+[
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. No daily note yet — say plan today and I'll set one up. Want me to run the morning report, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals"
+      ],
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "show me that",
+    "result": {
+      "tier": 2,
+      "reply": "I don't have any documents on file yet.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  }
+]

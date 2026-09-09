@@ -1,0 +1,156 @@
+{
+  "table": {
+    "<unset>": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='on'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='off'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": false,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='0'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": false,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='false'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": false,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='FALSE'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": false,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='Off'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": false,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='no'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD=''": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='1'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='true'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD='yes'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_WORD=' off'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WAKE_THRESHOLD='0.7'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.7
+    },
+    "WAKE_THRESHOLD='1'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 1.0
+    },
+    "WAKE_THRESHOLD=' 0.3 '": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.3
+    },
+    "WAKE_THRESHOLD='1e-1'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.1
+    },
+    "KOKORO_SPEED='1.08'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.08,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "KOKORO_SPEED='2'": {
+      "VOICE": "bm_george",
+      "SPEED": 2.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "KOKORO_VOICE='am_adam'": {
+      "VOICE": "am_adam",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "small.en",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    },
+    "WHISPER_MODEL='base'": {
+      "VOICE": "bm_george",
+      "SPEED": 1.0,
+      "WHISPER_MODEL": "base",
+      "WAKE_ENABLED": true,
+      "WAKE_THRESHOLD": 0.5
+    }
+  },
+  "errors": {
+    "WAKE_THRESHOLD='abc'": "ValueError: could not convert string to float: 'abc'",
+    "WAKE_THRESHOLD=''": "ValueError: could not convert string to float: ''",
+    "KOKORO_SPEED='fast'": "ValueError: could not convert string to float: 'fast'"
+  }
+}

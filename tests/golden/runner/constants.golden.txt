@@ -1,0 +1,28 @@
+{
+  "CLAUDE_MODEL": "claude-opus-5",
+  "MODEL_ALLOWLIST": [
+    "claude-fable-5",
+    "claude-haiku-4-5-20251001",
+    "claude-opus-4-8",
+    "claude-opus-5",
+    "claude-sonnet-4-6"
+  ],
+  "MAX_CONCURRENT": 3,
+  "SERIAL_SKILLS": [
+    "plan-today",
+    "plan-tomorrow"
+  ],
+  "DEDUPE_SKILLS": [
+    "inbox-brief",
+    "morning-report"
+  ],
+  "LONG_SKILLS": [
+    "morning-report"
+  ],
+  "HUD_TZ": "America/Chicago",
+  "VAULT_ROOT": "<VAULT>",
+  "QUEUE_DIR": "<VAULT>/system/queue",
+  "RUNS_DIR": "<VAULT>/system/runs",
+  "STATUS_FILE": "<VAULT>/system/runner-status.json",
+  "RUNNER_LOG": "<VAULT>/runner.log"
+}

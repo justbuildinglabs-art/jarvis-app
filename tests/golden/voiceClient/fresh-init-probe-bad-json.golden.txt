@@ -1,0 +1,10 @@
+{
+  "log": [
+    "window'3.addEventListener(pointerdown)",
+    "window'3.addEventListener(keydown)",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#7",
+    "res(200).json()",
+    "onLog[ok] voice link armed — kokoro · local"
+  ]
+}

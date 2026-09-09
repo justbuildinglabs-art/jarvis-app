@@ -1,0 +1,54 @@
+{
+  "wake-none-two-pings": {
+    "sent": [
+      "{\"type\": \"hello\", \"wake\": false}"
+    ],
+    "log": [
+      "accept",
+      "send_text in_clients=False",
+      "receive_text in_clients=True",
+      "receive_text in_clients=True",
+      "receive_text in_clients=True"
+    ],
+    "in_clients_after": false,
+    "raised": null
+  },
+  "wake-armed-no-pings": {
+    "sent": [
+      "{\"type\": \"hello\", \"wake\": true}"
+    ],
+    "log": [
+      "accept",
+      "send_text in_clients=False",
+      "receive_text in_clients=True"
+    ],
+    "in_clients_after": false,
+    "raised": null
+  },
+  "wake-enabled-dead": {
+    "sent": [
+      "{\"type\": \"hello\", \"wake\": false}"
+    ],
+    "log": [
+      "accept",
+      "send_text in_clients=False",
+      "receive_text in_clients=True",
+      "receive_text in_clients=True"
+    ],
+    "in_clients_after": false,
+    "raised": null
+  },
+  "receive-raises-other-error": {
+    "sent": [
+      "{\"type\": \"hello\", \"wake\": false}"
+    ],
+    "log": [
+      "accept",
+      "send_text in_clients=False",
+      "receive_text in_clients=True",
+      "receive_text in_clients=True"
+    ],
+    "in_clients_after": false,
+    "raised": "RuntimeError: socket torn down"
+  }
+}

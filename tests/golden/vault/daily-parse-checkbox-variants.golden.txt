@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-09",
+  "isToday": true,
+  "top3": [
+    {
+      "text": "one done",
+      "done": true
+    },
+    {
+      "text": "two open",
+      "done": false
+    },
+    {
+      "text": "three with extra spaces",
+      "done": true
+    },
+    {
+      "text": "ten double digit",
+      "done": true
+    },
+    {
+      "text": "zero padded",
+      "done": false
+    },
+    {
+      "text": "",
+      "done": false
+    },
+    {
+      "text": "**bold text** and `code` kept verbatim",
+      "done": false
+    },
+    {
+      "text": "[x] double box",
+      "done": true
+    }
+  ],
+  "schedule": [],
+  "focus": ""
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "ask": "show me that",
+    "answer": {
+      "text": "I don't have any documents on file yet.",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "ask": "show me the morning report",
+    "answer": {
+      "text": "Here's this morning's report. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open the cleanup",
+    "answer": null
+  },
+  {
+    "ask": "open the morning",
+    "answer": null
+  }
+]

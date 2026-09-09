@@ -1,0 +1,36 @@
+[
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "no",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "sounds good",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "no thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Anytime.",
+      "engine": "rules"
+    }
+  }
+]

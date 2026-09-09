@@ -1,0 +1,20 @@
+{
+  "message": "{\"type\": \"wake\", \"score\": 0.987}",
+  "delivered_to": [
+    "good1",
+    "good2"
+  ],
+  "remaining_clients": [
+    "good1",
+    "good2"
+  ],
+  "before-startup": {
+    "returned": null,
+    "scheduled_calls": 1
+  },
+  "transcript-wire-format": "{\"type\": \"transcript\", \"text\": \"hey jarvis\", \"ms\": 412}",
+  "hello-wire-format": {
+    "wake=None": "{\"type\": \"hello\", \"wake\": false}",
+    "wake.ok=True": "{\"type\": \"hello\", \"wake\": true}"
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "ping",
+    "jarvis": "pong",
+    "tier": 2
+  },
+  {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "run it",
+    "jarvis": "On it.",
+    "tier": 1,
+    "skill": "plan-today"
+  }
+]

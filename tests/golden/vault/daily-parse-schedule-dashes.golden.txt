@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-09",
+  "isToday": true,
+  "top3": [],
+  "schedule": [
+    {
+      "time": "09:00",
+      "item": "em dash"
+    },
+    {
+      "time": "13:00",
+      "item": "en dash"
+    },
+    {
+      "time": "16:30",
+      "item": "hyphen"
+    },
+    {
+      "time": "17:00",
+      "item": "double hyphen"
+    },
+    {
+      "time": "18:00",
+      "item": "mixed dashes"
+    },
+    {
+      "time": "19:00",
+      "item": "no spaces"
+    },
+    {
+      "time": "9:05",
+      "item": "single digit hour"
+    },
+    {
+      "time": "22:00",
+      "item": ""
+    },
+    {
+      "time": "23:00",
+      "item": "extra whitespace"
+    },
+    {
+      "time": "24:99",
+      "item": "nonsense time still matches"
+    },
+    {
+      "time": "08:00",
+      "item": "text (with parens) — and a second dash"
+    },
+    {
+      "time": "08:15",
+      "item": "[ ] checkbox inside schedule"
+    }
+  ],
+  "focus": ""
+}

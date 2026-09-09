@@ -1,0 +1,46 @@
+{
+  "offer_skills": {
+    "morning report": "morning-report",
+    "inbox audit": "inbox-brief"
+  },
+  "offers": [
+    {
+      "local_hour": 10,
+      "has_report": false,
+      "sentence": "Want me to run the morning report, or do you have anything else in mind?",
+      "phrase": "morning report",
+      "parsed": "morning-report"
+    },
+    {
+      "local_hour": 10,
+      "has_report": true,
+      "sentence": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "phrase": "inbox audit",
+      "parsed": "inbox-brief"
+    },
+    {
+      "local_hour": 16,
+      "has_report": false,
+      "sentence": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "phrase": "inbox audit",
+      "parsed": "inbox-brief"
+    },
+    {
+      "local_hour": 16,
+      "has_report": true,
+      "sentence": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "phrase": "inbox audit",
+      "parsed": "inbox-brief"
+    }
+  ],
+  "freshness": [
+    {
+      "age_ms": 180000,
+      "parsed": "inbox-brief"
+    },
+    {
+      "age_ms": 180001,
+      "parsed": null
+    }
+  ]
+}

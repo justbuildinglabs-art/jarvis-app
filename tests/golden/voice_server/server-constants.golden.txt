@@ -1,0 +1,34 @@
+{
+  "HERE": {
+    "expr": "os.path.dirname(os.path.dirname(os.path.abspath(__file__)))"
+  },
+  "PORT": {
+    "expr": "4871",
+    "literal": 4871
+  },
+  "VOICE": {
+    "expr": "os.environ.get(\"KOKORO_VOICE\", \"bm_george\")"
+  },
+  "SPEED": {
+    "expr": "float(os.environ.get(\"KOKORO_SPEED\", \"1.0\"))"
+  },
+  "SAMPLE_RATE": {
+    "expr": "24000",
+    "literal": 24000
+  },
+  "WHISPER_MODEL": {
+    "expr": "os.environ.get(\"WHISPER_MODEL\", \"small.en\")"
+  },
+  "WHISPER_PROMPT": {
+    "expr": "os.environ.get(\n    \"WHISPER_PROMPT\",\n    \"Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, \"\n    \"TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub \"\n    \"trending, trend scan, daily briefing, runner, queue, top three priorities.\",\n)"
+  },
+  "WAKE_ENABLED": {
+    "expr": "os.environ.get(\"WAKE_WORD\", \"on\").lower() not in (\"off\", \"0\", \"false\")"
+  },
+  "WAKE_THRESHOLD": {
+    "expr": "float(os.environ.get(\"WAKE_THRESHOLD\", \"0.5\"))"
+  },
+  "SENTENCE_SPLIT": {
+    "expr": "re.compile(r\"(?<=[.!?…])\\s+\")"
+  }
+}

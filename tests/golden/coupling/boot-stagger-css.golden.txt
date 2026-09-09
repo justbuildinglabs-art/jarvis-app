@@ -1,0 +1,31 @@
+{
+  "rules": [
+    {
+      "selector": ".boot-stagger",
+      "animation_declarations": [
+        "animation: boot-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards"
+      ]
+    }
+  ],
+  "keyframes": {
+    "name": "boot-in",
+    "frames": [
+      {
+        "at": "0%",
+        "declarations": [
+          "opacity: 0",
+          "transform: translateY(12px)",
+          "filter: blur(6px)"
+        ]
+      },
+      {
+        "at": "100%",
+        "declarations": [
+          "opacity: 1",
+          "transform: none",
+          "filter: blur(0)"
+        ]
+      }
+    ]
+  }
+}

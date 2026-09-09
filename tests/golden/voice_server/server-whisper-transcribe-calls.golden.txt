@@ -1,0 +1,62 @@
+[
+  {
+    "in": "transcribe_pcm",
+    "func": "whisper.transcribe",
+    "args": [
+      "audio_f32"
+    ],
+    "kwargs": {
+      "beam_size": "1",
+      "language": "\"en\"",
+      "vad_filter": "False",
+      "initial_prompt": "WHISPER_PROMPT"
+    },
+    "kwargs_literal": {
+      "beam_size": 1,
+      "language": "en",
+      "vad_filter": false,
+      "initial_prompt": {
+        "<expr>": "WHISPER_PROMPT"
+      }
+    },
+    "under_whisper_lock": true
+  },
+  {
+    "in": "stt",
+    "func": "whisper.transcribe",
+    "args": [
+      "io.BytesIO(audio)"
+    ],
+    "kwargs": {
+      "beam_size": "1",
+      "language": "\"en\"",
+      "vad_filter": "False",
+      "initial_prompt": "WHISPER_PROMPT"
+    },
+    "kwargs_literal": {
+      "beam_size": 1,
+      "language": "en",
+      "vad_filter": false,
+      "initial_prompt": {
+        "<expr>": "WHISPER_PROMPT"
+      }
+    },
+    "under_whisper_lock": true
+  },
+  {
+    "in": "warm_models",
+    "func": "whisper.transcribe",
+    "args": [
+      "warm"
+    ],
+    "kwargs": {
+      "beam_size": "1",
+      "language": "\"en\""
+    },
+    "kwargs_literal": {
+      "beam_size": 1,
+      "language": "en"
+    },
+    "under_whisper_lock": false
+  }
+]

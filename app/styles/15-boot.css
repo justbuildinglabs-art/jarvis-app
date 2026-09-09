@@ -1,0 +1,17 @@
+/* Boot choreography.
+   
+   LOAD-BEARING: nothing carrying .boot-stagger may take a second `animation`
+   declaration. A second one cancels `boot-in … forwards` and the panel renders
+   blank. tests/coupling.test.ts asserts exactly one animation shorthand here. */
+
+/* --- boot choreography ---------------------------------------------------------------- */
+
+.boot-stagger {
+  opacity: 0;
+  animation: boot-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes boot-in {
+  0% { opacity: 0; transform: translateY(12px); filter: blur(6px); }
+  100% { opacity: 1; transform: none; filter: blur(0); }
+}

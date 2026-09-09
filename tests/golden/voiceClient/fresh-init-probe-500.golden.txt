@@ -1,0 +1,10 @@
+{
+  "log": [
+    "window'2.addEventListener(pointerdown)",
+    "window'2.addEventListener(keydown)",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#6",
+    "-- speak() (locked, not disabled) --",
+    "onLog[sys] voice queued — click or key to enable audio"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "payload": {
+    "transcript": "inbox brief",
+    "tier": 2,
+    "skill": null,
+    "queued": null,
+    "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": null,
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "inbox brief",
+    "jarvis": "The inbox brief is already running — I'll let you know the moment it lands.",
+    "tier": 2
+  }
+}

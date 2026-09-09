@@ -1,0 +1,64 @@
+/* Audio I/O chrome. */
+
+/* --- audio I/O ----------------------------------------------------------------- */
+
+.wave {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 26px;
+}
+
+.wave i {
+  flex: 1;
+  background: var(--ember);
+  opacity: 0.55;
+  height: 1px;
+  transition: height 0.3s ease;
+}
+
+.wave.live i {
+  animation: wave 1.1s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.085s);
+}
+.wave.live i:nth-child(3n) {
+  background: var(--ember-hot);
+  animation-duration: 0.9s;
+}
+.wave.live i:nth-child(5n) {
+  animation-duration: 1.6s;
+}
+
+@keyframes wave {
+  0%, 100% { height: 8%; }
+  50% { height: 85%; }
+}
+
+.wave.cobalt i { background: var(--cobalt); }
+.wave.cobalt i:nth-child(3n) { background: rgba(255, 255, 255, 0.8); }
+
+/* standby: low, slow breathing — picks up to full wave when live */
+.wave.idle i {
+  animation: wave-idle 3.4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.19s);
+  opacity: 0.3;
+}
+
+.wave.idle i:nth-child(4n) {
+  animation-duration: 4.6s;
+}
+
+@keyframes wave-idle {
+  0%, 100% { height: 5%; }
+  50% { height: 16%; }
+}
+
+.audio-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}

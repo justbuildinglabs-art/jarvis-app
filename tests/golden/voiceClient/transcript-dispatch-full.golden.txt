@@ -1,0 +1,24 @@
+{
+  "log": [
+    ">> ws#1 message {\"type\":\"transcript\",\"text\":\"what's in the queue\"}",
+    "onListening(false)",
+    "fetch POST /api/voice/text {\"method\":\"POST\",\"headers\":{\"Content-Type\":\"application/json\"},\"body\":\"{\\\"transcript\\\":\\\"what's in the queue\\\"}\"}",
+    "res(200).json()",
+    "onLog[sys] you · what's in the queue",
+    "onPanels([\"queue\",\"runs\"])",
+    "onDeliverable(inbox/reports/inbox-briefs/2026-09-09-33333333.md, morning report)",
+    "onLog[ok] jarvis · Two things waiting: the inbox brief and a voice ask.",
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Two%20things%20waiting%3A%20the%20inbox%20brief%20and%20a%20voice%20ask.) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    "-- ended --",
+    ">> audio#1 'ended' → 1 listener(s)",
+    "mediaSrc#1.disconnect()",
+    "onSpeaking(false)"
+  ]
+}

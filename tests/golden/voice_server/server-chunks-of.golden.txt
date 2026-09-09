@@ -1,0 +1,233 @@
+[
+  {
+    "case": "empty",
+    "input": "",
+    "input_len": 0,
+    "chunks": [
+      ""
+    ]
+  },
+  {
+    "case": "whitespace-only",
+    "input": "   \n\t ",
+    "input_len": 6,
+    "chunks": [
+      "   \n\t "
+    ]
+  },
+  {
+    "case": "one-sentence",
+    "input": "Systems online.",
+    "input_len": 15,
+    "chunks": [
+      "Systems online."
+    ]
+  },
+  {
+    "case": "no-terminator",
+    "input": "Systems online",
+    "input_len": 14,
+    "chunks": [
+      "Systems online"
+    ]
+  },
+  {
+    "case": "two-short",
+    "input": "Yes. No.",
+    "input_len": 8,
+    "chunks": [
+      "Yes.",
+      "No."
+    ]
+  },
+  {
+    "case": "many-short",
+    "input": "Hi. Yes. No. Go. Stop. Wait. Ok. Sure. Fine. Done. Really. Maybe. Never. Always. Perhaps.",
+    "input_len": 89,
+    "chunks": [
+      "Hi.",
+      "Yes. No. Go. Stop. Wait. Ok. Sure. Fine. Done. Really. Maybe.",
+      "Never. Always. Perhaps."
+    ]
+  },
+  {
+    "case": "long-single",
+    "input": "This is one very long sentence that runs well past the sixty character glue threshold without ever stopping for breath.",
+    "input_len": 119,
+    "chunks": [
+      "This is one very long sentence that runs well past the sixty character glue threshold without ever stopping for breath."
+    ]
+  },
+  {
+    "case": "mixed-terminators",
+    "input": "One. Two! Three? Four… Five! Six? Seven.",
+    "input_len": 40,
+    "chunks": [
+      "One.",
+      "Two! Three? Four… Five! Six? Seven."
+    ]
+  },
+  {
+    "case": "ascii-ellipsis",
+    "input": "Well... maybe. Or not... who knows? Fine.",
+    "input_len": 41,
+    "chunks": [
+      "Well...",
+      "maybe. Or not... who knows? Fine."
+    ]
+  },
+  {
+    "case": "stacked-punct",
+    "input": "Really?! Yes!! Okay?? Done.",
+    "input_len": 27,
+    "chunks": [
+      "Really?!",
+      "Yes!! Okay?? Done."
+    ]
+  },
+  {
+    "case": "leading-trailing-ws",
+    "input": "   Good morning.   Two of three goals still open.   ",
+    "input_len": 52,
+    "chunks": [
+      "Good morning.",
+      "Two of three goals still open."
+    ]
+  },
+  {
+    "case": "newlines",
+    "input": "Line one.\nLine two.\n\nLine three.",
+    "input_len": 32,
+    "chunks": [
+      "Line one.",
+      "Line two. Line three."
+    ]
+  },
+  {
+    "case": "tabs-and-runs",
+    "input": "A.\t\tB.    C.",
+    "input_len": 12,
+    "chunks": [
+      "A.",
+      "B. C."
+    ]
+  },
+  {
+    "case": "no-space-after-period",
+    "input": "Version 1.5 shipped.Next up: v2.Hello.",
+    "input_len": 38,
+    "chunks": [
+      "Version 1.5 shipped.Next up: v2.Hello."
+    ]
+  },
+  {
+    "case": "decimal-and-abbrev",
+    "input": "Dr. Smith saw 3.5 percent growth. Mr. Jones did not.",
+    "input_len": 52,
+    "chunks": [
+      "Dr.",
+      "Smith saw 3.5 percent growth. Mr. Jones did not."
+    ]
+  },
+  {
+    "case": "terminator-then-quote",
+    "input": "He said \"go.\" Then left! Right?",
+    "input_len": 31,
+    "chunks": [
+      "He said \"go.\" Then left!",
+      "Right?"
+    ]
+  },
+  {
+    "case": "glue-second-59-chars",
+    "input": "Lead. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. Tail.",
+    "input_len": 71,
+    "chunks": [
+      "Lead.",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. Tail."
+    ]
+  },
+  {
+    "case": "glue-second-60-chars",
+    "input": "Lead. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. Tail.",
+    "input_len": 72,
+    "chunks": [
+      "Lead.",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.",
+      "Tail."
+    ]
+  },
+  {
+    "case": "glue-accumulates-to-60",
+    "input": "Lead. Twenty chars here!! Twenty chars here!! And then twenty more. Tail.",
+    "input_len": 73,
+    "chunks": [
+      "Lead.",
+      "Twenty chars here!! Twenty chars here!! And then twenty more.",
+      "Tail."
+    ]
+  },
+  {
+    "case": "only-punct",
+    "input": "...",
+    "input_len": 3,
+    "chunks": [
+      "..."
+    ]
+  },
+  {
+    "case": "punct-runs",
+    "input": "... !!! ???",
+    "input_len": 11,
+    "chunks": [
+      "...",
+      "!!! ???"
+    ]
+  },
+  {
+    "case": "unicode",
+    "input": "Café résumé naïve… Ünïcödé works? Ja!",
+    "input_len": 37,
+    "chunks": [
+      "Café résumé naïve…",
+      "Ünïcödé works? Ja!"
+    ]
+  },
+  {
+    "case": "rundown-like",
+    "input": "Good morning. Two of three goals still open. YouTube is at fifty thousand four hundred and five subscribers, up one hundred and fifteen. Want me to run the inbox audit?",
+    "input_len": 168,
+    "chunks": [
+      "Good morning.",
+      "Two of three goals still open. YouTube is at fifty thousand four hundred and five subscribers, up one hundred and fifteen.",
+      "Want me to run the inbox audit?"
+    ]
+  },
+  {
+    "case": "over-900",
+    "input": "Sentence number 1 is right here. Sentence number 2 is right here. Sentence number 3 is right here. Sentence number 4 is right here. Sentence number 5 is right here. Sentence number 6 is right here. Sentence number 7 is right here. Sentence number 8 is right here. Sentence number 9 is right here. Sentence number 10 is right here. Sentence number 11 is right here. Sentence number 12 is right here. Sentence number 13 is right here. Sentence number 14 is right here. Sentence number 15 is right here. Sentence number 16 is right here. Sentence number 17 is right here. Sentence number 18 is right here. Sentence number 19 is right here. Sentence number 20 is right here. Sentence number 21 is right here. Sentence number 22 is right here. Sentence number 23 is right here. Sentence number 24 is right here. Sentence number 25 is right here. Sentence number 26 is right here. Sentence number 27 is right here. Sentence number 28 is right here. Sentence number 29 is right here. Sentence number 30 is right here. Sentence number 31 is right here. Sentence number 32 is right here. Sentence number 33 is right here. Sentence number 34 is right here. Sentence number 35 is right here. Sentence number 36 is right here. Sentence number 37 is right here. Sentence number 38 is right here. Sentence number 39 is right here.",
+    "input_len": 1316,
+    "chunks": [
+      "Sentence number 1 is right here.",
+      "Sentence number 2 is right here. Sentence number 3 is right here.",
+      "Sentence number 4 is right here. Sentence number 5 is right here.",
+      "Sentence number 6 is right here. Sentence number 7 is right here.",
+      "Sentence number 8 is right here. Sentence number 9 is right here.",
+      "Sentence number 10 is right here. Sentence number 11 is right here.",
+      "Sentence number 12 is right here. Sentence number 13 is right here.",
+      "Sentence number 14 is right here. Sentence number 15 is right here.",
+      "Sentence number 16 is right here. Sentence number 17 is right here.",
+      "Sentence number 18 is right here. Sentence number 19 is right here.",
+      "Sentence number 20 is right here. Sentence number 21 is right here.",
+      "Sentence number 22 is right here. Sentence number 23 is right here.",
+      "Sentence number 24 is right here. Sentence number 25 is right here.",
+      "Sentence number 26 is right here. Sentence number 27 is right here.",
+      "Sentence number 28 is right here. Sentence number 29 is right here.",
+      "Sentence number 30 is right here. Sentence number 31 is right here.",
+      "Sentence number 32 is right here. Sentence number 33 is right here.",
+      "Sentence number 34 is right here. Sentence number 35 is right here.",
+      "Sentence number 36 is right here. Sentence number 37 is right here.",
+      "Sentence number 38 is right here. Sentence number 39 is right here."
+    ]
+  }
+]

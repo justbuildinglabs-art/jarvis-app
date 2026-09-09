@@ -1,0 +1,21 @@
+---
+date: 2026-09-01
+schema_version: 1
+focus: "Older note — only read when today's is missing"
+---
+
+# 2026-09-01
+
+## Top 3 Priorities
+
+1. [x] Old item one
+2. [x] Old item two
+3. [ ] Old item three
+
+## Schedule
+
+- 10:00 — Old meeting
+
+## Current Focus
+
+Old focus line.

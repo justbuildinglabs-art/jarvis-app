@@ -1,0 +1,14 @@
+{
+  "show me that": {
+    "text": "I don't have any documents on file yet.",
+    "panels": [
+      "documents"
+    ]
+  },
+  "show me the morning report": {
+    "text": "I don't see a recent document matching that — the Documents panel has the last five.",
+    "panels": [
+      "documents"
+    ]
+  }
+}

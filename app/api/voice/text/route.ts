@@ -1,32 +1,29 @@
-import { NextResponse } from "next/server";
 import { dispatchTranscript } from "@/lib/voiceDispatch";
+import { fail, ok, readJsonBody } from "@/lib/http/respond";
 
-// ---------------------------------------------------------------------------
-// POST /api/voice/text — {transcript} already STT'd by the voice-server wake
-// pipeline → shared dispatch (router → maybe queue write → convo memory).
-// Same response shape as /api/voice so the client handles both identically.
-// ---------------------------------------------------------------------------
+// POST /api/voice/text {transcript} — a transcript the voice-server's wake
+// pipeline already produced, so there is no audio to decode here.
+//
+// Same dispatch and same response shape as /api/voice, deliberately: the
+// client handles a wake-word utterance and a push-to-talk clip identically,
+// and only the transport differs.
 
+// Must be a literal: Next statically analyses segment config, so it cannot
+// be imported from a shared module.
 export const dynamic = "force-dynamic";
 
+const MAX_CHARS = 1000;
+
 export async function POST(req: Request) {
-  let transcript = "";
-  try {
-    const body = (await req.json()) as { transcript?: unknown };
-    transcript = String(body.transcript ?? "").trim();
-  } catch {
-    /* falls through to the 400 */
-  }
-  if (!transcript) {
-    return NextResponse.json({ error: "no transcript" }, { status: 400 });
-  }
-  if (transcript.length > 1000) {
-    return NextResponse.json({ error: "transcript too long" }, { status: 413 });
-  }
+  const body = await readJsonBody<{ transcript?: unknown }>(req);
+  const transcript = String(body?.transcript ?? "").trim();
+
+  if (!transcript) return fail("no transcript", 400);
+  if (transcript.length > MAX_CHARS) return fail("transcript too long", 413);
 
   try {
-    return NextResponse.json(await dispatchTranscript(transcript, "voice-wake"));
+    return ok(await dispatchTranscript(transcript, "voice-wake") as unknown as Record<string, unknown>);
   } catch (e) {
-    return NextResponse.json({ error: String(e) }, { status: 502 });
+    return fail(String(e), 502);
   }
 }

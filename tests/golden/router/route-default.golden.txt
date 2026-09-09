@@ -1,0 +1,265 @@
+[
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Inbox Summary",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox audit",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "run the inbox brief again",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief fable five launch",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief fable five",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief please jarvis",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "sounds good",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "no thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "what's in the queue",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "hey",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "show me that",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "tell me a joke",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "once you're done with that inbox brief tell me about fable five",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "voice ask",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "convo": "User: any news on fable\nJarvis: Working on it.",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "tell me a joke",
+    "convo": "User: any news on fable\nJarvis: Working on it.",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  }
+]

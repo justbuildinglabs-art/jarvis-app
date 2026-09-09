@@ -1,0 +1,2 @@
+[2026-09-09T15:30:00.000Z] aabbccdd-inbox-ok: running skill=inbox-brief
+[2026-09-09T15:30:00.000Z] aabbccdd-inbox-ok: completed exit=0 status=ok

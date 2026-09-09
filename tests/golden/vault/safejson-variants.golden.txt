@@ -1,0 +1,134 @@
+{
+  "invalid": {
+    "runner": null,
+    "video": null
+  },
+  "empty": {
+    "runner": null,
+    "video": null
+  },
+  "whitespace": {
+    "runner": null,
+    "video": null
+  },
+  "trailing_comma": {
+    "runner": null,
+    "video": null
+  },
+  "json_null": {
+    "runner": null,
+    "video": null
+  },
+  "json_zero": {
+    "runner": null,
+    "video": null
+  },
+  "json_false": {
+    "runner": null,
+    "video": null
+  },
+  "json_true": {
+    "runner": {
+      "ts": "",
+      "pid": 0,
+      "version": "?",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 0,
+      "pending": 0,
+      "heartbeat_age_s": null,
+      "alive": false
+    },
+    "video": {
+      "title": "",
+      "url": "",
+      "video_id": "",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "published_at": "",
+      "status": "?"
+    }
+  },
+  "json_string": {
+    "runner": {
+      "ts": "",
+      "pid": 0,
+      "version": "?",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 0,
+      "pending": 0,
+      "heartbeat_age_s": null,
+      "alive": false
+    },
+    "video": {
+      "title": "",
+      "url": "",
+      "video_id": "",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "published_at": "",
+      "status": "?"
+    }
+  },
+  "json_number": {
+    "runner": {
+      "ts": "",
+      "pid": 0,
+      "version": "?",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 0,
+      "pending": 0,
+      "heartbeat_age_s": null,
+      "alive": false
+    },
+    "video": {
+      "title": "",
+      "url": "",
+      "video_id": "",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "published_at": "",
+      "status": "?"
+    }
+  },
+  "json_array": {
+    "runner": {
+      "ts": "",
+      "pid": 0,
+      "version": "?",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 0,
+      "pending": 0,
+      "heartbeat_age_s": null,
+      "alive": false
+    },
+    "video": {
+      "title": "",
+      "url": "",
+      "video_id": "",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "published_at": "",
+      "status": "?"
+    }
+  },
+  "bom_prefixed": {
+    "runner": null,
+    "video": null
+  },
+  "two_documents": {
+    "runner": null,
+    "video": null
+  },
+  "missing_file": {
+    "runner": null,
+    "video": null
+  }
+}

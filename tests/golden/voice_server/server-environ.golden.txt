@@ -1,0 +1,61 @@
+[
+  {
+    "op": "get",
+    "key": "KOKORO_DEVICE",
+    "default": "auto"
+  },
+  {
+    "op": "get",
+    "key": "KOKORO_SPEED",
+    "default": "1.0"
+  },
+  {
+    "op": "get",
+    "key": "KOKORO_VOICE",
+    "default": "bm_george"
+  },
+  {
+    "op": "pop",
+    "key": "ONNX_PROVIDER",
+    "default": null
+  },
+  {
+    "op": "set",
+    "key": "ONNX_PROVIDER",
+    "value": "\"CUDAExecutionProvider\""
+  },
+  {
+    "op": "read",
+    "key": "PATH"
+  },
+  {
+    "op": "set",
+    "key": "PATH",
+    "value": "d + os.pathsep + os.environ[\"PATH\"]"
+  },
+  {
+    "op": "get",
+    "key": "WAKE_THRESHOLD",
+    "default": "0.5"
+  },
+  {
+    "op": "get",
+    "key": "WAKE_WORD",
+    "default": "on"
+  },
+  {
+    "op": "get",
+    "key": "WHISPER_DEVICE",
+    "default": "auto"
+  },
+  {
+    "op": "get",
+    "key": "WHISPER_MODEL",
+    "default": "small.en"
+  },
+  {
+    "op": "get",
+    "key": "WHISPER_PROMPT",
+    "default": "Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub trending, trend scan, daily briefing, runner, queue, top three priorities."
+  }
+]

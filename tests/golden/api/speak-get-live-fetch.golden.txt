@@ -1,0 +1,10 @@
+[
+  {
+    "url": "http://127.0.0.1:1/speak?text=4%20thousand%20dollars%20and%2014%20thousand%20views%20by%202026",
+    "method": "GET",
+    "headers": {},
+    "bodyBytes": null,
+    "signal": false,
+    "speakText": "4 thousand dollars and 14 thousand views by 2026"
+  }
+]

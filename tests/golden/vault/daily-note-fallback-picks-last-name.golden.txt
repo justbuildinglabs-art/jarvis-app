@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-10",
+  "isToday": false,
+  "top3": [],
+  "schedule": [],
+  "focus": "from 09-10 (tomorrow)"
+}

@@ -1,0 +1,16 @@
+{
+  "log": [
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Blocked) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    "mediaSrc#1.disconnect()",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "onLog[err] voice playback failed: NotAllowedError: play() failed because the user didn't interact with the document first.",
+    "onSpeaking(false)"
+  ]
+}

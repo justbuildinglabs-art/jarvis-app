@@ -1,0 +1,10 @@
+{
+  "PORT": 4871,
+  "VOICE": "bm_george",
+  "SPEED": 1.0,
+  "SAMPLE_RATE": 24000,
+  "WHISPER_MODEL": "small.en",
+  "WHISPER_PROMPT": "Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub trending, trend scan, daily briefing, runner, queue, top three priorities.",
+  "WAKE_ENABLED": true,
+  "WAKE_THRESHOLD": 0.5
+}

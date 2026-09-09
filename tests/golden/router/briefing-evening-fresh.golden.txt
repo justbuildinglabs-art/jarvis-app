@@ -1,0 +1,74 @@
+{
+  "now": "2026-09-10T00:30:00.000Z",
+  "runnerAlive": false,
+  "dailyIsToday": true,
+  "briefing": {
+    "text": "Good evening. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 8 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Heads-up — the background runner looks offline. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 115
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 193
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/anthropic-profit",
+        "label": "source",
+        "at": 193
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 367
+      }
+    ]
+  },
+  "rules": {
+    "tier": 2,
+    "reply": "Good evening. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 8 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Heads-up — the background runner looks offline. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "engine": "rules",
+    "panels": [
+      "priorities",
+      "schedule",
+      "objective",
+      "vitals",
+      "documents"
+    ],
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 115
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 193
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/anthropic-profit",
+        "label": "source",
+        "at": 193
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 367
+      }
+    ]
+  }
+}

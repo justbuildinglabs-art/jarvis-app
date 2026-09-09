@@ -1,0 +1,72 @@
+[
+  {
+    "label": "Morning Report",
+    "transcript": "morning report",
+    "alias_match": "morning-report",
+    "route": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "label": "Inbox Summary",
+    "transcript": "inbox summary",
+    "alias_match": "inbox-brief",
+    "route": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "label": "Triage Today",
+    "transcript": "triage today",
+    "alias_match": "plan-today",
+    "route": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "label": "Triage Tomorrow",
+    "transcript": "triage tomorrow",
+    "alias_match": "plan-tomorrow",
+    "route": {
+      "tier": 1,
+      "skill": "plan-tomorrow",
+      "reply": "On it — plan tomorrow coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "label": "AI Clean",
+    "transcript": "ai clean",
+    "alias_match": "vault-cleanup",
+    "route": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  }
+]

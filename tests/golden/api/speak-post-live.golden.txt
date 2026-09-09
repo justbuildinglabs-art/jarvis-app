@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "audio/wav",
+    "cache-control": "no-store",
+    "x-voice-engine": "kokoro"
+  },
+  "body": "RIFF-fake-wav-bytes"
+}

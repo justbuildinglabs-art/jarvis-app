@@ -1,0 +1,134 @@
+[
+  {
+    "transcript": "show me that",
+    "result": {
+      "tier": 2,
+      "reply": "I don't have any documents on file yet.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "open it",
+    "result": {
+      "tier": 2,
+      "reply": "I don't have any documents on file yet.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "show me the morning report",
+    "result": {
+      "tier": 2,
+      "reply": "Here's this morning's report. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "bring up this morning's report",
+    "result": {
+      "tier": 2,
+      "reply": "Here's this morning's report. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "open the morning one",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "show me the cleanup",
+    "result": {
+      "tier": 1,
+      "skill": "vault-cleanup",
+      "reply": "On it — vault cleanup coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "pull up the html",
+    "result": {
+      "tier": 2,
+      "reply": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "transcript": "show me",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "last run",
+    "result": {
+      "tier": 2,
+      "reply": "No recent runs.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "recent runs",
+    "result": {
+      "tier": 2,
+      "reply": "No recent runs.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "where's that inbox brief",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "input": "morning report",
+    "skill": "morning-report"
+  },
+  {
+    "input": "am report",
+    "skill": "morning-report"
+  },
+  {
+    "input": "the am reporter",
+    "skill": "morning-report"
+  },
+  {
+    "input": "spam report",
+    "skill": "morning-report"
+  },
+  {
+    "input": "inbox",
+    "skill": "inbox-brief"
+  },
+  {
+    "input": "inbox brief",
+    "skill": "inbox-brief"
+  },
+  {
+    "input": "inbox cleanup",
+    "skill": "inbox-brief"
+  },
+  {
+    "input": "cleanup",
+    "skill": "vault-cleanup"
+  },
+  {
+    "input": "clean up",
+    "skill": "vault-cleanup"
+  },
+  {
+    "input": "clean  up",
+    "skill": null
+  },
+  {
+    "input": "ai clean",
+    "skill": "vault-cleanup"
+  },
+  {
+    "input": "aiclean",
+    "skill": null
+  },
+  {
+    "input": "vault clean",
+    "skill": "vault-cleanup"
+  },
+  {
+    "input": "vault cleanup",
+    "skill": "vault-cleanup"
+  },
+  {
+    "input": "plan today",
+    "skill": "plan-today"
+  },
+  {
+    "input": "plan the day",
+    "skill": "plan-today"
+  },
+  {
+    "input": "plan my day",
+    "skill": "plan-today"
+  },
+  {
+    "input": "triage today",
+    "skill": "plan-today"
+  },
+  {
+    "input": "plan tomorrow",
+    "skill": "plan-tomorrow"
+  },
+  {
+    "input": "triage tomorrow",
+    "skill": "plan-tomorrow"
+  },
+  {
+    "input": "triage tmrw",
+    "skill": "plan-tomorrow"
+  },
+  {
+    "input": "plan for tomorrow",
+    "skill": null
+  },
+  {
+    "input": "Morning Report",
+    "skill": null
+  },
+  {
+    "input": "MORNING REPORT",
+    "skill": null
+  },
+  {
+    "input": "morning  report",
+    "skill": null
+  },
+  {
+    "input": "trend scan",
+    "skill": null
+  },
+  {
+    "input": "voice ask",
+    "skill": null
+  },
+  {
+    "input": "github trending",
+    "skill": null
+  },
+  {
+    "input": "report",
+    "skill": null
+  },
+  {
+    "input": "morning",
+    "skill": null
+  },
+  {
+    "input": "",
+    "skill": null
+  },
+  {
+    "input": "run the inbox brief and then the morning report",
+    "skill": "morning-report"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "qualname": "load_kokoro",
+  "async": false,
+  "decorators": [],
+  "params": [],
+  "ifs": [
+    "os.environ.get(\"KOKORO_DEVICE\", \"auto\") != \"cpu\"",
+    "\"CUDAExecutionProvider\" in k.sess.get_providers()"
+  ],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "os.path.join(HERE, \"kokoro-v1.0.onnx\")",
+    "os.path.join(HERE, \"voices-v1.0.bin\")",
+    "os.environ.get(\"KOKORO_DEVICE\", \"auto\")",
+    "Kokoro(model, voices)",
+    "k.sess.get_providers()",
+    "os.environ.pop(\"ONNX_PROVIDER\", None)",
+    "Kokoro(model, voices)"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    "k, \"cuda\"",
+    "Kokoro(model, voices), \"cpu\""
+  ],
+  "excepts": [
+    "Exception"
+  ],
+  "globals": []
+}

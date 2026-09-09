@@ -1,0 +1,73 @@
+{
+  "briefing": {
+    "text": "Good morning. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 14
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 93
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/anthropic-profit",
+        "label": "source",
+        "at": 93
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 219
+      }
+    ]
+  },
+  "offerWithReport": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+  "offerWithoutReport": "Want me to run the morning report, or do you have anything else in mind?",
+  "rules": {
+    "tier": 2,
+    "reply": "Good morning. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "engine": "rules",
+    "panels": [
+      "priorities",
+      "schedule",
+      "objective",
+      "vitals",
+      "documents"
+    ],
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 14
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 93
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/anthropic-profit",
+        "label": "source",
+        "at": 93
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 219
+      }
+    ]
+  }
+}

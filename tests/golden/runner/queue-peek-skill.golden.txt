@@ -1,0 +1,13 @@
+{
+  "01-plan-today.json": "plan-today",
+  "02-plan-tomorrow.json": "plan-tomorrow",
+  "03-morning-report.json": "morning-report",
+  "04-inbox-brief.json": "inbox-brief",
+  "05-voice-ask.json": "voice-ask",
+  "06-no-skill.json": null,
+  "07-empty-skill.json": null,
+  "08-bad.json": null,
+  "notes.txt": null,
+  "09-unknown-skill.json": "make-coffee",
+  "does-not-exist.json": null
+}

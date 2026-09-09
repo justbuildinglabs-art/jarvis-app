@@ -1,0 +1,18 @@
+{
+  "startCapture": false,
+  "stop": false,
+  "log": [
+    ">> ws#4 message {\"type\":\"transcript\",\"text\":\"hello?\"}",
+    "onListening(false)",
+    "fetch POST /api/voice/text {\"method\":\"POST\",\"headers\":{\"Content-Type\":\"application/json\"},\"body\":\"{\\\"transcript\\\":\\\"hello?\\\"}\"}",
+    "onLog[err] voice offline — TTS key missing",
+    "-- speak() while disabled --",
+    "-- startCapture() while disabled --",
+    "onLog[err] voice offline — can't listen without the TTS key",
+    "-- another transcript while disabled --",
+    ">> ws#4 message {\"type\":\"transcript\",\"text\":\"hello again\"}",
+    "onListening(false)",
+    "fetch POST /api/voice/text {\"method\":\"POST\",\"headers\":{\"Content-Type\":\"application/json\"},\"body\":\"{\\\"transcript\\\":\\\"hello again\\\"}\"}",
+    "onLog[err] voice offline — TTS key missing"
+  ]
+}

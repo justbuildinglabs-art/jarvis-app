@@ -1,0 +1,21 @@
+{
+  "payload": {
+    "transcript": "fable five",
+    "tier": 3,
+    "skill": null,
+    "queued": null,
+    "reply": "I didn't catch enough to act on.",
+    "engine": "rules",
+    "panels": [],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": null,
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "fable five",
+    "jarvis": "I didn't catch enough to act on.",
+    "tier": 3
+  }
+}

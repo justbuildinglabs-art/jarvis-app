@@ -1,0 +1,40 @@
+/* The HUD grid — four rails around the core. Nothing here draws a box. */
+
+/* --- HUD grid ------------------------------------------------------------ */
+
+.hud {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  grid-template-rows: auto 1fr auto;
+  gap: 24px;
+  padding: 28px 36px 26px;
+  pointer-events: none;
+}
+
+.hud > * {
+  pointer-events: auto;
+  min-height: 0;
+}
+
+.hud-top {
+  grid-column: 1 / -1;
+}
+
+.hud-left,
+.hud-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+}
+
+.hud-center {
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 28px;
+}

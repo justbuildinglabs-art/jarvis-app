@@ -1,0 +1,13 @@
+{
+  "startCapture": false,
+  "log": [
+    "window'1.addEventListener(pointerdown)",
+    "window'1.addEventListener(keydown)",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#5",
+    "onLog[err] voice offline — voice-server on :4871 is down",
+    "-- speak() --",
+    "-- startCapture() --",
+    "onLog[err] voice offline — can't listen without the TTS key"
+  ]
+}

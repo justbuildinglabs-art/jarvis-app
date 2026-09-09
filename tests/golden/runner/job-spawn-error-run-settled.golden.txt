@@ -1,0 +1,14 @@
+{
+  "id": "aabbccdd-spawn-error",
+  "skill": "plan-today",
+  "args": {},
+  "ts_queued": "2026-09-09T15:29:58.000Z",
+  "ts_started": "2026-09-09T15:30:00.000Z",
+  "ts_completed": "2026-09-09T15:30:00.000Z",
+  "status": "error",
+  "exit_code": -2,
+  "summary": "(no output)",
+  "md_path": "system/runs/aabbccdd-spawn-error.md",
+  "log_path": "system/runs/aabbccdd-spawn-error.md",
+  "deliverable_path": "daily-notes/2026-09-09.md"
+}

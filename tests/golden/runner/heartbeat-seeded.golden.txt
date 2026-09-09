@@ -1,0 +1,13 @@
+{
+  "ts": "2026-09-09T15:30:00.000Z",
+  "pid": "<PID>",
+  "version": "1.0.1",
+  "busy": false,
+  "active": 0,
+  "max_concurrent": 3,
+  "pending": 2,
+  "in_flight": [
+    "inbox-brief",
+    "voice-ask"
+  ]
+}

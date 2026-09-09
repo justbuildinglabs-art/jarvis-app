@@ -1,0 +1,21 @@
+<section class="objective boot-stagger " style="animation-delay:0.58s">
+<div class="obj-label">North Star · Launch Window</div>
+<div class="big">0<span class="unit">VIEWS</span>
+</div>
+<div class="progress">
+<i style="width:12.5%">
+</i>
+</div>
+<div class="sub">
+<span>velocity <b>73,600/day</b>
+</span>
+<span>live <b>6h</b>
+</span>
+<span>spotlight <b>42h left</b>
+</span>
+</div>
+<div class="video-title">latest deploy · <a href="https://www.youtube.com/watch?v=fixture01" target="_blank" rel="noreferrer">
+<b>Fixture Upload — golden vault</b>
+</a>
+ — 18,400 views</div>
+</section>

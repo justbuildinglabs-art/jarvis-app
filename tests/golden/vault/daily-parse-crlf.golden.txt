@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-09",
+  "isToday": true,
+  "top3": [
+    {
+      "text": "Pin every behavior the HUD reads",
+      "done": true
+    },
+    {
+      "text": "Rewrite the router behind the suite",
+      "done": false
+    },
+    {
+      "text": "Reply to the sponsor email — $4,200 offer",
+      "done": false
+    }
+  ],
+  "schedule": [
+    {
+      "time": "09:00",
+      "item": "Deep work (locked)"
+    },
+    {
+      "time": "13:00",
+      "item": "Edit session"
+    },
+    {
+      "time": "16:30",
+      "item": "Weekly sync (Google Meet)"
+    },
+    {
+      "time": "20:00",
+      "item": "Stream: building in public"
+    }
+  ],
+  "focus": "Land the characterization suite, then start the seams."
+}

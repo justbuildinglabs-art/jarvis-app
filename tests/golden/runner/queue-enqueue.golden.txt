@@ -1,0 +1,26 @@
+{
+  "firstSorted": [
+    "01-plan-today.json",
+    "02-plan-tomorrow.json",
+    "03-morning-report.json",
+    "04-inbox-brief.json",
+    "05-voice-ask.json",
+    "06-no-skill.json",
+    "07-empty-skill.json",
+    "08-bad.json",
+    "09-unknown-skill.json"
+  ],
+  "secondCallIsIdentical": true,
+  "withProcessingGuardSorted": [
+    "01-plan-today.json",
+    "02-plan-tomorrow.json",
+    "04-inbox-brief.json",
+    "05-voice-ask.json",
+    "06-no-skill.json",
+    "07-empty-skill.json",
+    "08-bad.json",
+    "09-unknown-skill.json",
+    "zz-already-pending.json"
+  ],
+  "missingDir": []
+}

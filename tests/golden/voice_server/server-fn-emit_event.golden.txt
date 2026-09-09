@@ -1,0 +1,38 @@
+{
+  "qualname": "emit_event",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "payload",
+      "annotation": "dict",
+      "default": null
+    }
+  ],
+  "ifs": [
+    "main_loop is None"
+  ],
+  "loops": [
+    "list(ws_clients)"
+  ],
+  "withs": [],
+  "calls": [
+    "json.dumps(payload)",
+    "list(ws_clients)",
+    "ws.send_text(msg)",
+    "ws_clients.discard(ws)",
+    "asyncio.run_coroutine_threadsafe(_send(), main_loop)",
+    "_send()"
+  ],
+  "yields": [],
+  "awaits": [
+    "ws.send_text(msg)"
+  ],
+  "returns": [
+    null
+  ],
+  "excepts": [
+    "Exception"
+  ],
+  "globals": []
+}

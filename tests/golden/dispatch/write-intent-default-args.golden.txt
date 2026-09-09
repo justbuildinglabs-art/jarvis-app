@@ -1,0 +1,7 @@
+{
+  "id": "<UUID>",
+  "skill": "not-a-real-skill",
+  "args": {},
+  "ts": "2026-09-09T15:30:00.000Z",
+  "source": "voice-wake"
+}

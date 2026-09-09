@@ -1,0 +1,210 @@
+{
+  "config.py": [
+    {
+      "in": "<module>",
+      "stmt": "import os"
+    }
+  ],
+  "platform.py": [
+    {
+      "in": "<module>",
+      "stmt": "import glob"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import os"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import sys"
+    }
+  ],
+  "runtime.py": [
+    {
+      "in": "<module>",
+      "stmt": "import threading"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from faster_whisper import WhisperModel"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from kokoro_onnx import Kokoro"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .config import HERE, WHISPER_MODEL, WHISPER_PROMPT"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import os"
+    }
+  ],
+  "audio.py": [
+    {
+      "in": "<module>",
+      "stmt": "import re"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import struct"
+    }
+  ],
+  "events.py": [
+    {
+      "in": "<module>",
+      "stmt": "import asyncio"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import json"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from wakeword import WakeListener, WAKE_MODEL"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .config import WAKE_ENABLED, WAKE_THRESHOLD"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .runtime import transcribe_pcm"
+    }
+  ],
+  "app.py": [
+    {
+      "in": "<module>",
+      "stmt": "import asyncio"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import io"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import time"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import numpy as np"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from fastapi import FastAPI, Request, Response, WebSocket, WebSocketDisconnect"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from fastapi.responses import StreamingResponse"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .audio import chunks_of, wav_header"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .config import (\n    MAX_SPEAK_CHARS,\n    MIN_CLIP_BYTES,\n    SAMPLE_RATE,\n    SPEED,\n    VOICE,\n    WHISPER_MODEL,\n    WHISPER_PROMPT,\n)"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .events import set_loop, wake, wake_status, ws_clients"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from .runtime import KOKORO_DEVICE, WHISPER_DEVICE, kokoro, whisper, whisper_lock"
+    }
+  ],
+  "server.py": [
+    {
+      "in": "<module>",
+      "stmt": "from jarvis_voice.platform import setup_dll_path"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import io"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import soundfile as sf"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import uvicorn"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from jarvis_voice.app import app"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from jarvis_voice.config import PORT, SAMPLE_RATE, SPEED, VOICE"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from jarvis_voice.runtime import KOKORO_DEVICE, WHISPER_DEVICE, kokoro, whisper"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from jarvis_voice.config import WHISPER_MODEL"
+    }
+  ],
+  "wakeword.py": [
+    {
+      "in": "<module>",
+      "stmt": "import threading"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import time"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import numpy as np"
+    },
+    {
+      "in": "WakeListener._run",
+      "stmt": "import sounddevice as sd"
+    },
+    {
+      "in": "WakeListener._run",
+      "stmt": "from openwakeword.model import Model"
+    }
+  ],
+  "make_samples.py": [
+    {
+      "in": "<module>",
+      "stmt": "import glob"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import os"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import sys"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import soundfile as sf"
+    },
+    {
+      "in": "<module>",
+      "stmt": "from kokoro_onnx import Kokoro"
+    }
+  ],
+  "ws_probe.py": [
+    {
+      "in": "<module>",
+      "stmt": "import asyncio"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import sys"
+    },
+    {
+      "in": "<module>",
+      "stmt": "import websockets"
+    }
+  ]
+}

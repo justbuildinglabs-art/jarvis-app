@@ -1,0 +1,218 @@
+[
+  {
+    "ask": "show me that",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open it",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "bring up the html",
+    "answer": {
+      "text": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "ask": "pull up the results",
+    "answer": {
+      "text": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "ask": "show me the morning report",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open the inbox brief",
+    "answer": {
+      "text": "Here it is — the morning report from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "show me the cleanup",
+    "answer": {
+      "text": "Here it is — the vault cleanup from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open the fable five doc",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "show me the weather",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-06-whats-the-weather-77777777.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "display the trend scan",
+    "answer": null
+  },
+  {
+    "ask": "show me",
+    "answer": null
+  },
+  {
+    "ask": "open the rundown",
+    "answer": null
+  },
+  {
+    "ask": "show me the briefing",
+    "answer": null
+  },
+  {
+    "ask": "put up the last one",
+    "answer": null
+  },
+  {
+    "ask": "show us the vault cleanup report",
+    "answer": {
+      "text": "Here it is — the vault cleanup from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open that again",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "bring up the explainer",
+    "answer": {
+      "text": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "ask": "open my daily note",
+    "answer": {
+      "text": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "ask": "show me the inbox report",
+    "answer": {
+      "text": "Here it is — the morning report from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "display",
+    "answer": null
+  },
+  {
+    "ask": "open",
+    "answer": null
+  },
+  {
+    "ask": "open the plan today note",
+    "answer": {
+      "text": "I don't see a recent document matching that — the Documents panel has the last five.",
+      "panels": [
+        "documents"
+      ]
+    }
+  },
+  {
+    "ask": "show me the voice ask",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "show me the weather one from the other day",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-06-whats-the-weather-77777777.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open the morning report from yesterday",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  }
+]

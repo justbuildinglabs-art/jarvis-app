@@ -1,0 +1,10 @@
+{
+  "log": [
+    ">> ws#1 message {\"type\":\"hello\",\"wake\":true}",
+    "onLog[ok] wake word armed — say \"hey Jarvis\"",
+    ">> ws#1 message {\"type\":\"hello\",\"wake\":false}",
+    "onLog[ok] voice link up — push-to-talk only (wake word off)",
+    ">> ws#1 message {\"type\":\"hello\"}",
+    "onLog[ok] voice link up — push-to-talk only (wake word off)"
+  ]
+}

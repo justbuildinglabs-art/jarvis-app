@@ -1,0 +1,6 @@
+{
+  "name": "jarvis-skills",
+  "private": true,
+  "type": "module",
+  "description": "Skill registry — the single source of truth shared by the HUD, the router and the runner daemon."
+}

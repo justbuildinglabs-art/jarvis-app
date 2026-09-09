@@ -1,0 +1,16 @@
+{
+  "nothing in flight, full queue": 0,
+  "plan-today pending while plan-tomorrow in flight (serial) → skips to morning-report": 1,
+  "plan-tomorrow pending while plan-today in flight (serial)": 1,
+  "plan-today pending while plan-today in flight (serial, same skill)": -1,
+  "morning-report pending while morning-report in flight (dedupe) → inbox-brief": 1,
+  "inbox-brief pending while inbox-brief in flight (dedupe) → voice-ask": 1,
+  "morning-report pending while inbox-brief in flight (different dedupe skill) → runs": 0,
+  "voice-ask pending while voice-ask in flight (neither set) → runs": 0,
+  "serial busy + dedupe busy → -1": -1,
+  "only unreadable / skill-less files → -1": -1,
+  "unreadable first, runnable second → 1": 1,
+  "unknown skill name is still picked (validation happens in processOne)": 0,
+  "empty pending → -1": -1,
+  "pending order decides, not file name order": 0
+}

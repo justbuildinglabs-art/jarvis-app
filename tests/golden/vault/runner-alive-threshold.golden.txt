@@ -1,0 +1,35 @@
+{
+  "age_119s": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": 4242,
+    "version": "1.0.1",
+    "busy": true,
+    "active": 1,
+    "max_concurrent": 3,
+    "pending": 1,
+    "heartbeat_age_s": 119,
+    "alive": true
+  },
+  "age_120s": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": 4242,
+    "version": "1.0.1",
+    "busy": true,
+    "active": 1,
+    "max_concurrent": 3,
+    "pending": 1,
+    "heartbeat_age_s": 120,
+    "alive": false
+  },
+  "age_121s": {
+    "ts": "2026-09-09T15:29:40.000Z",
+    "pid": 4242,
+    "version": "1.0.1",
+    "busy": true,
+    "active": 1,
+    "max_concurrent": 3,
+    "pending": 1,
+    "heartbeat_age_s": 121,
+    "alive": false
+  }
+}

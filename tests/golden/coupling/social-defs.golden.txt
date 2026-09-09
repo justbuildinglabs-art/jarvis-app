@@ -1,0 +1,12 @@
+[
+  {
+    "source": "youtube",
+    "metric": "subscribers",
+    "label": "YT Subscribers"
+  },
+  {
+    "source": "instagram",
+    "metric": "followers",
+    "label": "Instagram"
+  }
+]

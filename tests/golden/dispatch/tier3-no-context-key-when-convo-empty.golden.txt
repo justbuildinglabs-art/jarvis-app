@@ -1,0 +1,31 @@
+{
+  "payload": {
+    "transcript": "summarize my week in three bullets",
+    "tier": 3,
+    "skill": "voice-ask",
+    "queued": "<UUID>",
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "panels": [],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": {
+    "file": "<UUID>.json",
+    "id": "<UUID>",
+    "skill": "voice-ask",
+    "args": {
+      "prompt": "summarize my week in three bullets"
+    },
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "voice-ptt"
+  },
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "summarize my week in three bullets",
+    "jarvis": "Working on it — I'll speak up when it lands.",
+    "tier": 3,
+    "skill": "voice-ask"
+  }
+}

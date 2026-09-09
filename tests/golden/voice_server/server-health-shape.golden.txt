@@ -1,0 +1,12 @@
+{
+  "ok": "True",
+  "engine": "\"kokoro\"",
+  "voice": "VOICE",
+  "device": "KOKORO_DEVICE",
+  "stt": {
+    "ok": "True",
+    "model": "WHISPER_MODEL",
+    "device": "WHISPER_DEVICE"
+  },
+  "wake": "wake_status()"
+}

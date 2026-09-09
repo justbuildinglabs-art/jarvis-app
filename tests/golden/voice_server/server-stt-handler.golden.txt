@@ -1,0 +1,72 @@
+{
+  "empty-body": {
+    "result": {
+      "kind": "Response",
+      "status_code": 400,
+      "content": "clip too short"
+    },
+    "transcribe_calls": []
+  },
+  "999-bytes": {
+    "result": {
+      "kind": "Response",
+      "status_code": 400,
+      "content": "clip too short"
+    },
+    "transcribe_calls": []
+  },
+  "1000-bytes": {
+    "result": {
+      "text": "Hello world.",
+      "ms": 250
+    },
+    "transcribe_calls": [
+      {
+        "audio_type": "BytesIO",
+        "audio_bytes": 1000,
+        "kwargs": {
+          "beam_size": 1,
+          "language": "en",
+          "vad_filter": false,
+          "initial_prompt": "Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub trending, trend scan, daily briefing, runner, queue, top three priorities."
+        }
+      }
+    ]
+  },
+  "1001-bytes-empty-segments": {
+    "result": {
+      "text": "",
+      "ms": 250
+    },
+    "transcribe_calls": [
+      {
+        "audio_type": "BytesIO",
+        "audio_bytes": 1001,
+        "kwargs": {
+          "beam_size": 1,
+          "language": "en",
+          "vad_filter": false,
+          "initial_prompt": "Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub trending, trend scan, daily briefing, runner, queue, top three priorities."
+        }
+      }
+    ]
+  },
+  "whitespace-segments": {
+    "result": {
+      "text": "only",
+      "ms": 250
+    },
+    "transcribe_calls": [
+      {
+        "audio_type": "BytesIO",
+        "audio_bytes": 5000,
+        "kwargs": {
+          "beam_size": 1,
+          "language": "en",
+          "vad_filter": false,
+          "initial_prompt": "Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub trending, trend scan, daily briefing, runner, queue, top three priorities."
+        }
+      }
+    ]
+  }
+}

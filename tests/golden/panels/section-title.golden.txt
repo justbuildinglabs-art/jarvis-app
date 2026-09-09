@@ -1,0 +1,5 @@
+{
+  "plain": "<div class=\"sec-title\">\n<span>Telemetry</span>\n</div>",
+  "tick": "<div class=\"sec-title\">\n<span>Telemetry</span>\n<span class=\"tick\">AUDIENCE.FEED</span>\n</div>",
+  "href": "<div class=\"sec-title\">\n<a class=\"sec-link\" href=\"https://example.com/cal\" target=\"_blank\" rel=\"noreferrer\">Timeline ↗</a>\n<span class=\"tick\">TODAY</span>\n</div>"
+}

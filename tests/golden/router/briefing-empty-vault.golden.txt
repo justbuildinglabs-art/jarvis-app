@@ -1,0 +1,15 @@
+{
+  "briefing": {
+    "text": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. No daily note yet — say plan today and I'll set one up. Want me to run the morning report, or do you have anything else in mind?",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 115
+      }
+    ]
+  },
+  "offerWithReport": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+  "offerWithoutReport": "Want me to run the morning report, or do you have anything else in mind?"
+}

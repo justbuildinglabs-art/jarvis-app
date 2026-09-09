@@ -1,0 +1,40 @@
+{
+  "qualname": "events",
+  "async": true,
+  "decorators": [
+    "app.websocket(\"/events\")"
+  ],
+  "params": [
+    {
+      "name": "ws",
+      "annotation": "WebSocket",
+      "default": null
+    }
+  ],
+  "ifs": [],
+  "loops": [
+    "True"
+  ],
+  "withs": [],
+  "calls": [
+    "app.websocket(\"/events\")",
+    "ws.accept()",
+    "ws.send_text(json.dumps({\"type\": \"hello\", \"wake\": bool(wake and wake.ok)}))",
+    "json.dumps({\"type\": \"hello\", \"wake\": bool(wake and wake.ok)})",
+    "bool(wake and wake.ok)",
+    "ws_clients.add(ws)",
+    "ws.receive_text()",
+    "ws_clients.discard(ws)"
+  ],
+  "yields": [],
+  "awaits": [
+    "ws.accept()",
+    "ws.send_text(json.dumps({\"type\": \"hello\", \"wake\": bool(wake and wake.ok)}))",
+    "ws.receive_text()"
+  ],
+  "returns": [],
+  "excepts": [
+    "WebSocketDisconnect"
+  ],
+  "globals": []
+}

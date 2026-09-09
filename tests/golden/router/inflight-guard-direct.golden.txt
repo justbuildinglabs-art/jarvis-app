@@ -1,0 +1,653 @@
+[
+  {
+    "transcript": "inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "once you're done with that inbox brief, tell me about Fable 5",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 3,
+      "reply": "The inbox brief is already in the works — I'll dig into the rest of that and get back to you.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "run the inbox brief again",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "another inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "re-run the inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "rerun inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "one more inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "fresh inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "a new one for the inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Inbox Brief AGAIN",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief fable five",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief fable five launch",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "hey jarvis can you please run the inbox brief when you're done",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief — $$$ 100% done!!!",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "clean up the inbox",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief vault cleanup morning report",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 3,
+      "reply": "The inbox brief is already in the works — I'll dig into the rest of that and get back to you.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "voice ask",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "voice-ask",
+      "reply": "On it — voice ask coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The voice ask is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "summarize my week in three bullets",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "voice-ask",
+      "reply": "On it — voice ask coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 3,
+      "reply": "The voice ask is already in the works — I'll dig into the rest of that and get back to you.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "morning report",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 2,
+      "skill": "inbox-brief",
+      "reply": "x",
+      "engine": "rules"
+    },
+    "result": {
+      "tier": 2,
+      "skill": "inbox-brief",
+      "reply": "x",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "reply": "x",
+      "engine": "rules"
+    },
+    "result": {
+      "tier": 1,
+      "reply": "x",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "cli",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "cli",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "local",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "local",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "queued-only",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "running-only",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "state": "neither",
+    "input": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today",
+    "state": "default",
+    "input": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today",
+    "state": "plan-today-running",
+    "input": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 2,
+      "reply": "The plan today is already running — I'll let you know the moment it lands.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today again",
+    "state": "plan-today-running",
+    "input": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today for the sponsor pitch deck",
+    "state": "plan-today-running",
+    "input": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today coming up.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    },
+    "result": {
+      "tier": 3,
+      "reply": "The plan today is already in the works — I'll dig into the rest of that and get back to you.",
+      "engine": "haiku",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  }
+]

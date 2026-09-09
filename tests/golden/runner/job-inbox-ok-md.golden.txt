@@ -1,0 +1,23 @@
+---
+run_id: aabbccdd-inbox-ok
+skill: inbox-brief
+status: running
+ts_queued: 2026-09-09T15:29:00.000Z
+ts_started: 2026-09-09T15:30:00.000Z
+args: {}
+---
+
+# inbox-brief run
+
+> in progress — output streams below.
+
+```
+Warning: first line is a warning
+Here is the spoken line.
+SAVED inbox/reports/fake-deliverable.md
+claude: fake stderr noise
+
+```
+
+---
+*exit code=0 · status=ok · completed 2026-09-09T15:30:00.000Z*

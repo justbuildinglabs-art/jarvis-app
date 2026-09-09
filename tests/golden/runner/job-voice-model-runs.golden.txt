@@ -1,0 +1,36 @@
+{
+  "allowed": {
+    "id": "aabbccdd-voice-allowed",
+    "skill": "voice-ask",
+    "args": {
+      "prompt": "Draft a reply to the sponsor email",
+      "model": "claude-sonnet-4-6"
+    },
+    "ts_queued": "2026-09-09T15:29:50.000Z",
+    "ts_started": "2026-09-09T15:30:00.000Z",
+    "ts_completed": "2026-09-09T15:30:00.000Z",
+    "status": "ok",
+    "exit_code": 0,
+    "summary": "Here is the spoken line.",
+    "md_path": "system/runs/aabbccdd-voice-allowed.md",
+    "log_path": "system/runs/aabbccdd-voice-allowed.md",
+    "deliverable_path": "inbox/voice/2026-09-09-draft-a-reply-to-the-sponsor-email-aabbccdd.md"
+  },
+  "disallowed": {
+    "id": "aabbccdd-voice-disallowed",
+    "skill": "voice-ask",
+    "args": {
+      "prompt": "Draft a reply to the sponsor email",
+      "model": "gpt-5"
+    },
+    "ts_queued": "2026-09-09T15:29:51.000Z",
+    "ts_started": "2026-09-09T15:30:00.000Z",
+    "ts_completed": "2026-09-09T15:30:00.000Z",
+    "status": "ok",
+    "exit_code": 0,
+    "summary": "Here is the spoken line.",
+    "md_path": "system/runs/aabbccdd-voice-disallowed.md",
+    "log_path": "system/runs/aabbccdd-voice-disallowed.md",
+    "deliverable_path": "inbox/voice/2026-09-09-draft-a-reply-to-the-sponsor-email-aabbccdd.md"
+  }
+}

@@ -1,0 +1,8 @@
+youtube.subscribers = 50405 (ok, week delta 805)
+youtube.views_28d = 436900 (ok, week delta 24850)
+instagram.followers = 233600 (ok)
+tiktok.followers = 3960 (ok, week delta 840)
+stripe.mrr = 4200 (mock)
+claude_code.tokens_5h = 391022 (ok)
+runner: alive, busy=true, pending=1
+latest video: "Fixture Upload — golden vault" views=18400

@@ -1,0 +1,31 @@
+{
+  "payload": {
+    "transcript": "morning report",
+    "tier": 1,
+    "skill": "morning-report",
+    "queued": "<UUID>",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": {
+    "file": "<UUID>.json",
+    "id": "<UUID>",
+    "skill": "morning-report",
+    "args": {},
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "anything goes"
+  },
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "morning report",
+    "jarvis": "On it — morning report coming up.",
+    "tier": 1,
+    "skill": "morning-report"
+  }
+}

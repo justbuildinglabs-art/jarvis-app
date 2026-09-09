@@ -1,0 +1,26 @@
+[
+  {
+    "fn": "transcribe_pcm",
+    "body": [
+      "    segments, _info = whisper.transcribe(",
+      "        audio_f32, beam_size=1, language=\"en\", vad_filter=False,",
+      "        initial_prompt=WHISPER_PROMPT,",
+      "    )",
+      "    # segments is a lazy generator — consume INSIDE the lock or the",
+      "    # actual decode runs unguarded",
+      "    return \" \".join(s.text.strip() for s in segments).strip()",
+      "",
+      ""
+    ]
+  },
+  {
+    "fn": "stt",
+    "body": [
+      "    segments, _info = whisper.transcribe(",
+      "        io.BytesIO(audio), beam_size=1, language=\"en\", vad_filter=False,",
+      "        initial_prompt=WHISPER_PROMPT,",
+      "    )",
+      "    text = \" \".join(s.text.strip() for s in segments).strip()"
+    ]
+  }
+]

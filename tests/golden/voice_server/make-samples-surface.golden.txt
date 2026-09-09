@@ -1,0 +1,97 @@
+{
+  "dll_guard": {
+    "test": "hasattr(os, \"add_dll_directory\")",
+    "body": [
+      "for _d in glob.glob(os.path.join(sys.prefix, \"Lib\", \"site-packages\", \"nvidia\", \"*\", \"bin\")):\n        os.add_dll_directory(_d)\n        os.environ[\"PATH\"] = _d + os.pathsep + os.environ[\"PATH\"]",
+      "os.environ.setdefault(\"ONNX_PROVIDER\", \"CUDAExecutionProvider\")"
+    ],
+    "orelse": [
+      "os.environ.setdefault(\"ONNX_PROVIDER\", \"CPUExecutionProvider\")"
+    ]
+  },
+  "TEXT": "Good evening, sir. All systems are operating within normal parameters. The morning briefing is ready — three priorities on deck, and video velocity is up about twelve percent since yesterday.",
+  "SPEEDS": [
+    0.95,
+    1.0,
+    1.08
+  ],
+  "OUT": "os.path.join(HERE, \"samples\")",
+  "PREFIXES": "tuple(os.environ.get(\"SAMPLE_PREFIXES\", \"bm_,am_\").split(\",\"))",
+  "voices": "sorted(v for v in kokoro.get_voices() if v.startswith(PREFIXES))",
+  "outer_loop": "voices",
+  "lang_rule": [
+    "lang = \"en-gb\" if voice.startswith(\"bm_\") or voice.startswith(\"bf_\") else \"en-us\""
+  ],
+  "speed_sweep": "SPEEDS if voice.startswith(\"bm_\") else [1.0]",
+  "inner_assigns": [
+    "name = f\"{voice}_x{speed:.2f}.wav\"",
+    "samples, sr = kokoro.create(TEXT, voice=voice, speed=speed, lang=lang)"
+  ],
+  "Kokoro": [
+    {
+      "in": "<module>",
+      "func": "Kokoro",
+      "args": [
+        "os.path.join(HERE, \"kokoro-v1.0.onnx\")",
+        "os.path.join(HERE, \"voices-v1.0.bin\")"
+      ],
+      "kwargs": {}
+    }
+  ],
+  "kokoro.create": [
+    {
+      "in": "<module>",
+      "func": "kokoro.create",
+      "args": [
+        "TEXT"
+      ],
+      "kwargs": {
+        "voice": "voice",
+        "speed": "speed",
+        "lang": "lang"
+      }
+    }
+  ],
+  "sf.write": [
+    {
+      "in": "<module>",
+      "func": "sf.write",
+      "args": [
+        "os.path.join(OUT, name)",
+        "samples",
+        "sr"
+      ],
+      "kwargs": {}
+    }
+  ],
+  "makedirs": [
+    {
+      "in": "<module>",
+      "func": "os.makedirs",
+      "args": [
+        "OUT"
+      ],
+      "kwargs": {
+        "exist_ok": "True"
+      }
+    }
+  ],
+  "open": [
+    {
+      "in": "<module>",
+      "func": "open",
+      "args": [
+        "os.path.join(HERE, \"audition.html\")",
+        "\"w\""
+      ],
+      "kwargs": {
+        "encoding": "\"utf-8\""
+      }
+    }
+  ],
+  "prints": [
+    "print(f\"auditioning {len(voices)} voices: {voices}\")",
+    "print(\"wrote\", name)",
+    "print(f\"\\n{len(rows)} samples -> {OUT}\\naudition page -> {os.path.join(HERE, 'audition.html')}\")"
+  ]
+}

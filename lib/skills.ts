@@ -2,20 +2,21 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import { VAULT_ROOT } from "./config";
+import { SKILL_IDS, isKnownSkill } from "@/skills/index.js";
 
 // ---------------------------------------------------------------------------
 // Queue intent contract — shared by /api/queue (deck buttons) and /api/voice
-// (spoken commands). ALLOWED_SKILLS must match runner.js buildPrompt() cases.
+// (spoken commands).
+//
+// The roster itself lives in skills/ and is the single source the runner and
+// the HUD read too, so there is no longer a list here to keep in sync with
+// them: a skill exists once, in skills/definitions/, or it does not exist.
 // ---------------------------------------------------------------------------
 
-export const ALLOWED_SKILLS = new Set([
-  "morning-report",
-  "inbox-brief",
-  "plan-today",
-  "plan-tomorrow",
-  "vault-cleanup",
-  "voice-ask", // tier-3 open-ended asks → headless claude -p via runner
-]);
+/** Skill ids the HTTP layer will queue, in roster order. */
+export const ALLOWED_SKILLS: ReadonlySet<string> = new Set(SKILL_IDS);
+
+export { isKnownSkill };
 
 export function writeIntent(
   skill: string,

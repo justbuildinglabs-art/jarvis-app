@@ -1,0 +1,31 @@
+{
+  "version": 4,
+  "routes": {
+    "/": {
+      "initialStatus": null,
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc"
+    },
+    "/_not-found": {
+      "initialStatus": 404,
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc"
+    },
+    "/lab": {
+      "initialStatus": null,
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/lab",
+      "dataRoute": "/lab.rsc"
+    },
+    "/orb": {
+      "initialStatus": null,
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/orb",
+      "dataRoute": "/orb.rsc"
+    }
+  },
+  "dynamicRoutes": [],
+  "notFoundRoutes": []
+}

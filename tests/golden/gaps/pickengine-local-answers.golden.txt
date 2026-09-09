@@ -1,0 +1,22 @@
+{
+  "answered": {
+    "tier": 2,
+    "reply": "The sponsor thread is still open.",
+    "engine": "local",
+    "panels": [
+      "documents"
+    ]
+  },
+  "rejected": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "errored": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  }
+}

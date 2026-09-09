@@ -1,0 +1,59 @@
+/* The timeline, its NOW marker and the focus line. */
+
+/* --- schedule (bottom right) ------------------------------------------------------- */
+
+.sched {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.sched-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 2px 0;
+  font-size: 10.5px;
+  color: var(--ink-dim);
+}
+
+.sched-row .t {
+  flex: none;
+  width: 34px;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.sched-row.past {
+  opacity: 0.45;
+}
+.sched-row.past .i {
+  text-decoration: line-through;
+  text-decoration-color: var(--ink-faint);
+}
+
+.sched-row.now {
+  color: var(--white-hot);
+}
+.sched-row.now .t {
+  color: var(--ember-hot);
+}
+
+.now-tag {
+  margin-left: auto;
+  font-size: 7px;
+  letter-spacing: 0.18em;
+  color: var(--ember-hot);
+  border: 1px solid var(--line);
+  padding: 0 4px;
+  animation: blip 1.6s ease-in-out infinite;
+}
+
+.focus-line {
+  margin-top: 9px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+}

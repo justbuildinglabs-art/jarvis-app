@@ -1,0 +1,23 @@
+{
+  "qualname": "WakeListener.start",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "self",
+      "annotation": null,
+      "default": null
+    }
+  ],
+  "ifs": [],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "self._thread.start()"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [],
+  "excepts": [],
+  "globals": []
+}

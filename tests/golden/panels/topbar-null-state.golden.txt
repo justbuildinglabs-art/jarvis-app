@@ -1,0 +1,17 @@
+<header class="topbar hud-top boot-stagger" style="animation-delay:0.05s">
+<div class="clock-wrap">
+<div class="clock">--:--<span class="sec">
+</span>
+</div>
+<div class="clock-date">
+</div>
+</div>
+<div class="status-line">
+<span class="mode-chip mode-idle">
+<i class="status-dot">
+</i>
+ core · idle</span>
+<span class="chip on">link · online</span>
+<span class="chip dead">runner · down</span>
+</div>
+</header>

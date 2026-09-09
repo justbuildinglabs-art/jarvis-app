@@ -1,0 +1,62 @@
+{
+  "phrases": [
+    {
+      "phrase": "opus",
+      "id": "claude-opus-5",
+      "spoken": "Opus 5"
+    },
+    {
+      "phrase": "fable",
+      "id": "claude-fable-5",
+      "spoken": "Fable"
+    },
+    {
+      "phrase": "sonnet",
+      "id": "claude-sonnet-4-6",
+      "spoken": "Sonnet"
+    },
+    {
+      "phrase": "haiku",
+      "id": "claude-haiku-4-5-20251001",
+      "spoken": "Haiku"
+    }
+  ],
+  "allowlist": [
+    "claude-opus-5",
+    "claude-opus-4-8",
+    "claude-fable-5",
+    "claude-sonnet-4-6",
+    "claude-haiku-4-5-20251001"
+  ],
+  "default_model": "claude-opus-5",
+  "allowed_but_not_speakable": [
+    "claude-opus-4-8"
+  ],
+  "speakable_but_not_allowed": [],
+  "behavior": [
+    {
+      "phrase": "opus",
+      "extracted": "claude-opus-5",
+      "spoken": "Opus 5",
+      "runner_model_for": "claude-opus-5"
+    },
+    {
+      "phrase": "fable",
+      "extracted": "claude-fable-5",
+      "spoken": "Fable",
+      "runner_model_for": "claude-fable-5"
+    },
+    {
+      "phrase": "sonnet",
+      "extracted": "claude-sonnet-4-6",
+      "spoken": "Sonnet",
+      "runner_model_for": "claude-sonnet-4-6"
+    },
+    {
+      "phrase": "haiku",
+      "extracted": "claude-haiku-4-5-20251001",
+      "spoken": "Haiku",
+      "runner_model_for": "claude-haiku-4-5-20251001"
+    }
+  ]
+}

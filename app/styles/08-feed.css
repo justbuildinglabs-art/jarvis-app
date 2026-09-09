@@ -1,0 +1,126 @@
+/* The event feed, transcript, documents trail and wire rows. */
+
+/* --- telemetry log -------------------------------------------------------------- */
+
+.telemetry {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.telemetry .feed {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  font-size: 8.5px;
+  line-height: 1.6;
+}
+
+.tline {
+  display: flex;
+  gap: 10px;
+  color: var(--ink-dim);
+  animation: tline-in 0.3s ease both;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tline .ts {
+  color: var(--ink-faint);
+  flex: none;
+}
+
+.tline .ok { color: var(--ember); }
+.tline .err { color: var(--err); }
+.tline .sys { color: var(--ink); }
+
+/* compact transcript feed inside Audio I/O */
+.mini-feed {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 8.5px;
+}
+
+/* documents trail */
+.doc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 3px 0;
+  font-size: 10.5px;
+  color: var(--ink-dim);
+  cursor: pointer;
+}
+
+.doc-row:hover {
+  color: var(--ember-hot);
+}
+
+.doc-skill {
+  text-transform: capitalize;
+}
+
+.doc-age {
+  font-size: 9px;
+  color: var(--ink-faint);
+}
+
+/* AI wire — headlines */
+.wire-row {
+  display: flex;
+  gap: 8px;
+  padding: 2px 0;
+  font-size: 10.5px;
+  line-height: 1.5;
+  color: var(--ink-dim);
+  cursor: pointer;
+}
+
+.wire-row:hover {
+  color: var(--ink);
+}
+
+.wire-bullet {
+  color: var(--ember);
+  flex: none;
+}
+
+/* clickable directives + calendar link + token % unit */
+.prio.clickable {
+  cursor: pointer;
+}
+
+.prio.clickable:hover {
+  color: var(--ink);
+}
+
+.prio.clickable:hover .box {
+  color: var(--ember-hot);
+}
+
+.sec-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sec-link:hover {
+  color: var(--ember-hot);
+}
+
+.vital .unit-pct {
+  font-size: 0.55em;
+  margin-left: 2px;
+  color: var(--ink-dim);
+}
+
+@keyframes tline-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}

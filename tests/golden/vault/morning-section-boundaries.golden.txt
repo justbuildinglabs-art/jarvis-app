@@ -1,0 +1,13 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "First headline",
+    "Second headline, after the h3",
+    "Third headline"
+  ],
+  "links": [
+    null,
+    null,
+    null
+  ]
+}

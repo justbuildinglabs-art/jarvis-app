@@ -1,0 +1,421 @@
+[
+  {
+    "ask": "brief me",
+    "answer": {
+      "text": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "ask": "give me the rundown",
+    "answer": {
+      "text": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  {
+    "ask": "mrr",
+    "answer": {
+      "text": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "m r are",
+    "answer": {
+      "text": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "revenue",
+    "answer": {
+      "text": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "money",
+    "answer": {
+      "text": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "runner",
+    "answer": {
+      "text": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "ask": "daemon",
+    "answer": {
+      "text": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "ask": "subscriber",
+    "answer": {
+      "text": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "subs",
+    "answer": {
+      "text": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "youtube views",
+    "answer": {
+      "text": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "views youtube",
+    "answer": {
+      "text": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "28 day",
+    "answer": {
+      "text": "437 thousand YouTube views over the last 28 days — up about 25 thousand this week.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "instagram",
+    "answer": {
+      "text": "Instagram's at 234 thousand followers.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "tiktok",
+    "answer": {
+      "text": "TikTok's at 4 thousand followers — up about 840 this week.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "latest video",
+    "answer": {
+      "text": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "last video",
+    "answer": {
+      "text": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "video doing",
+    "answer": {
+      "text": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "ask": "token",
+    "answer": {
+      "text": "You've used 391 thousand Claude tokens in the current five-hour window.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "claude usage",
+    "answer": {
+      "text": "You've used 391 thousand Claude tokens in the current five-hour window.",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "ask": "queue",
+    "answer": {
+      "text": "2 things in the queue: inbox brief, voice ask.",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "ask": "top 3",
+    "answer": {
+      "text": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "ask": "top three",
+    "answer": {
+      "text": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "ask": "priorit",
+    "answer": {
+      "text": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "ask": "directive",
+    "answer": {
+      "text": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "ask": "goal",
+    "answer": {
+      "text": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "ask": "schedule",
+    "answer": {
+      "text": "Coming up at 1 PM — Edit session.",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "ask": "next today",
+    "answer": {
+      "text": "Coming up at 1 PM — Edit session.",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "ask": "whats next",
+    "answer": {
+      "text": "Coming up at 1 PM — Edit session.",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "ask": "what s next",
+    "answer": {
+      "text": "Coming up at 1 PM — Edit session.",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "ask": "next up",
+    "answer": {
+      "text": "Coming up at 1 PM — Edit session.",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "ask": "focus",
+    "answer": {
+      "text": "Today's focus is Land the characterization suite, then start the seams..",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "ask": "last run",
+    "answer": {
+      "text": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "ask": "last fail",
+    "answer": {
+      "text": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "ask": "recent run",
+    "answer": {
+      "text": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "ask": "show me that",
+    "answer": {
+      "text": "Here it is — the voice ask from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "open the cleanup",
+    "answer": {
+      "text": "Here it is — the vault cleanup from earlier. On screen now.",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "ask": "nothing here",
+    "answer": null
+  },
+  {
+    "ask": "hey",
+    "answer": null
+  },
+  {
+    "ask": "",
+    "answer": null
+  }
+]

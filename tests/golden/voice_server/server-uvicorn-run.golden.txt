@@ -1,0 +1,17 @@
+{
+  "in": "<module>",
+  "func": "uvicorn.run",
+  "args": [
+    "app"
+  ],
+  "kwargs": {
+    "host": "\"127.0.0.1\"",
+    "port": "PORT",
+    "log_level": "\"warning\""
+  },
+  "kwargs_literal": {
+    "host": "127.0.0.1",
+    "port": 4871,
+    "log_level": "warning"
+  }
+}

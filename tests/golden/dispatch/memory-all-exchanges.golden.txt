@@ -1,0 +1,28 @@
+[
+  {
+    "ts": "2026-09-09T15:00:00.000Z",
+    "you": "any news on fable",
+    "jarvis": "Working on it — I'll speak up when it lands.",
+    "tier": 3,
+    "skill": "voice-ask"
+  },
+  {
+    "ts": "2026-09-09T15:21:00.000Z",
+    "you": "what's in the queue",
+    "jarvis": "Two things waiting: the inbox brief and a voice ask.",
+    "tier": 2
+  },
+  {
+    "ts": "2026-09-09T15:25:00.000Z",
+    "you": "run the morning report",
+    "jarvis": "On it — morning report coming up.",
+    "tier": 1,
+    "skill": "morning-report"
+  },
+  {
+    "ts": "2026-09-09T15:29:00.000Z",
+    "you": "give me the rundown",
+    "jarvis": "Good morning. Two of three goals still open. Want me to run the inbox audit?",
+    "tier": 2
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "source": "youtube",
+    "metric": "subscribers",
+    "value": 50405,
+    "status": "ok",
+    "timestamp": "2026-09-09T12:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-07T18:30:00.000Z",
+        "value": 49600,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T00:30:00.000Z",
+        "value": 49715,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T06:30:00.000Z",
+        "value": 49830,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T12:30:00.000Z",
+        "value": 49945,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T18:30:00.000Z",
+        "value": 50060,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T00:30:00.000Z",
+        "value": 50175,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T06:30:00.000Z",
+        "value": 50290,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T12:30:00.000Z",
+        "value": 50405,
+        "status": "ok"
+      }
+    ],
+    "delta": 115,
+    "deltaWeek": 805
+  },
+  {
+    "source": "youtube",
+    "metric": "views_28d",
+    "value": 436900,
+    "status": "ok",
+    "timestamp": "2026-09-09T12:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-07T18:30:00.000Z",
+        "value": 412050,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T00:30:00.000Z",
+        "value": 415600,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T06:30:00.000Z",
+        "value": 419150,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T12:30:00.000Z",
+        "value": 422700,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T18:30:00.000Z",
+        "value": 426250,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T00:30:00.000Z",
+        "value": 429800,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T06:30:00.000Z",
+        "value": 433350,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T12:30:00.000Z",
+        "value": 436900,
+        "status": "ok"
+      }
+    ],
+    "delta": 3550,
+    "deltaWeek": 24850
+  },
+  {
+    "source": "instagram",
+    "metric": "followers",
+    "value": 233600,
+    "status": "ok",
+    "timestamp": "2026-09-09T12:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-09T00:30:00.000Z",
+        "value": 232800,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T06:30:00.000Z",
+        "value": 233200,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T12:30:00.000Z",
+        "value": 233600,
+        "status": "ok"
+      }
+    ],
+    "delta": 400,
+    "deltaWeek": null
+  },
+  {
+    "source": "tiktok",
+    "metric": "followers",
+    "value": 3960,
+    "status": "ok",
+    "timestamp": "2026-09-09T12:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-08T00:30:00.000Z",
+        "value": 3120,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T06:30:00.000Z",
+        "value": 3260,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T12:30:00.000Z",
+        "value": 3400,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-08T18:30:00.000Z",
+        "value": 3540,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T00:30:00.000Z",
+        "value": 3680,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T06:30:00.000Z",
+        "value": 3820,
+        "status": "ok"
+      },
+      {
+        "timestamp": "2026-09-09T12:30:00.000Z",
+        "value": 3960,
+        "status": "ok"
+      }
+    ],
+    "delta": 140,
+    "deltaWeek": 840
+  },
+  {
+    "source": "stripe",
+    "metric": "mrr",
+    "value": 4200,
+    "status": "mock",
+    "timestamp": "2026-09-09T12:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-09T06:30:00.000Z",
+        "value": 4100,
+        "status": "mock"
+      },
+      {
+        "timestamp": "2026-09-09T12:30:00.000Z",
+        "value": 4200,
+        "status": "mock"
+      }
+    ],
+    "delta": 100,
+    "deltaWeek": null
+  },
+  {
+    "source": "claude_code",
+    "metric": "tokens_5h",
+    "value": 391022,
+    "status": "ok",
+    "timestamp": "2026-09-09T12:30:00.000Z",
+    "history": [
+      {
+        "timestamp": "2026-09-09T12:30:00.000Z",
+        "value": 391022,
+        "status": "ok"
+      }
+    ],
+    "delta": null,
+    "deltaWeek": null
+  }
+]

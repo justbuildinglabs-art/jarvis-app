@@ -1,0 +1,22 @@
+[
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "voice ask",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  }
+]

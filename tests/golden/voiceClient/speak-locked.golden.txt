@@ -1,0 +1,8 @@
+{
+  "stopReturned": true,
+  "log": [
+    "onLog[sys] voice queued — click or key to enable audio",
+    "-- stop() --",
+    "-- speak after stop --"
+  ]
+}

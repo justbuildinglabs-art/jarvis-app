@@ -1,0 +1,38 @@
+{
+  "qualname": "chunks_of",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "text",
+      "annotation": "str",
+      "default": null
+    }
+  ],
+  "ifs": [
+    "not parts",
+    "len(cur) >= 60",
+    "cur"
+  ],
+  "loops": [
+    "parts[1:]"
+  ],
+  "withs": [],
+  "calls": [
+    "p.strip()",
+    "SENTENCE_SPLIT.split(text)",
+    "p.strip()",
+    "f\"{cur} {p}\".strip()",
+    "len(cur)",
+    "out.append(cur)",
+    "out.append(cur)"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    "[text]",
+    "out"
+  ],
+  "excepts": [],
+  "globals": []
+}

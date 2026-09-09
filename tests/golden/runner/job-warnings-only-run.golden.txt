@@ -1,0 +1,14 @@
+{
+  "id": "aabbccdd-warnings",
+  "skill": "morning-report",
+  "args": {},
+  "ts_queued": "2026-09-09T15:29:40.000Z",
+  "ts_started": "2026-09-09T15:30:00.000Z",
+  "ts_completed": "2026-09-09T15:30:00.000Z",
+  "status": "ok",
+  "exit_code": 0,
+  "summary": "Warning: only warnings here",
+  "md_path": "system/runs/aabbccdd-warnings.md",
+  "log_path": "system/runs/aabbccdd-warnings.md",
+  "deliverable_path": "inbox/reports/morning/2026-09-09-morning-report-aabbccdd.md"
+}

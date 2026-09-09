@@ -1,0 +1,6 @@
+{
+  "returned": false,
+  "todayExists": false,
+  "olderUnchanged": true,
+  "older": "---\ndate: 2026-09-01\nschema_version: 1\nfocus: \"Older note — only read when today's is missing\"\n---\n\n# 2026-09-01\n\n## Top 3 Priorities\n\n1. [x] Old item one\n2. [x] Old item two\n3. [ ] Old item three\n\n## Schedule\n\n- 10:00 — Old meeting\n\n## Current Focus\n\nOld focus line.\n"
+}

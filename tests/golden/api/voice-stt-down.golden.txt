@@ -1,0 +1,12 @@
+{
+  "status": 503,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "ok": false,
+    "error": "no STT engine: the voice-server stt on :4871 is down (voice-server\\start-voice-server.vbs)"
+  }
+}

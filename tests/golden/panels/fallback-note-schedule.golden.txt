@@ -1,0 +1,13 @@
+<section class="block boot-stagger note-stale " style="animation-delay:0.34s">
+<div class="sec-title">
+<a class="sec-link" href="https://calendar.google.com/calendar/u/0/r/day" target="_blank" rel="noreferrer">Timeline ↗</a>
+<span class="tick">8D OLD</span>
+</div>
+<div class="sched">
+<div class="sched-row  ">
+<span class="t">10:00</span>
+<span class="i">Old meeting</span>
+</div>
+</div>
+<div class="focus-line">focus · Old focus line.</div>
+</section>

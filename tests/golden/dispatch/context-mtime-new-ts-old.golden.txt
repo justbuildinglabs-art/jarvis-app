@@ -1,0 +1,7 @@
+Background results recently delivered (these are what "that"/"it" may refer to):
+[vault-cleanup] Ancient by timestamp, fresh by mtime. (doc: inbox/reports/vault-cleanup/2026-09-06-ancient.md)
+[voice-ask] Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless). (doc: inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md)
+[morning-report] Morning briefing is ready — five headlines, Anthropic profit leads. SAVED inbox/reports/morning/2026-09-09-morning-report-deadbeef.md (doc: inbox/reports/morning/2026-09-09-morning-report-deadbeef.md)
+
+Still working in the background ("where's that X?" refers to these — they are IN PROGRESS, not lost):
+[inbox-brief] (running 2 min)

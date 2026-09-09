@@ -1,0 +1,172 @@
+{
+  "use opus tell me about the fable five launch": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "tell me about the fable five launch"
+  },
+  "use fable summarize my week": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "summarize my week"
+  },
+  "use sonnet summarize my week": {
+    "model": "claude-sonnet-4-6",
+    "spoken": "Sonnet",
+    "stripped": "summarize my week"
+  },
+  "use haiku summarize my week": {
+    "model": "claude-haiku-4-5-20251001",
+    "spoken": "Haiku",
+    "stripped": "summarize my week"
+  },
+  "Use Opus tell me about X": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "tell me about X"
+  },
+  "USE FABLE summarize my week": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "summarize my week"
+  },
+  "uSe SoNnEt summarize my week": {
+    "model": "claude-sonnet-4-6",
+    "spoken": "Sonnet",
+    "stripped": "summarize my week"
+  },
+  "USE OPUS": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": ""
+  },
+  "useful summarize my week": null,
+  "user table opus": null,
+  "opus": null,
+  "opus summarize my week": null,
+  "reuse opus summarize my week": null,
+  "use opus5 summarize": null,
+  "use opusy summarize": null,
+  "use claude opus summarize": null,
+  "use the opus model summarize": null,
+  "muse opus summarize": null,
+  "use  opus   summarize": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize"
+  },
+  "use opus, summarize x": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize x"
+  },
+  "summarize x, and use opus": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize x"
+  },
+  "summarize x; then use haiku": {
+    "model": "claude-haiku-4-5-20251001",
+    "spoken": "Haiku",
+    "stripped": "summarize x"
+  },
+  "summarize x use opus then": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize x"
+  },
+  "summarize x use opus and please": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize x and"
+  },
+  "and then use fable please": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "then"
+  },
+  "summarize x and then use fable please": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "summarize x and then"
+  },
+  "please use sonnet, summarize my inbox": {
+    "model": "claude-sonnet-4-6",
+    "spoken": "Sonnet",
+    "stripped": "summarize my inbox"
+  },
+  "Use Fable please summarize x": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "summarize x"
+  },
+  "hey jarvis use fable what's the weather like": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "hey jarvis what's the weather like"
+  },
+  "use opus and": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": ""
+  },
+  "and use opus": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": ""
+  },
+  "use opus,": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": ""
+  },
+  "summarize x. use opus.": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize x. ."
+  },
+  "summarize x, use opus!": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "summarize x, !"
+  },
+  "Use opus.": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "."
+  },
+  "Use haiku? summarize x": {
+    "model": "claude-haiku-4-5-20251001",
+    "spoken": "Haiku",
+    "stripped": "? summarize x"
+  },
+  "use opus use fable summarize": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "use fable summarize"
+  },
+  "use fable summarize x and use opus": {
+    "model": "claude-fable-5",
+    "spoken": "Fable",
+    "stripped": "summarize x and use opus"
+  },
+  "use opus and use opus summarize x": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": "use opus summarize x"
+  },
+  "use haiku": {
+    "model": "claude-haiku-4-5-20251001",
+    "spoken": "Haiku",
+    "stripped": ""
+  },
+  "use opus ": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": ""
+  },
+  " use opus": {
+    "model": "claude-opus-5",
+    "spoken": "Opus 5",
+    "stripped": ""
+  }
+}

@@ -1,0 +1,17 @@
+# Voice Transcript
+
+## 2026-09-08
+
+**6:45 PM — You:** still the 8th here
+
+**Jarvis:** 6:45 PM Chicago
+
+## 2026-09-09
+
+**9:30 PM — You:** late night ask
+
+**Jarvis:** 9:30 PM on the 8th locally, header says the 9th *(dispatched voice-ask)*
+
+**10:00 AM — You:** morning
+
+**Jarvis:** 10:00 AM

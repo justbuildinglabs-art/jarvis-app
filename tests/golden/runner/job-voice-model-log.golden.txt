@@ -1,0 +1,4 @@
+[2026-09-09T15:30:00.000Z] aabbccdd-voice-allowed: running skill=voice-ask model=claude-sonnet-4-6 (per-ask override)
+[2026-09-09T15:30:00.000Z] aabbccdd-voice-allowed: completed exit=0 status=ok
+[2026-09-09T15:30:00.000Z] aabbccdd-voice-disallowed: running skill=voice-ask
+[2026-09-09T15:30:00.000Z] aabbccdd-voice-disallowed: completed exit=0 status=ok

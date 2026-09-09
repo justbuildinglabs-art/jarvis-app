@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "path": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "content": "---\ndate: 2026-09-09\nskill: morning-report\ntags: [morning, briefing]\n---\n\n# Morning Report\n\n**Date:** 2026-09-09\n\n## Headlines\n\n- **Anthropic posts its first profit** — $559M operating profit on $10.9B quarterly revenue. [source](https://example.com/anthropic-profit)\n- *OpenAI eyes a $1T+ IPO* as soon as September; Nvidia lining up ~$100B. https://example.com/openai-ipo\n- Google's Gemini crosses 1B monthly users and ships `Gemini 3.7 Flash`. [Unrot](https://example.com/gemini) and [more](https://example.com/gemini-2)\n- Open-weight push continues with no source link on this one at all\n- A fifth headline that the four-headline cap must drop. [source](https://example.com/fifth)\n* Sixth, star-bulleted, also past the cap. [source](https://example.com/sixth)\n\n## Web — News & Articles\n\n- Body bullet that is NOT a headline. [source](https://example.com/body)\n\n## Sources\n\n- https://example.com/anthropic-profit\n"
+  }
+}

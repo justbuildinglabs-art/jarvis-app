@@ -1,0 +1,21 @@
+{
+  "returnedId": "<UUID>",
+  "raw": "{\n  \"id\": \"<UUID>\",\n  \"skill\": \"plan-today\",\n  \"args\": {\n    \"prompt\": \"x\",\n    \"nested\": {\n      \"b\": [\n        1,\n        2\n      ]\n    },\n    \"n\": null\n  },\n  \"ts\": \"2026-09-09T15:30:00.000Z\",\n  \"source\": \"vault-hud\"\n}",
+  "parsed": {
+    "id": "<UUID>",
+    "skill": "plan-today",
+    "args": {
+      "prompt": "x",
+      "nested": {
+        "b": [
+          1,
+          2
+        ]
+      },
+      "n": null
+    },
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "vault-hud"
+  },
+  "tsIsFrozen": true
+}

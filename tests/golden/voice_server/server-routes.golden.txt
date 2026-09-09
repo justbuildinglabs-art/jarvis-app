@@ -1,0 +1,60 @@
+[
+  {
+    "decorator": "app.websocket(\"/events\")",
+    "method": "websocket",
+    "path": "/events",
+    "handler": "events",
+    "async": true,
+    "params": [
+      {
+        "name": "ws",
+        "annotation": "WebSocket",
+        "default": null
+      }
+    ]
+  },
+  {
+    "decorator": "app.on_event(\"startup\")",
+    "method": "on_event",
+    "path": "startup",
+    "handler": "_startup",
+    "async": true,
+    "params": []
+  },
+  {
+    "decorator": "app.get(\"/health\")",
+    "method": "get",
+    "path": "/health",
+    "handler": "health",
+    "async": false,
+    "params": []
+  },
+  {
+    "decorator": "app.post(\"/stt\")",
+    "method": "post",
+    "path": "/stt",
+    "handler": "stt",
+    "async": true,
+    "params": [
+      {
+        "name": "req",
+        "annotation": "Request",
+        "default": null
+      }
+    ]
+  },
+  {
+    "decorator": "app.get(\"/speak\")",
+    "method": "get",
+    "path": "/speak",
+    "handler": "speak",
+    "async": false,
+    "params": [
+      {
+        "name": "text",
+        "annotation": "str",
+        "default": "\"\""
+      }
+    ]
+  }
+]

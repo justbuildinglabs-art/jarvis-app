@@ -23,3 +23,10 @@ starter-vault/system/runs/
 starter-vault/inbox/voice/
 starter-vault/inbox/reports/*/
 !starter-vault/inbox/reports/morning/2026-06-01-morning-report-sample.md
+
+# python bytecode from the golden suite
+__pycache__/
+*.pyc
+
+# runtime logs from a local spin-up
+logs/

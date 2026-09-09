@@ -1,0 +1,20 @@
+<section class="block boot-stagger note-stale " style="animation-delay:0.18s">
+<div class="sec-title">
+<span>Goals</span>
+<span class="tick">TOP.3</span>
+</div>
+<div class="stale-banner err">⚠ note is 8d old — run /today</div>
+<div class="prio done ">
+<span class="box">■</span>
+<span>Old item one</span>
+</div>
+<div class="prio done ">
+<span class="box">■</span>
+<span>Old item two</span>
+</div>
+<div class="prio  ">
+<span class="box">□</span>
+<span>Old item three</span>
+</div>
+<div class="prio-date">carried · 2026-09-01</div>
+</section>

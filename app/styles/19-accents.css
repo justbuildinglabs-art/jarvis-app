@@ -1,0 +1,40 @@
+/* Gold. Used in exactly four places, as a rare high-value marker — spend it
+   anywhere else and it stops meaning anything. */
+
+/* --- gold accents (exactly four) ---------------------------------------------
+   Gold is the rarest ink in the interface: it marks the four things worth
+   finding at a glance. Deliberately restrained — if a fifth use appears,
+   one of these should lose it first. */
+
+/* 1 · the NOW badge on the current schedule block */
+.now-tag {
+  color: var(--gold);
+  border-color: rgba(217, 164, 65, 0.45);
+}
+
+/* 2 · the leading edge of the primary-directive progress bar */
+.objective .progress i {
+  background: linear-gradient(
+    90deg,
+    var(--ember-deep),
+    var(--cyan) 82%,
+    var(--gold) 100%
+  );
+  box-shadow: 0 0 10px rgba(217, 164, 65, 0.4);
+}
+
+/* 3 · the compass north marker — the ring's one fixed orientation anchor */
+.compass .cardinal-n {
+  fill: var(--gold);
+}
+
+/* 4 · the primary-directive label diamond */
+.obj-label::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background: var(--gold);
+  opacity: 0.85;
+  flex: none;
+}

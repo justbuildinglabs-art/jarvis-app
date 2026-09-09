@@ -1,0 +1,9 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "Anthropic posts its first profit — $559M operating profit on $10.9B quarterly revenue. source"
+  ],
+  "links": [
+    "https://example.com/anthropic-profit"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": {
+    "transcript": "no",
+    "tier": 2,
+    "skill": null,
+    "queued": null,
+    "reply": "Standing by.",
+    "engine": "rules",
+    "panels": [],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": null,
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "no",
+    "jarvis": "Standing by.",
+    "tier": 2
+  }
+}

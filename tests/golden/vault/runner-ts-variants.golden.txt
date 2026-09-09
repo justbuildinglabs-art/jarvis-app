@@ -1,0 +1,145 @@
+{
+  "missing": {
+    "ts": "",
+    "pid": 1,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "empty": {
+    "ts": "",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "null": {
+    "ts": "",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "invalid": {
+    "ts": "yesterday",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "numeric_epoch_ms": {
+    "ts": "1788967770000",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": null,
+    "alive": false
+  },
+  "numeric_year": {
+    "ts": "2026",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 21742200,
+    "alive": false
+  },
+  "date_only": {
+    "ts": "2026-09-09",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 55800,
+    "alive": false
+  },
+  "future_60s": {
+    "ts": "2026-09-09T15:31:00.000Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": -60,
+    "alive": true
+  },
+  "age_500ms": {
+    "ts": "2026-09-09T15:29:59.500Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 1,
+    "alive": true
+  },
+  "age_1499ms": {
+    "ts": "2026-09-09T15:29:58.501Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 1,
+    "alive": true
+  },
+  "age_1500ms": {
+    "ts": "2026-09-09T15:29:58.500Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 2,
+    "alive": true
+  },
+  "age_119999ms": {
+    "ts": "2026-09-09T15:28:00.001Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 120,
+    "alive": false
+  },
+  "age_120499ms": {
+    "ts": "2026-09-09T15:27:59.501Z",
+    "pid": 0,
+    "version": "?",
+    "busy": false,
+    "active": 0,
+    "max_concurrent": 0,
+    "pending": 0,
+    "heartbeat_age_s": 120,
+    "alive": false
+  }
+}

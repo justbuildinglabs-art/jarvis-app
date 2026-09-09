@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "path": "system/voice/transcript",
+    "content": "# Voice Transcript\n\n## 2026-09-09\n\n**10:00 AM — You:** any news on fable\n\n**Jarvis:** Working on it — I'll speak up when it lands. *(dispatched voice-ask)*\n\n**10:21 AM — You:** what's in the queue\n\n**Jarvis:** Two things waiting: the inbox brief and a voice ask.\n\n**10:25 AM — You:** run the morning report\n\n**Jarvis:** On it — morning report coming up. *(dispatched morning-report)*\n\n**10:29 AM — You:** give me the rundown\n\n**Jarvis:** Good morning. Two of three goals still open. Want me to run the inbox audit?\n"
+  }
+}

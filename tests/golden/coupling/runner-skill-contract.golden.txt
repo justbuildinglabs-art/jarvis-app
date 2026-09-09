@@ -1,0 +1,82 @@
+{
+  "allowed": [
+    {
+      "skill": "inbox-brief",
+      "args": {},
+      "deliverable": "inbox/reports/inbox-briefs/2026-09-09-b2b2b2b2.md",
+      "prompt_is_string": true,
+      "prompt_starts_with_autonomous_prefix": true,
+      "prompt_ends_with_saved_deliverable": true
+    },
+    {
+      "skill": "morning-report",
+      "args": {},
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-b2b2b2b2.md",
+      "prompt_is_string": true,
+      "prompt_starts_with_autonomous_prefix": true,
+      "prompt_ends_with_saved_deliverable": true
+    },
+    {
+      "skill": "plan-today",
+      "args": {},
+      "deliverable": "daily-notes/2026-09-09.md",
+      "prompt_is_string": true,
+      "prompt_starts_with_autonomous_prefix": true,
+      "prompt_ends_with_saved_deliverable": true
+    },
+    {
+      "skill": "plan-tomorrow",
+      "args": {},
+      "deliverable": "daily-notes/2026-09-10.md",
+      "prompt_is_string": true,
+      "prompt_starts_with_autonomous_prefix": true,
+      "prompt_ends_with_saved_deliverable": true
+    },
+    {
+      "skill": "vault-cleanup",
+      "args": {},
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-09-cleanup-b2b2b2b2.md",
+      "prompt_is_string": true,
+      "prompt_starts_with_autonomous_prefix": true,
+      "prompt_ends_with_saved_deliverable": true
+    },
+    {
+      "skill": "voice-ask",
+      "args": {
+        "prompt": "summarize my week in three bullets"
+      },
+      "deliverable": "inbox/voice/2026-09-09-summarize-my-week-in-three-bullets-b2b2b2b2.md",
+      "prompt_is_string": true,
+      "prompt_starts_with_autonomous_prefix": true,
+      "prompt_ends_with_saved_deliverable": true
+    }
+  ],
+  "edges": {
+    "madeUp": {
+      "skill": "made-up-skill",
+      "args": {},
+      "deliverable": null,
+      "prompt_is_string": false,
+      "prompt_starts_with_autonomous_prefix": false,
+      "prompt_ends_with_saved_deliverable": false
+    },
+    "emptyAsk": {
+      "skill": "voice-ask",
+      "args": {},
+      "deliverable": "inbox/voice/2026-09-09-ask-b2b2b2b2.md",
+      "prompt_is_string": false,
+      "prompt_starts_with_autonomous_prefix": false,
+      "prompt_ends_with_saved_deliverable": false
+    },
+    "blankAsk": {
+      "skill": "voice-ask",
+      "args": {
+        "prompt": "   "
+      },
+      "deliverable": "inbox/voice/2026-09-09-untitled-b2b2b2b2.md",
+      "prompt_is_string": false,
+      "prompt_starts_with_autonomous_prefix": false,
+      "prompt_ends_with_saved_deliverable": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "qualname": "wav_header",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "sample_rate",
+      "annotation": "int",
+      "default": null
+    }
+  ],
+  "ifs": [],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "struct.pack(\n        \"<4sI4s4sIHHIIHH4sI\",\n        b\"RIFF\", 36 + data_size, b\"WAVE\",\n        b\"fmt \", 16, 1, 1, sample_rate, sample_rate * 2, 2, 16,\n        b\"data\", data_size,\n    )"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    "struct.pack(\n        \"<4sI4s4sIHHIIHH4sI\",\n        b\"RIFF\", 36 + data_size, b\"WAVE\",\n        b\"fmt \", 16, 1, 1, sample_rate, sample_rate * 2, 2, 16,\n        b\"data\", data_size,\n    )"
+  ],
+  "excepts": [],
+  "globals": []
+}

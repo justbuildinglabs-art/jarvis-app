@@ -1,0 +1,7 @@
+{
+  "source": "{\"type\": \"hello\", \"wake\": bool(wake and wake.ok)}",
+  "shape": {
+    "type": "\"hello\"",
+    "wake": "bool(wake and wake.ok)"
+  }
+}

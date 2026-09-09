@@ -1,0 +1,23 @@
+{
+  "idle": null,
+  "quiet": 0,
+  "mid": 0.8,
+  "loud": 1,
+  "afterEnded": null,
+  "log": [
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Level%20check) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    "analyser#1.getByteTimeDomainData(len=1024)",
+    "analyser#1.getByteTimeDomainData(len=1024)",
+    "analyser#1.getByteTimeDomainData(len=1024)",
+    ">> audio#1 'ended' → 1 listener(s)",
+    "mediaSrc#1.disconnect()",
+    "onSpeaking(false)"
+  ]
+}

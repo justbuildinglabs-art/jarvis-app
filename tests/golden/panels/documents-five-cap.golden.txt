@@ -1,0 +1,26 @@
+<section class="block boot-stagger " style="animation-delay:0.26s">
+<div class="sec-title">
+<span>Paper Trail</span>
+<span class="tick">LATEST.DROPS</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">1h</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">2h</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">3h</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">4h</span>
+</div>
+<div class="doc-row" role="button">
+<span class="doc-skill">morning report</span>
+<span class="doc-age">5h</span>
+</div>
+</section>

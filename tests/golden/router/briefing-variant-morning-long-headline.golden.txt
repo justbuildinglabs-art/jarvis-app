@@ -1,0 +1,73 @@
+{
+  "briefing": {
+    "text": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic reports a record quarter with profit and revenue both up sharply across every se. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 115
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 194
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/long",
+        "label": "source",
+        "at": 194
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 378
+      }
+    ]
+  },
+  "offerWithReport": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+  "offerWithoutReport": "Want me to run the morning report, or do you have anything else in mind?",
+  "rules": {
+    "tier": 2,
+    "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic reports a record quarter with profit and revenue both up sharply across every se. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+    "engine": "rules",
+    "panels": [
+      "priorities",
+      "schedule",
+      "objective",
+      "vitals",
+      "documents"
+    ],
+    "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "reveals": [
+      {
+        "kind": "link",
+        "target": "https://www.youtube.com/watch?v=fixture01",
+        "label": "latest deploy",
+        "at": 115
+      },
+      {
+        "kind": "doc",
+        "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+        "label": "morning report",
+        "at": 194
+      },
+      {
+        "kind": "link",
+        "target": "https://example.com/long",
+        "label": "source",
+        "at": 194
+      },
+      {
+        "kind": "link",
+        "target": "https://mail.google.com",
+        "label": "inbox",
+        "at": 378
+      }
+    ]
+  }
+}

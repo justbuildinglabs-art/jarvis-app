@@ -1,0 +1,212 @@
+{
+  "assigns": [
+    {
+      "targets": [
+        "HERE"
+      ],
+      "value": "os.path.dirname(os.path.dirname(os.path.abspath(__file__)))"
+    },
+    {
+      "targets": [
+        "PORT"
+      ],
+      "value": "4871"
+    },
+    {
+      "targets": [
+        "VOICE"
+      ],
+      "value": "os.environ.get(\"KOKORO_VOICE\", \"bm_george\")"
+    },
+    {
+      "targets": [
+        "SPEED"
+      ],
+      "value": "float(os.environ.get(\"KOKORO_SPEED\", \"1.0\"))"
+    },
+    {
+      "targets": [
+        "SAMPLE_RATE"
+      ],
+      "value": "24000"
+    },
+    {
+      "targets": [
+        "WHISPER_MODEL"
+      ],
+      "value": "os.environ.get(\"WHISPER_MODEL\", \"small.en\")"
+    },
+    {
+      "targets": [
+        "WHISPER_PROMPT"
+      ],
+      "value": "os.environ.get(\n    \"WHISPER_PROMPT\",\n    \"Jarvis dashboard voice commands: MRR, revenue, YouTube subscribers, \"\n    \"TikTok, Instagram, metrics pull, morning report, inbox brief, GitHub \"\n    \"trending, trend scan, daily briefing, runner, queue, top three priorities.\",\n)"
+    },
+    {
+      "targets": [
+        "WAKE_ENABLED"
+      ],
+      "value": "os.environ.get(\"WAKE_WORD\", \"on\").lower() not in (\"off\", \"0\", \"false\")"
+    },
+    {
+      "targets": [
+        "WAKE_THRESHOLD"
+      ],
+      "value": "float(os.environ.get(\"WAKE_THRESHOLD\", \"0.5\"))"
+    },
+    {
+      "targets": [
+        "MAX_SPEAK_CHARS"
+      ],
+      "value": "900"
+    },
+    {
+      "targets": [
+        "MIN_CLIP_BYTES"
+      ],
+      "value": "1000"
+    },
+    {
+      "targets": [
+        "kokoro, KOKORO_DEVICE"
+      ],
+      "value": "load_kokoro()"
+    },
+    {
+      "targets": [
+        "kokoro, KOKORO_DEVICE"
+      ],
+      "value": "load_kokoro()"
+    },
+    {
+      "targets": [
+        "whisper, WHISPER_DEVICE"
+      ],
+      "value": "load_whisper()"
+    },
+    {
+      "targets": [
+        "whisper_lock"
+      ],
+      "value": "threading.Lock()"
+    },
+    {
+      "targets": [
+        "SENTENCE_SPLIT"
+      ],
+      "value": "re.compile(r\"(?<=[.!?…])\\s+\")"
+    },
+    {
+      "targets": [
+        "ws_clients"
+      ],
+      "annotation": "set",
+      "value": "set()"
+    },
+    {
+      "targets": [
+        "main_loop"
+      ],
+      "value": "None"
+    },
+    {
+      "targets": [
+        "wake"
+      ],
+      "value": "WakeListener(transcribe_pcm, emit_event, threshold=WAKE_THRESHOLD)\n    if WAKE_ENABLED\n    else None"
+    },
+    {
+      "targets": [
+        "app"
+      ],
+      "value": "FastAPI()"
+    }
+  ],
+  "defs": [
+    {
+      "name": "setup_dll_path",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "load_kokoro",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "load_whisper",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "transcribe_pcm",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "wav_header",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "chunks_of",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "emit_event",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "set_loop",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "wake_status",
+      "async": false,
+      "decorators": []
+    },
+    {
+      "name": "events",
+      "async": true,
+      "decorators": [
+        "app.websocket(\"/events\")"
+      ]
+    },
+    {
+      "name": "_startup",
+      "async": true,
+      "decorators": [
+        "app.on_event(\"startup\")"
+      ]
+    },
+    {
+      "name": "health",
+      "async": false,
+      "decorators": [
+        "app.get(\"/health\")"
+      ]
+    },
+    {
+      "name": "stt",
+      "async": true,
+      "decorators": [
+        "app.post(\"/stt\")"
+      ]
+    },
+    {
+      "name": "speak",
+      "async": false,
+      "decorators": [
+        "app.get(\"/speak\")"
+      ]
+    },
+    {
+      "name": "warm_models",
+      "async": false,
+      "decorators": []
+    }
+  ]
+}

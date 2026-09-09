@@ -1,0 +1,6 @@
+User: what's in the queue
+Jarvis: Two things waiting: the inbox brief and a voice ask.
+User: run the morning report
+Jarvis: On it — morning report coming up.
+User: give me the rundown
+Jarvis: Good morning. Two of three goals still open. Want me to run the inbox audit?

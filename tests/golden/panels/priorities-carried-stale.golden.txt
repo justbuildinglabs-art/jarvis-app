@@ -1,0 +1,20 @@
+<section class="block boot-stagger note-stale " style="animation-delay:0.18s">
+<div class="sec-title">
+<span>Goals</span>
+<span class="tick">TOP.3</span>
+</div>
+<div class="stale-banner err">⚠ note is 8d old — run /today</div>
+<div class="prio done ">
+<span class="box">■</span>
+<span>Pin every behavior the HUD reads</span>
+</div>
+<div class="prio  ">
+<span class="box">□</span>
+<span>Rewrite the router behind the suite</span>
+</div>
+<div class="prio  ">
+<span class="box">□</span>
+<span>Reply to the sponsor email — $4,200 offer</span>
+</div>
+<div class="prio-date">carried · 2026-09-01</div>
+</section>
