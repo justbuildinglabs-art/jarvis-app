@@ -1,0 +1,6 @@
+<section class="block boot-stagger " style="animation-delay:0.1s">
+<div class="sec-title">
+<span>Telemetry</span>
+<span class="tick">AUDIENCE.FEED</span>
+</div>
+</section>

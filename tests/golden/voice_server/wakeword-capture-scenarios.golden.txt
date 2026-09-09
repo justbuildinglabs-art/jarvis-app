@@ -1,0 +1,278 @@
+{
+  "speech-then-silence": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 14,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 112,
+        "head": [
+          0.030517578125,
+          0.030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 1.0
+  },
+  "nobody-speaks": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "wake_timeout"
+      }
+    ],
+    "reads": 41,
+    "first_read_arg": 1280,
+    "transcribe_calls": [],
+    "clock_at_end": 2.5625
+  },
+  "speech-never-ends-hits-8s-cap": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 128,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 1024,
+        "head": [
+          0.030517578125,
+          0.030517578125
+        ],
+        "tail": 0.030517578125
+      }
+    ],
+    "clock_at_end": 8.125
+  },
+  "speech-then-silence-but-cap-wins": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 128,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 1024,
+        "head": [
+          0.030517578125,
+          0.030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 8.125
+  },
+  "transcribe-raises": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "wake_error",
+        "error": "CUDA out of memory"
+      }
+    ],
+    "reads": 14,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 112,
+        "head": [
+          0.030517578125,
+          0.030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 1.0
+  },
+  "transcribe-empty-text": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "wake_timeout"
+      }
+    ],
+    "reads": 14,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 112,
+        "head": [
+          0.030517578125,
+          0.030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 1.0
+  },
+  "gate-follows-noise-floor": {
+    "noise": 200.0,
+    "speech_gate": 600.0,
+    "events": [
+      {
+        "type": "wake_timeout"
+      }
+    ],
+    "reads": 41,
+    "first_read_arg": 1280,
+    "transcribe_calls": [],
+    "clock_at_end": 2.5625
+  },
+  "gate-follows-noise-floor-speech-above": {
+    "noise": 200.0,
+    "speech_gate": 600.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 12,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 96,
+        "head": [
+          0.0213623046875,
+          0.0213623046875
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 0.875
+  },
+  "gate-min-250-exact-boundary": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 12,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 96,
+        "head": [
+          0.00762939453125,
+          0.00762939453125
+        ],
+        "tail": 0.007598876953125
+      }
+    ],
+    "clock_at_end": 0.875
+  },
+  "pause-shorter-than-trail-resets-silence": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 19,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 152,
+        "head": [
+          0.030517578125,
+          0.030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 1.3125
+  },
+  "speech-starts-just-before-no-speech-timeout": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 49,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 392,
+        "head": [
+          0.00030517578125,
+          0.00030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 3.1875
+  },
+  "speech-starts-just-after-no-speech-timeout": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "wake_timeout"
+      }
+    ],
+    "reads": 41,
+    "first_read_arg": 1280,
+    "transcribe_calls": [],
+    "clock_at_end": 2.5625
+  },
+  "negative-samples-rms-is-magnitude": {
+    "noise": 80.0,
+    "speech_gate": 250.0,
+    "events": [
+      {
+        "type": "transcript",
+        "text": "hey jarvis what time is it",
+        "ms": 125
+      }
+    ],
+    "reads": 14,
+    "first_read_arg": 1280,
+    "transcribe_calls": [
+      {
+        "samples": 112,
+        "head": [
+          -0.030517578125,
+          -0.030517578125
+        ],
+        "tail": 0.00030517578125
+      }
+    ],
+    "clock_at_end": 1.0
+  }
+}

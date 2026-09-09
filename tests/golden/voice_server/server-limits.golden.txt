@@ -1,0 +1,30 @@
+{
+  "speak_text_cap": {
+    "stmt": "text = text.strip()[:MAX_SPEAK_CHARS]",
+    "slice_upper": 900
+  },
+  "stt_min_clip": {
+    "test": "len(audio) < MIN_CLIP_BYTES",
+    "bytes": 1000
+  },
+  "speak_yields_in_order": [
+    "wav_header(SAMPLE_RATE)",
+    "pcm.tobytes()",
+    "b\"\\x00\" * int(SAMPLE_RATE * 0.12) * 2"
+  ],
+  "breath": {
+    "expr": "b\"\\x00\" * int(SAMPLE_RATE * 0.12) * 2",
+    "seconds": [
+      0.12
+    ],
+    "bytes_at_24000": 5760,
+    "bytes_at_16000": 3840
+  },
+  "chunk_glue": {
+    "test": "len(cur) >= 60",
+    "min_chars": 60
+  },
+  "pcm_conversion": [
+    "pcm = (np.clip(samples, -1.0, 1.0) * 32767).astype(np.int16)"
+  ]
+}

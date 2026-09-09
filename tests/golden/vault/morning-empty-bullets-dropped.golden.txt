@@ -1,0 +1,11 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "Real one",
+    "Real two"
+  ],
+  "links": [
+    null,
+    null
+  ]
+}

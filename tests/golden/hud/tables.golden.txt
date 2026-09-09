@@ -1,0 +1,60 @@
+{
+  "MILESTONES": [
+    100000,
+    250000,
+    500000,
+    1000000,
+    2000000
+  ],
+  "MRR_MILESTONES": [
+    10000,
+    25000,
+    50000,
+    100000,
+    250000,
+    500000
+  ],
+  "LIVE_DEPLOY_H": 48,
+  "WAVE_BARS": 200,
+  "MODE_KEYS": {
+    "1": "idle",
+    "2": "working",
+    "3": "listening",
+    "4": "speaking",
+    "5": "error"
+  },
+  "DECK_SKILLS": [
+    {
+      "skill": "morning-report",
+      "label": "Morning Report"
+    },
+    {
+      "skill": "inbox-brief",
+      "label": "Inbox Summary"
+    },
+    {
+      "skill": "plan-today",
+      "label": "Triage Today"
+    },
+    {
+      "skill": "plan-tomorrow",
+      "label": "Triage Tomorrow"
+    },
+    {
+      "skill": "vault-cleanup",
+      "label": "AI Clean"
+    }
+  ],
+  "SOCIAL_DEFS": [
+    {
+      "source": "youtube",
+      "metric": "subscribers",
+      "label": "YT Subscribers"
+    },
+    {
+      "source": "instagram",
+      "metric": "followers",
+      "label": "Instagram"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "briefing": {
+    "text": "Good morning. No daily note yet — say plan today and I'll set one up. Want me to run the morning report, or do you have anything else in mind?",
+    "reveals": []
+  },
+  "offerWithReport": "Want me to run the daily inbox audit, or do you have anything else in mind?",
+  "offerWithoutReport": "Want me to run the morning report, or do you have anything else in mind?",
+  "rules": {
+    "tier": 2,
+    "reply": "Good morning. No daily note yet — say plan today and I'll set one up. Want me to run the morning report, or do you have anything else in mind?",
+    "engine": "rules",
+    "panels": [
+      "priorities",
+      "schedule",
+      "objective",
+      "vitals"
+    ],
+    "reveals": []
+  }
+}

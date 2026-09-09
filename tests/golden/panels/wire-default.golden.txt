@@ -1,0 +1,18 @@
+<section class="block boot-stagger" style="animation-delay:0.5s">
+<div class="sec-title">
+<span>Signal Scan</span>
+<span class="tick">AM.INTEL</span>
+</div>
+<div class="wire-row" role="button">
+<span class="wire-bullet">▸</span>
+<span>Anthropic posts its first profit — $559M operating profit on $10.9B quarterly revenue. source</span>
+</div>
+<div class="wire-row" role="button">
+<span class="wire-bullet">▸</span>
+<span>OpenAI eyes a $1T+ IPO as soon as September; Nvidia lining up ~$100B.</span>
+</div>
+<div class="wire-row" role="button">
+<span class="wire-bullet">▸</span>
+<span>Google&#x27;s Gemini crosses 1B monthly users and ships Gemini 3.7 Flash. Unrot and more</span>
+</div>
+</section>

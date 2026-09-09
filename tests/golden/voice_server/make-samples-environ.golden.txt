@@ -1,0 +1,39 @@
+{
+  "environ": [
+    {
+      "op": "get",
+      "key": "KOKORO_SPEED",
+      "default": "1.0"
+    },
+    {
+      "op": "get",
+      "key": "KOKORO_VOICE",
+      "default": "bm_george"
+    },
+    {
+      "op": "setdefault",
+      "key": "ONNX_PROVIDER",
+      "default": "CPUExecutionProvider"
+    },
+    {
+      "op": "setdefault",
+      "key": "ONNX_PROVIDER",
+      "default": "CUDAExecutionProvider"
+    },
+    {
+      "op": "read",
+      "key": "PATH"
+    },
+    {
+      "op": "set",
+      "key": "PATH",
+      "value": "_d + os.pathsep + os.environ[\"PATH\"]"
+    },
+    {
+      "op": "get",
+      "key": "SAMPLE_PREFIXES",
+      "default": "bm_,am_"
+    }
+  ],
+  "uses_sys_argv": false
+}

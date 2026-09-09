@@ -1,0 +1,10 @@
+<section class="block boot-stagger" style="animation-delay:0.5s">
+<div class="sec-title">
+<span>Signal Scan</span>
+<span class="tick">AM.INTEL</span>
+</div>
+<div class="wire-row" role="button">
+<span class="wire-bullet">▸</span>
+<span>Only headline</span>
+</div>
+</section>

@@ -1,0 +1,23 @@
+{
+  "payload": {
+    "transcript": "how many subscribers do I have",
+    "tier": 2,
+    "skill": null,
+    "queued": null,
+    "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+    "engine": "rules",
+    "panels": [
+      "vitals"
+    ],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": null,
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "how many subscribers do I have",
+    "jarvis": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+    "tier": 2
+  }
+}

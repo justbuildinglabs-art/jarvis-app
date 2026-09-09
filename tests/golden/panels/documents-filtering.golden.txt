@@ -1,0 +1,47 @@
+{
+  "rendered": "<section class=\"block boot-stagger \" style=\"animation-delay:0.26s\">\n<div class=\"sec-title\">\n<span>Paper Trail</span>\n<span class=\"tick\">LATEST.DROPS</span>\n</div>\n<div class=\"doc-row\" role=\"button\">\n<span class=\"doc-skill\">fable five launch</span>\n<span class=\"doc-age\">11m</span>\n</div>\n<div class=\"doc-row\" role=\"button\">\n<span class=\"doc-skill\">morning report</span>\n<span class=\"doc-age\">32m</span>\n</div>\n<div class=\"doc-row\" role=\"button\">\n<span class=\"doc-skill\">morning report</span>\n<span class=\"doc-age\">24h</span>\n</div>\n<div class=\"doc-row\" role=\"button\">\n<span class=\"doc-skill\">vault cleanup</span>\n<span class=\"doc-age\">47h</span>\n</div>\n<div class=\"doc-row\" role=\"button\">\n<span class=\"doc-skill\">s weather</span>\n<span class=\"doc-age\">2d</span>\n</div>\n</section>",
+  "runsConsidered": [
+    {
+      "skill": "inbox-brief",
+      "status": "running",
+      "deliverable": "inbox/reports/inbox-briefs/2026-09-09-33333333.md",
+      "included": false
+    },
+    {
+      "skill": "voice-ask",
+      "status": "ok",
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "included": true
+    },
+    {
+      "skill": "morning-report",
+      "status": "ok",
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "included": true
+    },
+    {
+      "skill": "plan-today",
+      "status": "error",
+      "deliverable": "daily-notes/2026-09-09.md",
+      "included": false
+    },
+    {
+      "skill": "morning-report",
+      "status": "ok",
+      "deliverable": "inbox/reports/morning/2026-09-08-morning-report-cafebabe.md",
+      "included": true
+    },
+    {
+      "skill": "vault-cleanup",
+      "status": "ok",
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "included": true
+    },
+    {
+      "skill": "voice-ask",
+      "status": "ok",
+      "deliverable": "inbox/voice/2026-09-06-whats-the-weather-77777777.md",
+      "included": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<section class="block boot-stagger voice-hot" style="animation-delay:0.1s">
+<div class="sec-title">
+<span>Telemetry</span>
+<span class="tick">AUDIENCE.FEED</span>
+</div>
+<div class="vital ">
+<span class="label">
+<i class="status-dot ">
+</i>
+YT Subscribers<span class="age ">3h</span>
+</span>
+<span class="value">0</span>
+<span class="delta ">▲ 805 /wk</span>
+<div class="spark-row">
+<svg class="spark" viewBox="0 0 100 16" preserveAspectRatio="none">
+<path d="M0.0,14.0 L14.3,12.3 L28.6,10.6 L42.9,8.9 L57.1,7.1 L71.4,5.4 L85.7,3.7 L100.0,2.0" fill="none" stroke="currentColor" stroke-width="1.2" vector-effect="non-scaling-stroke">
+</path>
+<circle cx="100" cy="2" r="1.8" fill="currentColor">
+</circle>
+</svg>
+</div>
+</div>
+<div class="vital ">
+<span class="label">
+<i class="status-dot ">
+</i>
+Instagram<span class="age ">3h</span>
+</span>
+<span class="value">0</span>
+<span class="delta zero">—</span>
+<div class="spark-row">
+<svg class="spark" viewBox="0 0 100 16" preserveAspectRatio="none">
+<path d="M0.0,14.0 L50.0,8.0 L100.0,2.0" fill="none" stroke="currentColor" stroke-width="1.2" vector-effect="non-scaling-stroke">
+</path>
+<circle cx="100" cy="2" r="1.8" fill="currentColor">
+</circle>
+</svg>
+</div>
+</div>
+<div class="vital ">
+<span class="label">
+<i class="status-dot ">
+</i>
+Claude 5h Window<span class="age ">3h</span>
+</span>
+<span class="value">0<span class="unit-pct">%</span>
+</span>
+<span class="delta">391K of 391K peak</span>
+<div class="spark-row">
+<div class="spark spark-flat">
+</div>
+</div>
+</div>
+</section>

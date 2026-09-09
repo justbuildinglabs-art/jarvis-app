@@ -1,0 +1,9 @@
+[
+  "vitals",
+  "pipeline",
+  "diagnostics",
+  "priorities",
+  "schedule",
+  "objective",
+  "documents"
+]

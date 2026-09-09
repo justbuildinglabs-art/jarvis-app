@@ -1,0 +1,18 @@
+{
+  "allowlisted:claude-fable-5": "claude-fable-5",
+  "allowlisted:claude-haiku-4-5-20251001": "claude-haiku-4-5-20251001",
+  "allowlisted:claude-opus-4-8": "claude-opus-4-8",
+  "allowlisted:claude-opus-5": "claude-opus-5",
+  "allowlisted:claude-sonnet-4-6": "claude-sonnet-4-6",
+  "disallowed:gpt-5": "claude-opus-5",
+  "disallowed:claude-opus-4-1": "claude-opus-5",
+  "case-sensitive:Claude-Opus-5": "claude-opus-5",
+  "padded:' claude-opus-5 '": "claude-opus-5",
+  "non-string:number": "claude-opus-5",
+  "non-string:null": "claude-opus-5",
+  "non-string:object": "claude-opus-5",
+  "model missing": "claude-opus-5",
+  "args missing": "claude-opus-5",
+  "intent undefined": "claude-opus-5",
+  "intent null": "claude-opus-5"
+}

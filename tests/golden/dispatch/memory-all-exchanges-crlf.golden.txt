@@ -1,0 +1,17 @@
+[
+  {
+    "ts": "2026-09-08T15:30:00.000Z",
+    "you": "old",
+    "jarvis": "x",
+    "tier": 2
+  },
+  42,
+  "a string",
+  {
+    "ts": "2026-09-09T15:29:59.000Z",
+    "you": "new",
+    "jarvis": "y",
+    "tier": 3,
+    "skill": "voice-ask"
+  }
+]

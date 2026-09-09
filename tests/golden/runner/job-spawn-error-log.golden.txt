@@ -1,0 +1,3 @@
+[2026-09-09T15:30:00.000Z] aabbccdd-spawn-error: running skill=plan-today
+[2026-09-09T15:30:00.000Z] aabbccdd-spawn-error: spawn error spawn claude ENOENT
+[2026-09-09T15:30:00.000Z] aabbccdd-spawn-error: completed exit=-2 status=error

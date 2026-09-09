@@ -1,0 +1,16 @@
+{
+  "id": "aabbccdd-unknown",
+  "skill": "make-coffee",
+  "args": {
+    "size": "large"
+  },
+  "ts_queued": "2026-09-09T15:29:55.000Z",
+  "ts_started": "2026-09-09T15:30:00.000Z",
+  "ts_completed": "2026-09-09T15:30:00.000Z",
+  "status": "error",
+  "exit_code": -1,
+  "summary": "unknown or invalid intent: make-coffee",
+  "md_path": "system/runs/aabbccdd-unknown.md",
+  "log_path": "system/runs/aabbccdd-unknown.md",
+  "deliverable_path": null
+}

@@ -1,0 +1,32 @@
+[
+  [
+    "a **b** c",
+    "a <strong>b</strong> c",
+    "a **b** c"
+  ],
+  [
+    "*i* and `c`",
+    "<em>i</em> and <code>c</code>",
+    "*i* and `c`"
+  ],
+  [
+    "[t](https://u) [t2](http://u2) [x](notaurl)",
+    "<a href=\"https://u\" target=\"_blank\" rel=\"noreferrer\">t</a> <a href=\"http://u2\" target=\"_blank\" rel=\"noreferrer\">t2</a> [x](notaurl)",
+    "[t](https://u) [t2](http://u2) [x](notaurl)"
+  ],
+  [
+    "<b>&</b>",
+    "&lt;b&gt;&amp;&lt;/b&gt;",
+    "&lt;b&gt;&amp;&lt;/b&gt;"
+  ],
+  [
+    "**a *b* c**",
+    "*<em>a </em>b<em> c</em>*",
+    "**a *b* c**"
+  ],
+  [
+    "`x` `y`",
+    "<code>x</code> <code>y</code>",
+    "`x` `y`"
+  ]
+]

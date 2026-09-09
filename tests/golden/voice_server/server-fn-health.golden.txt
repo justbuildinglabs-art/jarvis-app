@@ -1,0 +1,22 @@
+{
+  "qualname": "health",
+  "async": false,
+  "decorators": [
+    "app.get(\"/health\")"
+  ],
+  "params": [],
+  "ifs": [],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "app.get(\"/health\")",
+    "wake_status()"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    "{\n        \"ok\": True,\n        \"engine\": \"kokoro\",\n        \"voice\": VOICE,\n        \"device\": KOKORO_DEVICE,\n        \"stt\": {\"ok\": True, \"model\": WHISPER_MODEL, \"device\": WHISPER_DEVICE},\n        \"wake\": wake_status(),\n    }"
+  ],
+  "excepts": [],
+  "globals": []
+}

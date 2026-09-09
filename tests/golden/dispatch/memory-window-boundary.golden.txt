@@ -1,0 +1,26 @@
+[
+  {
+    "ts": "2026-09-09T15:20:00.001Z",
+    "you": "minus nine fifty-nine point nine nine nine",
+    "jarvis": "x",
+    "tier": 2
+  },
+  {
+    "ts": "2026-09-09T15:20:01.000Z",
+    "you": "minus nine fifty-nine",
+    "jarvis": "x",
+    "tier": 2
+  },
+  {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "now",
+    "jarvis": "x",
+    "tier": 2
+  },
+  {
+    "ts": "2026-09-09T15:35:00.000Z",
+    "you": "future",
+    "jarvis": "x",
+    "tier": 2
+  }
+]

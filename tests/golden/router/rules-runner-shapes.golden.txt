@@ -1,0 +1,458 @@
+[
+  {
+    "shape": "idle",
+    "runner": {
+      "ts": "2026-09-09T15:29:40.000Z",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 3,
+      "pending": 0,
+      "heartbeat_age_s": 20,
+      "alive": true
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "Runner's alive and idle.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report coming up.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "Working on it — I'll speak up when it lands.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "idle-with-pending",
+    "runner": {
+      "ts": "2026-09-09T15:29:40.000Z",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 3,
+      "pending": 2,
+      "heartbeat_age_s": 20,
+      "alive": true
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "Runner's alive and idle, 2 waiting in the queue.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report coming up.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "Working on it — I'll speak up when it lands.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "busy-2-active",
+    "runner": {
+      "ts": "2026-09-09T15:29:40.000Z",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": true,
+      "active": 2,
+      "max_concurrent": 3,
+      "pending": 0,
+      "heartbeat_age_s": 20,
+      "alive": true
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "Runner's alive and working — 2 jobs active.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report coming up.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "Working on it — I'll speak up when it lands.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "busy-3-active-4-pending",
+    "runner": {
+      "ts": "2026-09-09T15:29:40.000Z",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": true,
+      "active": 3,
+      "max_concurrent": 3,
+      "pending": 4,
+      "heartbeat_age_s": 20,
+      "alive": true
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "Runner's alive and working — 3 jobs active, 4 waiting in the queue.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report coming up.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "Working on it — I'll speak up when it lands.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "stale-but-busy",
+    "runner": {
+      "ts": "2026-09-09T15:20:00.000Z",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": true,
+      "active": 1,
+      "max_concurrent": 3,
+      "pending": 1,
+      "heartbeat_age_s": 600,
+      "alive": false
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "The runner's heartbeat has gone stale — it looks down.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "I've queued that, but heads up — the runner daemon looks down, so it'll wait until that's restarted.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "bad-ts",
+    "runner": {
+      "ts": "not-a-date",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": true,
+      "active": 1,
+      "max_concurrent": 3,
+      "pending": 1,
+      "heartbeat_age_s": null,
+      "alive": false
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "The runner's heartbeat has gone stale — it looks down.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "I've queued that, but heads up — the runner daemon looks down, so it'll wait until that's restarted.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "future-heartbeat",
+    "runner": {
+      "ts": "2026-09-09T15:35:00.000Z",
+      "pid": 4242,
+      "version": "1.0.1",
+      "busy": true,
+      "active": 1,
+      "max_concurrent": 3,
+      "pending": 1,
+      "heartbeat_age_s": -300,
+      "alive": true
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "Runner's alive and working — 1 job active, 1 waiting in the queue.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report coming up.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "Working on it — I'll speak up when it lands.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  },
+  {
+    "shape": "missing-fields",
+    "runner": {
+      "ts": "2026-09-09T15:29:40.000Z",
+      "pid": 0,
+      "version": "?",
+      "busy": false,
+      "active": 0,
+      "max_concurrent": 3,
+      "pending": 0,
+      "heartbeat_age_s": 20,
+      "alive": true
+    },
+    "answers": [
+      {
+        "transcript": "is the runner alive",
+        "result": {
+          "tier": 2,
+          "reply": "Runner's alive and idle.",
+          "engine": "rules",
+          "panels": [
+            "diagnostics",
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "hey",
+        "result": {
+          "tier": 2,
+          "reply": "Not much — 2 goals still open. Say brief me if you want the rundown.",
+          "engine": "rules"
+        }
+      },
+      {
+        "transcript": "morning report",
+        "result": {
+          "tier": 1,
+          "skill": "morning-report",
+          "reply": "On it — morning report coming up.",
+          "engine": "rules",
+          "panels": [
+            "pipeline"
+          ]
+        }
+      },
+      {
+        "transcript": "tell me a joke",
+        "result": {
+          "tier": 3,
+          "reply": "Working on it — I'll speak up when it lands.",
+          "engine": "rules",
+          "fallthrough": true
+        }
+      }
+    ]
+  }
+]

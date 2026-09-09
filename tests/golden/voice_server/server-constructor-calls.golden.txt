@@ -1,0 +1,96 @@
+[
+  {
+    "in": "load_whisper",
+    "func": "WhisperModel",
+    "args": [
+      "WHISPER_MODEL"
+    ],
+    "kwargs": {
+      "device": "\"cuda\"",
+      "compute_type": "\"float16\""
+    }
+  },
+  {
+    "in": "load_whisper",
+    "func": "WhisperModel",
+    "args": [
+      "WHISPER_MODEL"
+    ],
+    "kwargs": {
+      "device": "\"cpu\"",
+      "compute_type": "\"int8\""
+    }
+  },
+  {
+    "in": "load_kokoro",
+    "func": "Kokoro",
+    "args": [
+      "model",
+      "voices"
+    ],
+    "kwargs": {}
+  },
+  {
+    "in": "load_kokoro",
+    "func": "Kokoro",
+    "args": [
+      "model",
+      "voices"
+    ],
+    "kwargs": {}
+  },
+  {
+    "in": "<module>",
+    "func": "WakeListener",
+    "args": [
+      "transcribe_pcm",
+      "emit_event"
+    ],
+    "kwargs": {
+      "threshold": "WAKE_THRESHOLD"
+    }
+  },
+  {
+    "in": "<module>",
+    "func": "FastAPI",
+    "args": [],
+    "kwargs": {}
+  },
+  {
+    "in": "<module>",
+    "func": "threading.Lock",
+    "args": [],
+    "kwargs": {}
+  },
+  {
+    "in": "setup_dll_path",
+    "func": "os.path.join",
+    "args": [
+      "sys.prefix",
+      "\"Lib\"",
+      "\"site-packages\"",
+      "\"nvidia\"",
+      "\"*\"",
+      "\"bin\""
+    ],
+    "kwargs": {}
+  },
+  {
+    "in": "load_kokoro",
+    "func": "os.path.join",
+    "args": [
+      "HERE",
+      "\"kokoro-v1.0.onnx\""
+    ],
+    "kwargs": {}
+  },
+  {
+    "in": "load_kokoro",
+    "func": "os.path.join",
+    "args": [
+      "HERE",
+      "\"voices-v1.0.bin\""
+    ],
+    "kwargs": {}
+  }
+]

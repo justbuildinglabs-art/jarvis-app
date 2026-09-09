@@ -1,0 +1,31 @@
+{
+  "payload": {
+    "transcript": "plan today",
+    "tier": 1,
+    "skill": "plan-today",
+    "queued": "<UUID>",
+    "reply": "On it — plan today coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": {
+    "file": "<UUID>.json",
+    "id": "<UUID>",
+    "skill": "plan-today",
+    "args": {},
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "voice-ptt"
+  },
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "plan today",
+    "jarvis": "On it — plan today coming up.",
+    "tier": 1,
+    "skill": "plan-today"
+  }
+}

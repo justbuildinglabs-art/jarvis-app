@@ -1,0 +1,19 @@
+# Voice Transcript
+
+## 2026-09-09
+
+**10:00 AM — You:** any news on fable
+
+**Jarvis:** Working on it — I'll speak up when it lands. *(dispatched voice-ask)*
+
+**10:21 AM — You:** what's in the queue
+
+**Jarvis:** Two things waiting: the inbox brief and a voice ask.
+
+**10:25 AM — You:** run the morning report
+
+**Jarvis:** On it — morning report coming up. *(dispatched morning-report)*
+
+**10:29 AM — You:** give me the rundown
+
+**Jarvis:** Good morning. Two of three goals still open. Want me to run the inbox audit?

@@ -1,0 +1,42 @@
+{
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": null,
+      "x-voice-engine": null
+    },
+    "body": {
+      "transcript": "what's in the queue",
+      "tier": 2,
+      "skill": null,
+      "queued": null,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ],
+      "deliverable": null,
+      "reveal": null,
+      "reveals": []
+    }
+  },
+  "fetch": [
+    {
+      "url": "http://127.0.0.1:1/health",
+      "method": "GET",
+      "headers": {},
+      "bodyBytes": null,
+      "signal": true
+    },
+    {
+      "url": "http://127.0.0.1:1/stt",
+      "method": "POST",
+      "headers": {
+        "content-type": "audio/webm"
+      },
+      "bodyBytes": 1000,
+      "signal": true
+    }
+  ]
+}

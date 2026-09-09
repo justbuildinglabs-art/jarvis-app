@@ -1,0 +1,9 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-ffffffff.md",
+  "heads": [
+    "From the ffffffff file"
+  ],
+  "links": [
+    null
+  ]
+}

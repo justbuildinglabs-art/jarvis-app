@@ -1,0 +1,62 @@
+[
+  {
+    "in": "WakeListener._run",
+    "kind": "Assign",
+    "source": "noise = 80.0"
+  },
+  {
+    "in": "WakeListener._run",
+    "kind": "Assign",
+    "source": "last_fire = 0.0"
+  },
+  {
+    "in": "WakeListener._run",
+    "kind": "Assign",
+    "source": "pcm = frame[:, 0]"
+  },
+  {
+    "in": "WakeListener._run",
+    "kind": "Assign",
+    "source": "rms = float(np.sqrt(np.mean(pcm.astype(np.float32) ** 2)))"
+  },
+  {
+    "in": "WakeListener._run",
+    "kind": "Assign",
+    "source": "noise = 0.98 * noise + 0.02 * min(rms, 600.0)"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "Assign",
+    "source": "speech_gate = max(noise * 3.0, 250.0)"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "Assign",
+    "source": "silent = 0"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "Assign",
+    "source": "pcm = frame[:, 0]"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "Assign",
+    "source": "rms = float(np.sqrt(np.mean(pcm.astype(np.float32) ** 2)))"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "Assign",
+    "source": "silent = 0"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "AugAssign",
+    "source": "silent += 1"
+  },
+  {
+    "in": "WakeListener._capture",
+    "kind": "Assign",
+    "source": "audio = np.concatenate(frames).astype(np.float32) / 32768.0"
+  }
+]

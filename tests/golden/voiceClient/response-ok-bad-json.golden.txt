@@ -1,0 +1,9 @@
+{
+  "log": [
+    ">> ws#1 message {\"type\":\"transcript\",\"text\":\"trigger\"}",
+    "onListening(false)",
+    "fetch POST /api/voice/text {\"method\":\"POST\",\"headers\":{\"Content-Type\":\"application/json\"},\"body\":\"{\\\"transcript\\\":\\\"trigger\\\"}\"}",
+    "res(200).json()",
+    "onLog[err] voice command failed: SyntaxError: Unexpected token '<', \"<html>\" is not valid JSON"
+  ]
+}

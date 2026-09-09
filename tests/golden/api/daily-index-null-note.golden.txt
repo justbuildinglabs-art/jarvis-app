@@ -1,0 +1,28 @@
+---
+date: 2026-09-09
+schema_version: 1
+focus: "Ship the golden suite before the refactor lands"
+---
+
+# 2026-09-09
+
+## Top 3 Priorities
+
+1. [ ] Pin every behavior the HUD reads
+2. [ ] Rewrite the router behind the suite
+3. [ ] Reply to the sponsor email — $4,200 offer
+
+## Schedule
+
+- 09:00 — Deep work (locked)
+- 13:00 - Edit session
+- 16:30 – Weekly sync (Google Meet)
+- 20:00 — Stream: building in public
+
+## Current Focus
+
+Land the characterization suite, then start the seams.
+
+## Notes
+
+Freeform, not parsed — 1,437,000 views and $200M mentioned to trip nothing.

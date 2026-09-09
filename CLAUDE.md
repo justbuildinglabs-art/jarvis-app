@@ -111,31 +111,61 @@ user units. Wire it up for them rather than describing it.
   overview see `docs/architecture.html`; the README condenses it. A
   cloud-voice cost and latency study lives in
   `docs/voice-engine-comparison.html`.
-- Gates to satisfy: `npm test` (a router sweep that spends nothing) and
-  `npx tsc --noEmit`. Both, after any change under `lib/`.
+- The gate is `npm run check`, and it is the whole story: a production build,
+  the router sweep, ~390 golden tests, the Python contract suite, and
+  `tsc --noEmit`. Run it after any change. The build runs FIRST on purpose —
+  some goldens describe its output, and a stale `.next/` would let them pass
+  against HTML that no longer matches the source (there is a test that fails
+  on exactly that).
+- Those goldens pin CURRENT behavior so a refactor can be proven not to have
+  changed it. A red golden means behavior moved. `tests/README.md` explains
+  the harness and the one rule: loaders may change, expectations may not.
+
+## Where things live
+
+- `skills/` — the skill registry, and the reason adding a skill is now one
+  file. Each definition in `skills/definitions/` carries its own id, Ops Board
+  label, voice aliases, deliverable path, prompt, and scheduling category.
+  The runner, the queue API, the Ops Board and the router all derive their
+  view from it. (This replaced five hand-synchronised lists in four files.)
+- `lib/router/` — `chain.ts` picks the engine ladder, `engines/` holds rules,
+  haiku, local and cli, `answers/` holds everything answerable from the vault
+  with no model.
+- `lib/vault/` — `storage.ts` is the only module that touches `fs`; each
+  reader owns one kind of file.
+- `lib/voice/` — the whole voice path in pipeline order: stt, dispatch,
+  speech, tts, memory, client.
+- `components/hud/` — panels in `panels/`, shared pieces beside them; the root
+  component keeps only the state and effects that connect them.
+- `app/styles/` — one CSS partial per surface. The numbering IS the cascade.
+- `runner/lib/` — config, files, log, skills, pool, execute.
+- `voice-server/jarvis_voice/` — config, platform, runtime, audio, events, app.
+  `server.py` is now just the entry point.
 
 ## Couplings that fail silently
 
-- The skill roster is duplicated three times — `ALLOWED_SKILLS` in
-  `lib/skills.ts`, the `buildPrompt()` branches in `runner/runner.js`, and
-  `DECK_SKILLS` in `components/HUD.tsx`. All three have to name the same
-  skills.
-- The offer sentence built by `briefingOffer()` in `lib/router.ts` is read
-  back out of conversation memory word for word when someone replies "yes",
-  so it is bound to the `OFFER_SKILLS` keys and the pattern inside
-  `pendingOffer()`. Move one, move all three.
+- The offer sentence built by `briefingOffer()` (`lib/router/answers/`) is
+  read back out of conversation memory word for word when someone replies
+  "yes", so it is bound to the `OFFER_SKILLS` keys and the pattern inside
+  `pendingOffer()` (`lib/router/offer.ts`). Move one, move all three.
 - `HUD_TZ` is read independently by `lib/config.ts` and by the runner, both
   defaulting to America/Chicago. Change them as a pair or "today" fractures
   across two different dates.
 - Never attach a second `animation` to anything carrying `.boot-stagger`:
   doing so supersedes `boot-in ... forwards` and the panel renders blank.
-- Voice aliases in `SKILL_ALIASES` (`lib/router.ts`) need to accept the
-  wording actually printed on the Ops Board buttons — people say what they
-  can see. Rename a button, extend the pattern.
+- The order of the `@import` lines in `app/globals.css` is the cascade.
+  Reordering them is a visual change, not a tidy-up.
+- Voice aliases live with their skill in `skills/definitions/`, and must
+  accept the wording printed on the Ops Board button — people say what they
+  can see. Rename a button, extend that skill's `aliases`.
+
+The skill roster used to appear in three places and is now in one; `tests/
+coupling.test.ts` still asserts every one of these invariants, so breaking one
+turns the gate red rather than failing quietly at runtime.
 
 ## Traps worth knowing
 
-- Every edit to `runner/runner.js` must be followed by
+- Every edit under `runner/` must be followed by
   `node --check runner/runner.js`. A syntax error there fails quietly: the
   heartbeat simply goes stale and no log appears.
 - Exercising `/api/voice` with a command phrase enqueues a genuine intent

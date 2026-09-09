@@ -1,0 +1,8 @@
+{
+  "test": "__name__ == \"__main__\"",
+  "body": [
+    "warm_models()",
+    "print(\n        f\"kokoro({KOKORO_DEVICE}) + whisper({WHISPER_MODEL}/{WHISPER_DEVICE}) warm \"\n        f\"— serving :{PORT} voice={VOICE}\"\n    )",
+    "uvicorn.run(app, host=\"127.0.0.1\", port=PORT, log_level=\"warning\")"
+  ]
+}

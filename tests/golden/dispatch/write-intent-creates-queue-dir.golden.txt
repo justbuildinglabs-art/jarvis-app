@@ -1,0 +1,12 @@
+{
+  "files": [
+    "<UUID>.json"
+  ],
+  "intent": {
+    "id": "<UUID>",
+    "skill": "morning-report",
+    "args": {},
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "voice-ptt"
+  }
+}

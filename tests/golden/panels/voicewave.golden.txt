@@ -1,0 +1,8 @@
+{
+  "barCount": 0,
+  "rootClass": "class=\"voice-wave live cobalt\"",
+  "first3": [],
+  "last3": [],
+  "idleRootClass": "class=\"voice-wave idle \"",
+  "speakingRootClass": "class=\"voice-wave live \""
+}

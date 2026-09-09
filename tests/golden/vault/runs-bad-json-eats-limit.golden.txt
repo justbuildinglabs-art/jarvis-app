@@ -1,0 +1,17 @@
+{
+  "limit_1": [],
+  "limit_2": [
+    {
+      "id": "33333333-cccc-4ccc-8ccc-333333333333",
+      "skill": "inbox-brief",
+      "label": null,
+      "link": null,
+      "status": "running",
+      "summary": "",
+      "ts_completed": null,
+      "ts_started": "2026-09-09T15:28:00.000Z",
+      "duration_s": null,
+      "deliverable_path": "inbox/reports/inbox-briefs/2026-09-09-33333333.md"
+    }
+  ]
+}

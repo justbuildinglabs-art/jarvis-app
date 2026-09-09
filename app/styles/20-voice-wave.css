@@ -1,0 +1,81 @@
+/* The centred voice waveform and the push-to-talk hint.
+   
+   Every bar is the same colour; listening reads through motion, not hue. */
+
+/* --- centered voice waveform ---------------------------------------------
+   Replaces the old Voice Line rail panel. Thin bars across the middle of the
+   core, span kept well inside the compass ring. Height comes from a per-bar
+   --a amplitude set in HUD.tsx, so the middle rises and the edges taper.
+   z-index 4 puts it above the backdrop grid (3) and the core (1), below the
+   HUD text (5). */
+.voice-wave {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* compass is min(78vh, 46vw) — this stays comfortably within it */
+  width: min(52vh, 31vw);
+  height: 210px;
+  z-index: 4;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  animation: fade-in 1.2s ease 1.05s forwards;
+}
+
+.voice-wave i {
+  flex: none;
+  width: 1px;
+  height: 2px;
+  background: var(--cyan);
+  box-shadow: 0 0 6px rgba(111, 216, 245, 0.5);
+}
+
+.voice-wave.live i {
+  animation: wave-center 1.1s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.045s);
+}
+.voice-wave.live i:nth-child(3n) { animation-duration: 0.9s; }
+.voice-wave.live i:nth-child(5n) { animation-duration: 1.55s; }
+.voice-wave.live i:nth-child(7n) { animation-duration: 1.3s; }
+
+@keyframes wave-center {
+  0%, 100% { height: calc(2px + var(--a) * 22px); }
+  50%      { height: calc(3px + var(--a) * 198px); }
+}
+
+/* standby: a low, slow breath rather than a flat line */
+.voice-wave.idle i {
+  animation: wave-center-idle 3.6s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.09s);
+  opacity: 0.55;
+}
+.voice-wave.idle i:nth-child(4n) { animation-duration: 4.8s; }
+
+@keyframes wave-center-idle {
+  0%, 100% { height: 2px; }
+  50%      { height: calc(2px + var(--a) * 40px); }
+}
+
+/* every bar is the same colour — listening reads through motion, not hue */
+
+/* push-to-talk hint — bottom-right, mirroring the transcript button */
+.ptt-hint {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 6;
+  pointer-events: none;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.ptt-hint b {
+  font-weight: 600;
+  color: var(--cyan);
+  text-shadow: 0 0 10px rgba(111, 216, 245, 0.45);
+}

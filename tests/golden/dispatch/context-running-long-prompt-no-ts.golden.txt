@@ -1,0 +1,2 @@
+Still working in the background ("where's that X?" refers to these — they are IN PROGRESS, not lost):
+[voice-ask] — "write me a very long and detailed essay about the history of voice assistants from eliza t" (running)

@@ -1,0 +1,8 @@
+{
+  "08:00 before everything": "<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"",
+  "09:00 exactly": "<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"",
+  "12:59 still the 09:00 block": "<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"",
+  "13:00 second block": "<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"",
+  "20:00 last block": "<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"",
+  "23:59 last block holds": "<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \"\n<div class=\"sched-row  \""
+}

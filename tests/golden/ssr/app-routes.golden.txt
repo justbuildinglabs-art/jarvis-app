@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/daily/route": "/api/daily",
+  "/api/queue/route": "/api/queue",
+  "/api/report/route": "/api/report",
+  "/api/speak/route": "/api/speak",
+  "/api/state/route": "/api/state",
+  "/api/transcript/route": "/api/transcript",
+  "/api/voice/route": "/api/voice",
+  "/api/voice/text/route": "/api/voice/text",
+  "/lab/page": "/lab",
+  "/orb/page": "/orb",
+  "/page": "/"
+}

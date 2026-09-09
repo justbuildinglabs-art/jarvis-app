@@ -1,0 +1,11 @@
+{
+  "status": 502,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "error": "Error: local stt 500"
+  }
+}

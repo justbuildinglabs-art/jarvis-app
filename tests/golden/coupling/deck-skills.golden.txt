@@ -1,0 +1,22 @@
+[
+  {
+    "skill": "morning-report",
+    "label": "Morning Report"
+  },
+  {
+    "skill": "inbox-brief",
+    "label": "Inbox Summary"
+  },
+  {
+    "skill": "plan-today",
+    "label": "Triage Today"
+  },
+  {
+    "skill": "plan-tomorrow",
+    "label": "Triage Tomorrow"
+  },
+  {
+    "skill": "vault-cleanup",
+    "label": "AI Clean"
+  }
+]

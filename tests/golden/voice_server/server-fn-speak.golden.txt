@@ -1,0 +1,47 @@
+{
+  "qualname": "speak",
+  "async": false,
+  "decorators": [
+    "app.get(\"/speak\")"
+  ],
+  "params": [
+    {
+      "name": "text",
+      "annotation": "str",
+      "default": "\"\""
+    }
+  ],
+  "ifs": [
+    "not text"
+  ],
+  "loops": [
+    "chunks_of(text)"
+  ],
+  "withs": [],
+  "calls": [
+    "app.get(\"/speak\")",
+    "text.strip()",
+    "Response(status_code=400, content=\"empty text\")",
+    "wav_header(SAMPLE_RATE)",
+    "chunks_of(text)",
+    "kokoro.create(chunk, voice=VOICE, speed=SPEED, lang=\"en-gb\")",
+    "(np.clip(samples, -1.0, 1.0) * 32767).astype(np.int16)",
+    "np.clip(samples, -1.0, 1.0)",
+    "pcm.tobytes()",
+    "int(SAMPLE_RATE * 0.12)",
+    "StreamingResponse(gen(), media_type=\"audio/wav\",\n                             headers={\"Cache-Control\": \"no-store\"})",
+    "gen()"
+  ],
+  "yields": [
+    "wav_header(SAMPLE_RATE)",
+    "pcm.tobytes()",
+    "b\"\\x00\" * int(SAMPLE_RATE * 0.12) * 2"
+  ],
+  "awaits": [],
+  "returns": [
+    "Response(status_code=400, content=\"empty text\")",
+    "StreamingResponse(gen(), media_type=\"audio/wav\",\n                             headers={\"Cache-Control\": \"no-store\"})"
+  ],
+  "excepts": [],
+  "globals": []
+}

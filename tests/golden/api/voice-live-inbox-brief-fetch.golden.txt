@@ -1,0 +1,18 @@
+[
+  {
+    "url": "http://127.0.0.1:1/health",
+    "method": "GET",
+    "headers": {},
+    "bodyBytes": null,
+    "signal": true
+  },
+  {
+    "url": "http://127.0.0.1:1/stt",
+    "method": "POST",
+    "headers": {
+      "content-type": "audio/ogg; codecs=opus"
+    },
+    "bodyBytes": 1000,
+    "signal": true
+  }
+]

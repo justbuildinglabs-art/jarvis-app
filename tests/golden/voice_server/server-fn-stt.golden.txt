@@ -1,0 +1,45 @@
+{
+  "qualname": "stt",
+  "async": true,
+  "decorators": [
+    "app.post(\"/stt\")"
+  ],
+  "params": [
+    {
+      "name": "req",
+      "annotation": "Request",
+      "default": null
+    }
+  ],
+  "ifs": [
+    "len(audio) < MIN_CLIP_BYTES"
+  ],
+  "loops": [],
+  "withs": [
+    "whisper_lock"
+  ],
+  "calls": [
+    "app.post(\"/stt\")",
+    "req.body()",
+    "len(audio)",
+    "Response(status_code=400, content=\"clip too short\")",
+    "time.time()",
+    "whisper.transcribe(\n            io.BytesIO(audio), beam_size=1, language=\"en\", vad_filter=False,\n            initial_prompt=WHISPER_PROMPT,\n        )",
+    "io.BytesIO(audio)",
+    "\" \".join(s.text.strip() for s in segments).strip()",
+    "\" \".join(s.text.strip() for s in segments)",
+    "s.text.strip()",
+    "int((time.time() - t0) * 1000)",
+    "time.time()"
+  ],
+  "yields": [],
+  "awaits": [
+    "req.body()"
+  ],
+  "returns": [
+    "Response(status_code=400, content=\"clip too short\")",
+    "{\"text\": text, \"ms\": int((time.time() - t0) * 1000)}"
+  ],
+  "excepts": [],
+  "globals": []
+}

@@ -1,0 +1,24 @@
+<section class="objective boot-stagger " style="animation-delay:0.58s">
+<div class="obj-label">North Star · Road to 1.50M</div>
+<div class="big">
+<span class="currency">$</span>
+0<span class="unit">MRR</span>
+</div>
+<div class="progress">
+<i style="width:42.66666666666667%">
+</i>
+</div>
+<div class="sub">
+<span>target <b>$1,500,000</b>
+</span>
+<span>this week <b>—</b>
+</span>
+<span>
+<b>42.7%</b>
+</span>
+</div>
+<div class="video-title">latest deploy · <a href="https://www.youtube.com/watch?v=fixture01" target="_blank" rel="noreferrer">
+<b>Fixture Upload — golden vault</b>
+</a>
+ — 18,400 views</div>
+</section>

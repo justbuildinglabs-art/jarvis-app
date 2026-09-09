@@ -1,0 +1,105 @@
+#doctype: html
+html lang="en"
+  head
+    meta charSet="utf-8"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    link href="/_next/static/<hash>/<hash>.css" rel="stylesheet"
+    link as="script" fetchPriority="low" href="/_next/static/<hash>/webpack-<hash>.js" rel="preload"
+    meta content="" name="next-size-adjust"
+    title
+      #text: CORE LAB — centerpiece candidates
+    meta content="Voice-driven heads-up display over your own file-backed agent" name="description"
+  body class="__variable_<hash> __variable_<hash>"
+    div hidden=""
+      #comment: $
+      #comment: /$
+    main class="lab "
+      canvas class="lab-canvas"
+      header class="lab-head"
+        span class="lab-title"
+          #text: CORE LAB
+        span class="lab-sub"
+          #text: centerpiece candidates · click to isolate · esc to return · keys 1–0
+      div class="lab-grid"
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 01
+            span class="nm"
+              #text: HELIOS
+            span class="bl"
+              #text: structured reactor · shell + kepler ring
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 02
+            span class="nm"
+              #text: SINGULARITY
+            span class="bl"
+              #text: black hole · lensed accretion
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 03
+            span class="nm"
+              #text: LATTICE
+            span class="bl"
+              #text: constellation graph · machine geometry
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 04
+            span class="nm"
+              #text: ANNULUS
+            span class="bl"
+              #text: data disc · rotating arc rings
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 05
+            span class="nm"
+              #text: UPLINK
+            span class="bl"
+              #text: energy column · particle beam
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 06
+            span class="nm"
+              #text: FILAMENT
+            span class="bl"
+              #text: trefoil knot · light flowing a ribbon
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 07
+            span class="nm"
+              #text: EMBERS
+            span class="bl"
+              #text: rising fire · organic drift
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 08
+            span class="nm"
+              #text: MONOLITH
+            span class="bl"
+              #text: fresnel crystal · quiet luxury
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 09
+            span class="nm"
+              #text: PROMINENCE
+            span class="bl"
+              #text: molten star · live fbm surface
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 10
+            span class="nm"
+              #text: ORBITAL
+            span class="bl"
+              #text: electron trails · gyroscope
+    #comment: $
+    #comment: /$

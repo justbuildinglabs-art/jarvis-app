@@ -1,0 +1,8 @@
+f"""<!doctype html><meta charset="utf-8"><title>Kokoro voice audition</title>
+<style>body{{background:#0a0e14;color:#9fd8e8;font-family:Consolas,monospace;padding:2rem}}
+.row{{display:flex;align-items:center;gap:1rem;margin:.4rem 0}}
+.row b{{width:8rem}}.row span{{width:4rem;opacity:.6}}audio{{width:30rem}}</style>
+<h2>Kokoro voice audition — current: {os.environ.get("KOKORO_VOICE", "bm_george")} x{float(os.environ.get("KOKORO_SPEED", "1.0")):.2f}</h2>
+<p>Pick one, then set KOKORO_VOICE / KOKORO_SPEED in ~/.claude/.env and restart the voice-server.</p>
+{items}
+"""

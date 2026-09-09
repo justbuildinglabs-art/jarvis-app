@@ -1,0 +1,45 @@
+[
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 2,
+      "reply": "The inbox brief is already running — I'll let you know the moment it lands.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "tell me a joke",
+    "result": {
+      "tier": 3,
+      "reply": "I've queued that, but heads up — the runner daemon looks down, so it'll wait until that's restarted.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  }
+]

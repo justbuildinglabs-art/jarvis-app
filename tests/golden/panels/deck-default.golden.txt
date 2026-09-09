@@ -1,0 +1,43 @@
+<section class="block boot-stagger " style="animation-delay:0.26s">
+<div class="sec-title">
+<span>Ops Board</span>
+<span class="tick">ENGAGED · 1/3 ACTIVE · 1 QUEUED</span>
+</div>
+<div class="queue-list">
+<span>▸ inbox-brief</span>
+<span>▸ summarize week three</span>
+</div>
+<div class="deck">
+<button class="deck-btn ">
+<span class="deck-dot">
+</span>
+<span class="deck-label">Morning Report</span>
+<span class="deck-arrow">→</span>
+</button>
+<button class="deck-btn ">
+<span class="deck-dot">
+</span>
+<span class="deck-label">Inbox Summary</span>
+<span class="deck-arrow">→</span>
+</button>
+<button class="deck-btn ">
+<span class="deck-dot">
+</span>
+<span class="deck-label">Triage Today</span>
+<span class="deck-arrow">→</span>
+</button>
+<button class="deck-btn ">
+<span class="deck-dot">
+</span>
+<span class="deck-label">Triage Tomorrow</span>
+<span class="deck-arrow">→</span>
+</button>
+<button class="deck-btn ">
+<span class="deck-dot">
+</span>
+<span class="deck-label">AI Clean</span>
+<span class="deck-arrow">→</span>
+</button>
+</div>
+<div class="deck-hint">each tap queues a real job — the runner takes it from there</div>
+</section>

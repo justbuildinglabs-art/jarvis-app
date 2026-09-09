@@ -1,0 +1,13 @@
+{
+  "first": true,
+  "second": true,
+  "levelWhileCapturing": null,
+  "log": [
+    "navigator.mediaDevices.getUserMedia({\"audio\":true})",
+    "MediaRecorder.new(micStream#1) → recorder#1 mimeType=\"audio/webm;codecs=opus\"",
+    "recorder#1.addEventListener(dataavailable)",
+    "recorder#1.start()",
+    "performance.now() → 1000",
+    "-- second call --"
+  ]
+}

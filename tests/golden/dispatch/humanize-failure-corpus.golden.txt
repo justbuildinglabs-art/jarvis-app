@@ -1,0 +1,19 @@
+{
+  "[runner: hard timeout 10m — killed]": "it ran past the time limit, so I stopped it.",
+  "Hard Timeout": "it ran past the time limit, so I stopped it.",
+  "hard timeout but also spawn error": "it ran past the time limit, so I stopped it.",
+  "spawn error: ENOENT": "I couldn't start the session for it.",
+  "[runner: spawn error: EACCES]": "I couldn't start the session for it.",
+  "bad intent json": "the request didn't parse on my end.",
+  "unknown or invalid intent: foo": "the request didn't parse on my end.",
+  "Unknown Or Invalid Intent": "the request didn't parse on my end.",
+  "[runner: something weird happened] with (headless) extra": "with extra",
+  "[runner: exit 1]": "",
+  "[RUNNER: uppercase] leftover": "leftover",
+  "[runner: a] and [runner: b] both": "and both",
+  "[runner: unclosed bracket": "[runner: unclosed bracket",
+  "plain text failure": "plain text failure",
+  "Claude said no. SAVED x/y.md": "Claude said no.",
+  "timeout without the word hard": "timeout without the word hard",
+  "": ""
+}

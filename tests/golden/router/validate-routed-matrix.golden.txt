@@ -1,0 +1,452 @@
+{
+  "haiku/tier1-valid-skill": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it",
+    "engine": "haiku",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "haiku/tier1-voice-ask": {
+    "tier": 1,
+    "skill": "voice-ask",
+    "reply": "On it",
+    "engine": "haiku"
+  },
+  "haiku/tier1-invalid-skill": null,
+  "haiku/tier1-skill-wrong-case": null,
+  "haiku/tier1-missing-skill": null,
+  "haiku/tier1-empty-skill": null,
+  "haiku/tier1-null-skill": null,
+  "haiku/tier2-with-skill-dropped": {
+    "tier": 2,
+    "reply": "Two things",
+    "engine": "haiku",
+    "panels": [
+      "pipeline",
+      "vitals"
+    ]
+  },
+  "haiku/tier2-no-panels": {
+    "tier": 2,
+    "reply": "ok",
+    "engine": "haiku"
+  },
+  "haiku/tier3": {
+    "tier": 3,
+    "reply": "Working on it",
+    "engine": "haiku",
+    "panels": [
+      "diagnostics"
+    ]
+  },
+  "haiku/tier3-with-skill-dropped": {
+    "tier": 3,
+    "reply": "Working on it",
+    "engine": "haiku"
+  },
+  "haiku/tier-missing": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "haiku"
+  },
+  "haiku/tier-0": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "haiku"
+  },
+  "haiku/tier-4": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "haiku"
+  },
+  "haiku/tier-string-1": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "haiku"
+  },
+  "haiku/tier-string-2": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "haiku"
+  },
+  "haiku/tier-float": {
+    "tier": 1,
+    "skill": "plan-today",
+    "reply": "hi",
+    "engine": "haiku"
+  },
+  "haiku/panels-mixed": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "haiku",
+    "panels": [
+      "vitals",
+      "pipeline",
+      "vitals"
+    ]
+  },
+  "haiku/panels-all-invalid": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "haiku",
+    "panels": []
+  },
+  "haiku/panels-empty": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "haiku",
+    "panels": []
+  },
+  "haiku/panels-string": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "haiku"
+  },
+  "haiku/panels-object": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "haiku"
+  },
+  "haiku/panels-null": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "haiku"
+  },
+  "haiku/reply-missing": {
+    "tier": 2,
+    "reply": "Done.",
+    "engine": "haiku"
+  },
+  "haiku/reply-null": {
+    "tier": 2,
+    "reply": "Done.",
+    "engine": "haiku"
+  },
+  "haiku/reply-number": {
+    "tier": 2,
+    "reply": "42",
+    "engine": "haiku"
+  },
+  "haiku/reply-empty": {
+    "tier": 2,
+    "reply": "",
+    "engine": "haiku"
+  },
+  "haiku/reply-object": {
+    "tier": 3,
+    "reply": "[object Object]",
+    "engine": "haiku"
+  },
+  "haiku/reply-array": {
+    "tier": 3,
+    "reply": "a,b",
+    "engine": "haiku"
+  },
+  "haiku/empty-object": {
+    "tier": 3,
+    "reply": "Done.",
+    "engine": "haiku"
+  },
+  "local/tier1-valid-skill": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it",
+    "engine": "local",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "local/tier1-voice-ask": {
+    "tier": 1,
+    "skill": "voice-ask",
+    "reply": "On it",
+    "engine": "local"
+  },
+  "local/tier1-invalid-skill": null,
+  "local/tier1-skill-wrong-case": null,
+  "local/tier1-missing-skill": null,
+  "local/tier1-empty-skill": null,
+  "local/tier1-null-skill": null,
+  "local/tier2-with-skill-dropped": {
+    "tier": 2,
+    "reply": "Two things",
+    "engine": "local",
+    "panels": [
+      "pipeline",
+      "vitals"
+    ]
+  },
+  "local/tier2-no-panels": {
+    "tier": 2,
+    "reply": "ok",
+    "engine": "local"
+  },
+  "local/tier3": {
+    "tier": 3,
+    "reply": "Working on it",
+    "engine": "local",
+    "panels": [
+      "diagnostics"
+    ]
+  },
+  "local/tier3-with-skill-dropped": {
+    "tier": 3,
+    "reply": "Working on it",
+    "engine": "local"
+  },
+  "local/tier-missing": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "local"
+  },
+  "local/tier-0": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "local"
+  },
+  "local/tier-4": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "local"
+  },
+  "local/tier-string-1": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "local"
+  },
+  "local/tier-string-2": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "local"
+  },
+  "local/tier-float": {
+    "tier": 1,
+    "skill": "plan-today",
+    "reply": "hi",
+    "engine": "local"
+  },
+  "local/panels-mixed": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "local",
+    "panels": [
+      "vitals",
+      "pipeline",
+      "vitals"
+    ]
+  },
+  "local/panels-all-invalid": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "local",
+    "panels": []
+  },
+  "local/panels-empty": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "local",
+    "panels": []
+  },
+  "local/panels-string": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "local"
+  },
+  "local/panels-object": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "local"
+  },
+  "local/panels-null": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "local"
+  },
+  "local/reply-missing": {
+    "tier": 2,
+    "reply": "Done.",
+    "engine": "local"
+  },
+  "local/reply-null": {
+    "tier": 2,
+    "reply": "Done.",
+    "engine": "local"
+  },
+  "local/reply-number": {
+    "tier": 2,
+    "reply": "42",
+    "engine": "local"
+  },
+  "local/reply-empty": {
+    "tier": 2,
+    "reply": "",
+    "engine": "local"
+  },
+  "local/reply-object": {
+    "tier": 3,
+    "reply": "[object Object]",
+    "engine": "local"
+  },
+  "local/reply-array": {
+    "tier": 3,
+    "reply": "a,b",
+    "engine": "local"
+  },
+  "local/empty-object": {
+    "tier": 3,
+    "reply": "Done.",
+    "engine": "local"
+  },
+  "cli/tier1-valid-skill": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it",
+    "engine": "cli",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "cli/tier1-voice-ask": {
+    "tier": 1,
+    "skill": "voice-ask",
+    "reply": "On it",
+    "engine": "cli"
+  },
+  "cli/tier1-invalid-skill": null,
+  "cli/tier1-skill-wrong-case": null,
+  "cli/tier1-missing-skill": null,
+  "cli/tier1-empty-skill": null,
+  "cli/tier1-null-skill": null,
+  "cli/tier2-with-skill-dropped": {
+    "tier": 2,
+    "reply": "Two things",
+    "engine": "cli",
+    "panels": [
+      "pipeline",
+      "vitals"
+    ]
+  },
+  "cli/tier2-no-panels": {
+    "tier": 2,
+    "reply": "ok",
+    "engine": "cli"
+  },
+  "cli/tier3": {
+    "tier": 3,
+    "reply": "Working on it",
+    "engine": "cli",
+    "panels": [
+      "diagnostics"
+    ]
+  },
+  "cli/tier3-with-skill-dropped": {
+    "tier": 3,
+    "reply": "Working on it",
+    "engine": "cli"
+  },
+  "cli/tier-missing": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "cli"
+  },
+  "cli/tier-0": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "cli"
+  },
+  "cli/tier-4": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "cli"
+  },
+  "cli/tier-string-1": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "cli"
+  },
+  "cli/tier-string-2": {
+    "tier": 3,
+    "reply": "hi",
+    "engine": "cli"
+  },
+  "cli/tier-float": {
+    "tier": 1,
+    "skill": "plan-today",
+    "reply": "hi",
+    "engine": "cli"
+  },
+  "cli/panels-mixed": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "cli",
+    "panels": [
+      "vitals",
+      "pipeline",
+      "vitals"
+    ]
+  },
+  "cli/panels-all-invalid": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "cli",
+    "panels": []
+  },
+  "cli/panels-empty": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "cli",
+    "panels": []
+  },
+  "cli/panels-string": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "cli"
+  },
+  "cli/panels-object": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "cli"
+  },
+  "cli/panels-null": {
+    "tier": 2,
+    "reply": "x",
+    "engine": "cli"
+  },
+  "cli/reply-missing": {
+    "tier": 2,
+    "reply": "Done.",
+    "engine": "cli"
+  },
+  "cli/reply-null": {
+    "tier": 2,
+    "reply": "Done.",
+    "engine": "cli"
+  },
+  "cli/reply-number": {
+    "tier": 2,
+    "reply": "42",
+    "engine": "cli"
+  },
+  "cli/reply-empty": {
+    "tier": 2,
+    "reply": "",
+    "engine": "cli"
+  },
+  "cli/reply-object": {
+    "tier": 3,
+    "reply": "[object Object]",
+    "engine": "cli"
+  },
+  "cli/reply-array": {
+    "tier": 3,
+    "reply": "a,b",
+    "engine": "cli"
+  },
+  "cli/empty-object": {
+    "tier": 3,
+    "reply": "Done.",
+    "engine": "cli"
+  }
+}

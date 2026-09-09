@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-09-09T15:30:00.000Z",
+  "vault_root": "<VAULT>",
+  "metrics": [],
+  "runner": null,
+  "latestVideo": null,
+  "daily": null,
+  "runs": [],
+  "queue": [],
+  "morning": null,
+  "etas": {}
+}

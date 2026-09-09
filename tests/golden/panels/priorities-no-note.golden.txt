@@ -1,0 +1,7 @@
+<section class="block boot-stagger  " style="animation-delay:0.18s">
+<div class="sec-title">
+<span>Goals</span>
+<span class="tick">TOP.3</span>
+</div>
+<div class="prio dim">no daily note found</div>
+</section>

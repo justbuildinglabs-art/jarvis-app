@@ -1,0 +1,31 @@
+{
+  "payload": {
+    "transcript": "vault cleanup",
+    "tier": 1,
+    "skill": "vault-cleanup",
+    "queued": "<UUID>",
+    "reply": "On it — vault cleanup coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": {
+    "file": "<UUID>.json",
+    "id": "<UUID>",
+    "skill": "vault-cleanup",
+    "args": {},
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "voice-ptt"
+  },
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "vault cleanup",
+    "jarvis": "On it — vault cleanup coming up.",
+    "tier": 1,
+    "skill": "vault-cleanup"
+  }
+}

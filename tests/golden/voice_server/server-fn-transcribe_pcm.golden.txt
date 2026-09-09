@@ -1,0 +1,30 @@
+{
+  "qualname": "transcribe_pcm",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "audio_f32",
+      "annotation": null,
+      "default": null
+    }
+  ],
+  "ifs": [],
+  "loops": [],
+  "withs": [
+    "whisper_lock"
+  ],
+  "calls": [
+    "whisper.transcribe(\n            audio_f32, beam_size=1, language=\"en\", vad_filter=False,\n            initial_prompt=WHISPER_PROMPT,\n        )",
+    "\" \".join(s.text.strip() for s in segments).strip()",
+    "\" \".join(s.text.strip() for s in segments)",
+    "s.text.strip()"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    "\" \".join(s.text.strip() for s in segments).strip()"
+  ],
+  "excepts": [],
+  "globals": []
+}

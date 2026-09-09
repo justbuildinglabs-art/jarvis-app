@@ -1,0 +1,41 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "Markdown link only: source",
+    "Bare URL then markdown:  then src",
+    "Markdown then bare: src then",
+    "Parenthesised (see ) end",
+    "Trailing period",
+    "Quoted \"\" here",
+    "Link with title t tail",
+    "source",
+    "bold under code snakecase ab",
+    "No link at all",
+    "Empty link text []()",
+    "Nested [a [b] c]()",
+    "Relative link rel and bare",
+    "ftp://example.com/ftp is not a link",
+    "Two spaces  after  words",
+    "HTTPS://EXAMPLE.COM/UPPER is case-sensitive",
+    "Angle < brackets"
+  ],
+  "links": [
+    "https://example.com/a",
+    "https://example.com/bare",
+    "https://example.com/md2",
+    "https://example.com/paren",
+    "https://example.com/dot.",
+    "https://example.com/quoted",
+    "https://example.com/title",
+    "https://example.com/only-link",
+    null,
+    null,
+    "https://example.com/empty",
+    "https://example.com/nested",
+    "http://example.com/http",
+    null,
+    null,
+    null,
+    "https://example.com/angle>"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "log": [
+    ">> ws#1 message not json",
+    ">> ws#1 message {}",
+    ">> ws#1 message {\"type\":\"nope\",\"text\":\"hello\"}",
+    ">> ws#1 message {\"type\":\"transcript\"}",
+    "onListening(false)",
+    ">> ws#1 message {\"type\":\"transcript\",\"text\":\"   \"}",
+    "onListening(false)",
+    ">> ws#1 message {\"type\":\"transcript\",\"text\":null}",
+    "onListening(false)"
+  ]
+}

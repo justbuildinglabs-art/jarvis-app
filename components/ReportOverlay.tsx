@@ -102,3 +102,6 @@ export default function ReportOverlay({
     </div>
   );
 }
+
+// --- test seams ---------------------------------------------------------------
+export { mdToHtml, inline as mdInline, escapeHtml };

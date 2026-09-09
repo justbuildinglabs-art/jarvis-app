@@ -1,0 +1,27 @@
+{
+  "stopReturned": true,
+  "log": [
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Interrupted%20reply.) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(playing, once)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    ">> audio#1 'playing' → 1 listener(s)",
+    "setTimeout(1000ms)",
+    "setTimeout(2000ms)",
+    "tick 1000ms",
+    "onReveal({\"kind\":\"doc\",\"target\":\"inbox/reports/morning/2026-09-09-morning-report-deadbeef.md\",\"label\":\"morning report\",\"at\":13})",
+    "-- stop() --",
+    "clearTimeout()",
+    "clearTimeout()",
+    "audio#1.pause()",
+    "audio#1.removeAttribute(src)",
+    "mediaSrc#1.disconnect()",
+    "onSpeaking(false)",
+    "tick 5000ms"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-09",
+  "isToday": true,
+  "top3": [],
+  "schedule": [],
+  "focus": "- first non-empty is a bullet, kept verbatim"
+}

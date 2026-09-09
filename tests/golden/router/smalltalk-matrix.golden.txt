@@ -1,0 +1,2504 @@
+{
+  "default-busy-2-open": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "idle-1-open": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — one goal still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "idle-all-done": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "busy-all-done": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "idle-no-daily": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "busy-no-daily": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "no-runner-stale-note-2-open": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — all quiet on my end. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "busy-empty-top3": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ],
+  "idle-3-open": [
+    {
+      "t": "can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "hey can you hear me",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "are you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you there",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "you up",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "mic check",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "testing testing",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test test",
+      "reply": "Loud and clear."
+    },
+    {
+      "t": "test",
+      "reply": null
+    },
+    {
+      "t": "thank you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks jarvis",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thank you so much",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate it",
+      "reply": "Anytime."
+    },
+    {
+      "t": "appreciate you",
+      "reply": "Anytime."
+    },
+    {
+      "t": "good night",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "goodnight",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "i'm off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "im off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "heading to bed",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "signing off",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "see you tomorrow",
+      "reply": "Goodnight. I'll keep watch."
+    },
+    {
+      "t": "ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay",
+      "reply": "Standing by."
+    },
+    {
+      "t": "okay cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "nice one jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "got it",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sounds good",
+      "reply": "Standing by."
+    },
+    {
+      "t": "great",
+      "reply": "Standing by."
+    },
+    {
+      "t": "perfect",
+      "reply": "Standing by."
+    },
+    {
+      "t": "alright",
+      "reply": "Standing by."
+    },
+    {
+      "t": "sweet",
+      "reply": "Standing by."
+    },
+    {
+      "t": "cool cool cool",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok",
+      "reply": "Standing by."
+    },
+    {
+      "t": "ok ok ok ok ok",
+      "reply": null
+    },
+    {
+      "t": "one man",
+      "reply": "Standing by."
+    },
+    {
+      "t": "then",
+      "reply": "Standing by."
+    },
+    {
+      "t": "jarvis",
+      "reply": "Standing by."
+    },
+    {
+      "t": "how are you",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how's it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "hows it going",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "how you doing",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you good",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "you doing ok",
+      "reply": "Running smooth — all systems green. What do you need?"
+    },
+    {
+      "t": "what's up",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "whats up",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "wassup",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "what is up",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey what's up jarvis",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hi",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "yo",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "sup",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey jarvis",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hello there jarvis",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "hey there buddy",
+      "reply": null
+    },
+    {
+      "t": "yo yo",
+      "reply": null
+    },
+    {
+      "t": "good morning",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good afternoon",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good evening",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "good morning jarvis",
+      "reply": "Not much — 3 goals still open. Say brief me if you want the rundown."
+    },
+    {
+      "t": "ok thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "thanks good night",
+      "reply": "Anytime."
+    },
+    {
+      "t": "no thanks",
+      "reply": "Anytime."
+    },
+    {
+      "t": "yes",
+      "reply": null
+    },
+    {
+      "t": "brief me",
+      "reply": null
+    },
+    {
+      "t": "",
+      "reply": null
+    }
+  ]
+}

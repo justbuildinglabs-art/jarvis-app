@@ -1,0 +1,89 @@
+{
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": null,
+      "x-voice-engine": null
+    },
+    "body": {
+      "transcript": "give me the rundown",
+      "tier": 2,
+      "skill": null,
+      "queued": null,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveal": null,
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 320
+        }
+      ]
+    }
+  },
+  "intents": [],
+  "memory": [
+    {
+      "ts": "2026-09-09T15:00:00.000Z",
+      "you": "any news on fable",
+      "jarvis": "Working on it — I'll speak up when it lands.",
+      "tier": 3,
+      "skill": "voice-ask"
+    },
+    "<unparseable> {oops not json",
+    {
+      "ts": "2026-09-09T15:21:00.000Z",
+      "you": "what's in the queue",
+      "jarvis": "Two things waiting: the inbox brief and a voice ask.",
+      "tier": 2
+    },
+    {
+      "ts": "2026-09-09T15:25:00.000Z",
+      "you": "run the morning report",
+      "jarvis": "On it — morning report coming up.",
+      "tier": 1,
+      "skill": "morning-report"
+    },
+    {
+      "ts": "2026-09-09T15:29:00.000Z",
+      "you": "give me the rundown",
+      "jarvis": "Good morning. Two of three goals still open. Want me to run the inbox audit?",
+      "tier": 2
+    },
+    {
+      "ts": "2026-09-09T15:30:00.000Z",
+      "you": "give me the rundown",
+      "jarvis": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "tier": 2
+    }
+  ]
+}

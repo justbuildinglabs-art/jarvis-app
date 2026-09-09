@@ -1,0 +1,105 @@
+#doctype: html
+html
+  head
+    meta
+    meta
+    link href="/_next/static/<hash>/<hash>.css"
+    link href="/_next/static/<hash>/webpack-<hash>.js"
+    meta
+    title
+      #text: ORB LAB — dither sphere variations
+    meta
+  body class="__variable_<hash> __variable_<hash>"
+    div
+      #comment: $
+      #comment: /$
+    main class="lab"
+      canvas class="lab-canvas"
+      header class="lab-head"
+        span class="lab-title"
+          #text: ORB LAB
+        span class="lab-sub"
+          #text: dither sphere · 10 ways to feel alive · click to isolate · esc back · keys 1–0
+      div class="lab-grid"
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 01
+            span class="nm"
+              #text: BREATH
+            span class="bl"
+              #text: noise-timed inhale / exhale
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 02
+            span class="nm"
+              #text: TURBULENT
+            span class="bl"
+              #text: organic silhouette morph
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 03
+            span class="nm"
+              #text: PULSE
+            span class="bl"
+              #text: heartbeat thump + ring (runner heartbeat)
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 04
+            span class="nm"
+              #text: WAVEFORM
+            span class="bl"
+              #text: speech-reactive swell (mic / tts)
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 05
+            span class="nm"
+              #text: SCAN
+            span class="bl"
+              #text: sweep band climbing
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 06
+            span class="nm"
+              #text: BINARY
+            span class="bl"
+              #text: two orbiting lights
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 07
+            span class="nm"
+              #text: ERODE
+            span class="bl"
+              #text: dissolves to dust, re-condenses
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 08
+            span class="nm"
+              #text: CONTOUR
+            span class="bl"
+              #text: rotating topo light bands
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 09
+            span class="nm"
+              #text: CORONA
+            span class="bl"
+              #text: rim flares licking out
+        div class="lab-tile  "
+          div class="lab-label"
+            span class="idx"
+              #text: 10
+            span class="nm"
+              #text: GAZE
+            span class="bl"
+              #text: follows your cursor · blinks
+    #comment: $
+    #comment: /$

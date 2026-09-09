@@ -1,0 +1,8 @@
+[
+  "inbox-brief",
+  "morning-report",
+  "plan-today",
+  "plan-tomorrow",
+  "vault-cleanup",
+  "voice-ask"
+]

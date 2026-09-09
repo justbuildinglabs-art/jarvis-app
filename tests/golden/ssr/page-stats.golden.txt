@@ -1,0 +1,23 @@
+{
+  "index": {
+    "lines": 529,
+    "elements": 484,
+    "texts": 38,
+    "comments": 6,
+    "maxDepth": 9
+  },
+  "lab": {
+    "lines": 105,
+    "elements": 67,
+    "texts": 33,
+    "comments": 4,
+    "maxDepth": 7
+  },
+  "orb": {
+    "lines": 105,
+    "elements": 67,
+    "texts": 33,
+    "comments": 4,
+    "maxDepth": 7
+  }
+}

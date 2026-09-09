@@ -1,0 +1,58 @@
+{
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": null,
+      "x-voice-engine": null
+    },
+    "body": {
+      "transcript": "123",
+      "tier": 3,
+      "skill": null,
+      "queued": null,
+      "reply": "I didn't catch enough to act on.",
+      "engine": "rules",
+      "panels": [],
+      "deliverable": null,
+      "reveal": null,
+      "reveals": []
+    }
+  },
+  "intents": [],
+  "memory": [
+    {
+      "ts": "2026-09-09T15:00:00.000Z",
+      "you": "any news on fable",
+      "jarvis": "Working on it — I'll speak up when it lands.",
+      "tier": 3,
+      "skill": "voice-ask"
+    },
+    "<unparseable> {oops not json",
+    {
+      "ts": "2026-09-09T15:21:00.000Z",
+      "you": "what's in the queue",
+      "jarvis": "Two things waiting: the inbox brief and a voice ask.",
+      "tier": 2
+    },
+    {
+      "ts": "2026-09-09T15:25:00.000Z",
+      "you": "run the morning report",
+      "jarvis": "On it — morning report coming up.",
+      "tier": 1,
+      "skill": "morning-report"
+    },
+    {
+      "ts": "2026-09-09T15:29:00.000Z",
+      "you": "give me the rundown",
+      "jarvis": "Good morning. Two of three goals still open. Want me to run the inbox audit?",
+      "tier": 2
+    },
+    {
+      "ts": "2026-09-09T15:30:00.000Z",
+      "you": "123",
+      "jarvis": "I didn't catch enough to act on.",
+      "tier": 3
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "job-bad-json",
+  "skill": "(unknown)",
+  "args": {},
+  "ts_queued": "2026-09-09T15:30:00.000Z",
+  "ts_started": "2026-09-09T15:30:00.000Z",
+  "ts_completed": "2026-09-09T15:30:00.000Z",
+  "status": "error",
+  "exit_code": -3,
+  "summary": "bad intent json after 5 retries: Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+  "md_path": "system/runs/job-bad-json.md",
+  "log_path": "system/runs/job-bad-json.md",
+  "deliverable_path": null
+}

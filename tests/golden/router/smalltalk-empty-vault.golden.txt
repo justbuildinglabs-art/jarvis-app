@@ -1,0 +1,4 @@
+{
+  "hey": "Not much — the runner's mid-job. Say brief me if you want the rundown.",
+  "what's up": "Not much — the runner's mid-job. Say brief me if you want the rundown."
+}

@@ -1,0 +1,7 @@
+{
+  "returned": false,
+  "log": [
+    "navigator.mediaDevices.getUserMedia({\"audio\":true})",
+    "onLog[err] microphone access denied"
+  ]
+}

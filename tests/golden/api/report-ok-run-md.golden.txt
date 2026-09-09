@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "path": "system/runs/22222222-bbbb-4bbb-8bbb-222222222222.md",
+    "content": "---\nrun_id: 22222222-bbbb-4bbb-8bbb-222222222222\nskill: voice-ask\nstatus: ok\n---\n\n# voice-ask run\n\n```\noutput for 22222222-bbbb-4bbb-8bbb-222222222222\n```\n"
+  }
+}

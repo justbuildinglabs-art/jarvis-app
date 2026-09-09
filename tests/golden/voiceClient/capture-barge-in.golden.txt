@@ -1,0 +1,29 @@
+{
+  "returned": true,
+  "log": [
+    "onSpeaking(true)",
+    "Audio.new(/api/speak?text=Talking%20over%20you.) → audio#1",
+    "audio#1.preload=auto",
+    "ctx#1.createMediaElementSource(audio#1) → mediaSrc#1",
+    "mediaSrc#1.connect(biquad#1)",
+    "audio#1.addEventListener(ended, once)",
+    "audio#1.addEventListener(error, once)",
+    "audio#1.play()",
+    "-- startCapture() --",
+    "audio#1.pause()",
+    "audio#1.removeAttribute(src)",
+    "mediaSrc#1.disconnect()",
+    "MediaRecorder.new(micStream#1) → recorder#1 mimeType=\"audio/webm;codecs=opus\"",
+    "recorder#1.addEventListener(dataavailable)",
+    "recorder#1.start()",
+    "performance.now() → 3700",
+    "onSpeaking(false)",
+    "-- quick tap to close --",
+    "perf +100ms",
+    "performance.now() → 3800",
+    "recorder#1.addEventListener(stop, once)",
+    "recorder#1.stop()",
+    ">> recorder#1 'stop' → 1 listener(s)",
+    "Blob.new(parts=0, type=\"audio/webm;codecs=opus\") → size=0 type=\"audio/webm;codecs=opus\""
+  ]
+}

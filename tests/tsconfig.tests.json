@@ -1,0 +1,5 @@
+{
+  "//": "Test-loader-only tsconfig. The repo tsconfig sets jsx:\"preserve\" because Next owns the JSX transform at build time; under the node test loader nothing does, so esbuild falls back to the CLASSIC runtime and every component that (correctly) does not import React blows up with 'React is not defined'. Pointing tsx at this file switches it to the automatic runtime — the same one Next uses. Nothing else differs.",
+  "extends": "../tsconfig.json",
+  "compilerOptions": { "jsx": "react-jsx" }
+}

@@ -1,0 +1,32 @@
+{
+  "24000": {
+    "riff": "RIFF",
+    "riff_size": 2147483647,
+    "wave": "WAVE",
+    "fmt": "fmt ",
+    "fmt_size": 16,
+    "audio_format": 1,
+    "channels": 1,
+    "sample_rate": 24000,
+    "byte_rate": 48000,
+    "block_align": 2,
+    "bits_per_sample": 16,
+    "data": "data",
+    "data_size": 2147483611
+  },
+  "16000": {
+    "riff": "RIFF",
+    "riff_size": 2147483647,
+    "wave": "WAVE",
+    "fmt": "fmt ",
+    "fmt_size": 16,
+    "audio_format": 1,
+    "channels": 1,
+    "sample_rate": 16000,
+    "byte_rate": 32000,
+    "block_align": 2,
+    "bits_per_sample": 16,
+    "data": "data",
+    "data_size": 2147483611
+  }
+}

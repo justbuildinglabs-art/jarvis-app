@@ -1,0 +1,128 @@
+[
+  {
+    "name": "fixture-default",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "run-the-morning-report-with-tail",
+    "offer": "morning-report"
+  },
+  {
+    "name": "run-the-daily-inbox-audit-with-tail",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "run-the-inbox-audit",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "pull-the-inbox-audit",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "pull-the-daily-morning-report",
+    "offer": "morning-report"
+  },
+  {
+    "name": "run-morning-report-no-article",
+    "offer": "morning-report"
+  },
+  {
+    "name": "run-daily-inbox-audit-no-article",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "uppercase",
+    "offer": "morning-report"
+  },
+  {
+    "name": "mid-sentence",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "both-phrases-first-wins",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "near-miss-inbox-brief",
+    "offer": null
+  },
+  {
+    "name": "near-miss-do-verb",
+    "offer": null
+  },
+  {
+    "name": "near-miss-shall-i",
+    "offer": null
+  },
+  {
+    "name": "near-miss-double-daily",
+    "offer": null
+  },
+  {
+    "name": "near-miss-run-a",
+    "offer": null
+  },
+  {
+    "name": "near-miss-bare-phrase",
+    "offer": null
+  },
+  {
+    "name": "near-miss-morning-inbox-audit",
+    "offer": null
+  },
+  {
+    "name": "offer-superseded-by-later-exchange",
+    "offer": null
+  },
+  {
+    "name": "offer-exactly-3-min-old",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "offer-3-min-plus-1ms-old",
+    "offer": null
+  },
+  {
+    "name": "offer-9-min-old",
+    "offer": null
+  },
+  {
+    "name": "offer-11-min-old",
+    "offer": null
+  },
+  {
+    "name": "offer-from-the-future",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "offer-bad-ts",
+    "offer": null
+  },
+  {
+    "name": "offer-missing-ts",
+    "offer": null
+  },
+  {
+    "name": "garbage-line-after-offer",
+    "offer": "inbox-brief"
+  },
+  {
+    "name": "offer-missing-jarvis-field",
+    "offer": {
+      "threw": "TypeError"
+    }
+  },
+  {
+    "name": "empty-file",
+    "offer": null
+  },
+  {
+    "name": "blank-lines-only",
+    "offer": null
+  },
+  {
+    "name": "missing-file",
+    "offer": null
+  }
+]

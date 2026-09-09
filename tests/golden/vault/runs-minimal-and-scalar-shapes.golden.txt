@@ -1,0 +1,74 @@
+[
+  {
+    "id": "empty-object",
+    "skill": "?",
+    "label": null,
+    "link": null,
+    "status": "?",
+    "summary": "",
+    "ts_completed": null,
+    "ts_started": null,
+    "duration_s": null,
+    "deliverable_path": null
+  },
+  {
+    "id": "0",
+    "skill": "",
+    "label": null,
+    "link": null,
+    "status": "",
+    "summary": "",
+    "ts_completed": null,
+    "ts_started": null,
+    "duration_s": null,
+    "deliverable_path": null
+  },
+  {
+    "id": "123",
+    "skill": "5",
+    "label": null,
+    "link": null,
+    "status": "true",
+    "summary": "a,b",
+    "ts_completed": "[object Object]",
+    "ts_started": "1700000000000",
+    "duration_s": null,
+    "deliverable_path": "7"
+  },
+  {
+    "id": "number",
+    "skill": "?",
+    "label": null,
+    "link": null,
+    "status": "?",
+    "summary": "",
+    "ts_completed": null,
+    "ts_started": null,
+    "duration_s": null,
+    "deliverable_path": null
+  },
+  {
+    "id": "string",
+    "skill": "?",
+    "label": null,
+    "link": null,
+    "status": "?",
+    "summary": "",
+    "ts_completed": null,
+    "ts_started": null,
+    "duration_s": null,
+    "deliverable_path": null
+  },
+  {
+    "id": "array",
+    "skill": "?",
+    "label": null,
+    "link": null,
+    "status": "?",
+    "summary": "",
+    "ts_completed": null,
+    "ts_started": null,
+    "duration_s": null,
+    "deliverable_path": null
+  }
+]

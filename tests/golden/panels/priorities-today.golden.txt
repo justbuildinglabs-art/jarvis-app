@@ -1,0 +1,19 @@
+<section class="block boot-stagger  " style="animation-delay:0.18s">
+<div class="sec-title">
+<span>Goals</span>
+<span class="tick">TOP.3</span>
+</div>
+<div class="prio done clickable" role="button" title="mark open">
+<span class="box">■</span>
+<span>Pin every behavior the HUD reads</span>
+</div>
+<div class="prio  clickable" role="button" title="mark done">
+<span class="box">□</span>
+<span>Rewrite the router behind the suite</span>
+</div>
+<div class="prio  clickable" role="button" title="mark done">
+<span class="box">□</span>
+<span>Reply to the sponsor email — $4,200 offer</span>
+</div>
+<div class="prio-date">today</div>
+</section>

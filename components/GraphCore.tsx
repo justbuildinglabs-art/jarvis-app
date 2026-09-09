@@ -7,117 +7,40 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 
+import {
+  BG_MODES,
+  CLOUD_R,
+  CYAN_HUE,
+  ERROR_HUE,
+  FEELS,
+  LINKS_PER_NODE,
+  N_NODES,
+  type BgMode,
+  type CoreMode,
+} from "./cores/modes";
+import { NODE_FRAG, NODE_VERT } from "./cores/shaders";
+import { fakeSpeechLevel, glowTexture } from "./cores/textures";
+
 // ---------------------------------------------------------------------------
-// GRAPH CORE — JARVIS reference replica.
-// Volumetric knowledge-graph cloud: ~2200 nodes, center-dense, linked to
-// nearest neighbors (real edges that follow the nodes as they drift),
-// constant slow rotation + per-node wander, speech pulses brightness across
-// the whole cloud (no center flash), UnrealBloom for the glow.
-// Voice source: real AnalyserNode RMS via the getLevel prop when audio is
-// playing; falls back to the synthetic envelope (demo key 4, no audio).
+// The graph core — the volumetric knowledge-graph cloud at the centre of the
+// HUD, and the only thing on screen that is not text.
+//
+// ~1100 nodes, centre-dense, each linked to its nearest neighbours by real
+// edges that follow the nodes as they drift. The whole cloud rotates slowly
+// while every node also wanders on its own; speech pulses brightness across
+// all of it rather than flashing the centre, which is what keeps it reading
+// as a thinking system rather than a level meter.
+//
+// The speech envelope is real when there is audio: the voice client exposes
+// an AnalyserNode's RMS through getLevel(). Without audio it falls back to a
+// synthetic envelope, so demo mode still looks alive.
+//
+// The parts that are data rather than plumbing now live in ./cores/ — the
+// mode feels, the GLSL, and the generated glow sprite.
 // ---------------------------------------------------------------------------
 
-export type CoreMode = "idle" | "working" | "listening" | "speaking" | "error";
-export type BgMode = "flat" | "depth" | "nebula";
-export const BG_MODES: BgMode[] = ["flat", "depth", "nebula"];
-
-// color is FIXED at the cyan anchor; modes shape tempo + brightness only,
-// error locks the hue to red
-interface ModeFeel {
-  speed: number; // rotation/drift multiplier
-  boost: number; // brightness multiplier
-}
-
-const FEELS: Record<CoreMode, ModeFeel> = {
-  idle: { speed: 1, boost: 1 },
-  working: { speed: 1.7, boost: 1.25 },
-  listening: { speed: 1.2, boost: 1.1 },
-  speaking: { speed: 1.3, boost: 1.15 },
-  error: { speed: 1.8, boost: 1.2 },
-};
-
-const ERROR_HUE = 0.015;
-// Cyan anchor (~190deg) — the orb's one fixed color. The HUD chrome no longer
-// derives from it (globals.css is a static white ramp).
-const CYAN_HUE = 0.528;
-
-const CLOUD_R = 1.5;
-const N_NODES = 1100;
-// links scale with nodes, so halving N alone would leave the cloud looking
-// as busy as before — 3 links each on half the nodes still reads dense
-const LINKS_PER_NODE = 2;
-
-const NODE_VERT = /* glsl */ `
-uniform float uTime;
-attribute float aSeed;
-varying float vR;
-varying float vSeed;
-void main() {
-  vR = length(position) / ${CLOUD_R.toFixed(2)};
-  vSeed = aSeed;
-  vec4 mv = modelViewMatrix * vec4(position, 1.0);
-  float big = step(0.86, fract(aSeed * 7.13)); // 14% are hub nodes
-  gl_PointSize = (0.5 + big * 0.8) * (58.0 / -mv.z);
-  gl_Position = projectionMatrix * mv;
-}
-`;
-
-const NODE_FRAG = /* glsl */ `
-uniform float uTime;
-uniform float uBoost;
-uniform float uLevel;
-uniform float uHue;
-uniform vec3 uInner;
-uniform vec3 uOuter;
-varying float vR;
-varying float vSeed;
-vec3 hsl2rgb(vec3 hsl) {
-  vec3 rgb = clamp(abs(mod(hsl.x * 6.0 + vec3(0.0, 4.0, 2.0), 6.0) - 3.0) - 1.0, 0.0, 1.0);
-  return hsl.z + hsl.y * (rgb - 0.5) * (1.0 - abs(2.0 * hsl.z - 1.0));
-}
-void main() {
-  vec2 c = gl_PointCoord - 0.5;
-  float alpha = smoothstep(0.5, 0.22, length(c));
-  vec3 col = mix(uInner, uOuter, smoothstep(0.0, 0.95, vR));
-  // speaking: nodes shimmer within ±~40° of the fixed accent hue. The offset
-  // is per-node and STATIC — no uTime term, so hue never animates.
-  float off = (fract(vSeed * 3.17) - 0.5) * 0.22;
-  vec3 shimmer = hsl2rgb(vec3(fract(uHue + off), 0.8, 0.62));
-  col = mix(col, shimmer, uLevel * 0.55);
-  // white-hot center — nodes near the core bleach toward white for contrast
-  // (after shimmer, so the core stays white while speaking)
-  col = mix(col, vec3(1.0), 0.85 * (1.0 - smoothstep(0.05, 0.5, vR)));
-  // twinkle — every node flickers on its own clock
-  alpha *= 0.3 + 0.7 * (0.5 + 0.5 * sin(uTime * (1.0 + vSeed * 2.5) + vSeed * 43.0));
-  // speaking: brightness waves ripple outward from the center per syllable
-  alpha *= 1.0 + uLevel * 0.45 * sin(vR * 9.0 - uTime * 5.5);
-  alpha *= uBoost;
-  gl_FragColor = vec4(col, clamp(alpha, 0.0, 1.0) * 0.55);
-}
-`;
-
-// synthetic speech envelope — syllable bursts with pauses
-function fakeSpeechLevel(): number {
-  const t = performance.now() * 0.001;
-  const gate = Math.sin(t * 0.9) > -0.6 ? 1 : 0.08;
-  const syllables = (0.45 + 0.55 * Math.sin(t * 6.1)) * (0.4 + 0.6 * Math.sin(t * 2.3));
-  return gate * Math.max(0, syllables);
-}
-
-function glowTexture(): THREE.Texture {
-  const size = 256;
-  const canvas = document.createElement("canvas");
-  canvas.width = canvas.height = size;
-  const ctx = canvas.getContext("2d")!;
-  const g = ctx.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
-  g.addColorStop(0, "rgba(255,255,255,1)");
-  g.addColorStop(0.25, "rgba(255,255,255,0.4)");
-  g.addColorStop(0.6, "rgba(255,255,255,0.08)");
-  g.addColorStop(1, "rgba(255,255,255,0)");
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, size, size);
-  return new THREE.CanvasTexture(canvas);
-}
+export type { CoreMode, BgMode } from "./cores/modes";
+export { BG_MODES } from "./cores/modes";
 
 export default function GraphCore({
   mode = "idle",

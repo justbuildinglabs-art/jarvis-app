@@ -1,0 +1,24 @@
+{
+  "sockets": [
+    "ws#1",
+    "ws#2",
+    "ws#3"
+  ],
+  "log": [
+    ">> ws#1 close",
+    "onListening(false)",
+    "onLog[sys] wake word link lost — retrying",
+    "setTimeout(5000ms)",
+    "tick 4999ms",
+    "tick 1ms",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#2",
+    "-- close before open --",
+    ">> ws#2 close",
+    "setTimeout(5000ms)",
+    "tick 5000ms",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#3",
+    "-- error --",
+    ">> ws#3 error",
+    "ws#3.close()"
+  ]
+}

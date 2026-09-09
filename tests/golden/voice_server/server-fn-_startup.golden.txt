@@ -1,0 +1,24 @@
+{
+  "qualname": "_startup",
+  "async": true,
+  "decorators": [
+    "app.on_event(\"startup\")"
+  ],
+  "params": [],
+  "ifs": [
+    "wake is not None"
+  ],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "app.on_event(\"startup\")",
+    "set_loop(asyncio.get_running_loop())",
+    "asyncio.get_running_loop()",
+    "wake.start()"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [],
+  "excepts": [],
+  "globals": []
+}

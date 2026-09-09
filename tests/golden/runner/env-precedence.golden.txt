@@ -1,0 +1,38 @@
+{
+  "sonnet": {
+    "model": "claude-sonnet-4-6",
+    "vault": "<VAULT>"
+  },
+  "bogusModel": {
+    "model": "not-a-real-model",
+    "vault": "<VAULT>"
+  },
+  "emptyModel": {
+    "model": "claude-opus-5",
+    "vault": "<VAULT>"
+  },
+  "unset": {
+    "model": "claude-opus-5",
+    "vault": "<VAULT>"
+  },
+  "agenticOsVaultFallback": {
+    "model": "claude-opus-5",
+    "vault": "<VAULT>/alt-vault"
+  },
+  "vaultRootWinsOverAgenticOsVault": {
+    "model": "claude-opus-5",
+    "vault": "<VAULT>"
+  },
+  "neitherSetUsesStarterVault": {
+    "model": "claude-opus-5",
+    "vault": "<REPO>/starter-vault"
+  },
+  "envFileRead": {
+    "model": "claude-haiku-4-5-20251001",
+    "vault": "<VAULT>/env-file-vault"
+  },
+  "processEnvBeatsEnvFile": {
+    "model": "claude-opus-4-8",
+    "vault": "<VAULT>/env-file-vault"
+  }
+}

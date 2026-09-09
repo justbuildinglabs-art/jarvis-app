@@ -1,0 +1,10 @@
+{
+  "server.PORT": 4871,
+  "server.PORT_read_from_env": false,
+  "uvicorn.host": "127.0.0.1",
+  "uvicorn.port_expr": "PORT",
+  "ws_probe.url": "ws://127.0.0.1:4871/events",
+  "server.websocket_routes": [
+    "/events"
+  ]
+}

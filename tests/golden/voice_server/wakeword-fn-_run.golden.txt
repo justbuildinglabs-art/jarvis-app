@@ -1,0 +1,51 @@
+{
+  "qualname": "WakeListener._run",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "self",
+      "annotation": null,
+      "default": null
+    }
+  ],
+  "ifs": [
+    "score >= self.threshold and time.time() - last_fire > COOLDOWN_S"
+  ],
+  "loops": [
+    "True"
+  ],
+  "withs": [
+    "sd.InputStream(\n                samplerate=SR, channels=1, dtype=\"int16\", blocksize=FRAME\n            )"
+  ],
+  "calls": [
+    "Model(wakeword_models=[WAKE_MODEL], inference_framework=\"onnx\")",
+    "type(e)",
+    "sd.InputStream(\n                samplerate=SR, channels=1, dtype=\"int16\", blocksize=FRAME\n            )",
+    "stream.read(FRAME)",
+    "float(np.sqrt(np.mean(pcm.astype(np.float32) ** 2)))",
+    "np.sqrt(np.mean(pcm.astype(np.float32) ** 2))",
+    "np.mean(pcm.astype(np.float32) ** 2)",
+    "pcm.astype(np.float32)",
+    "min(rms, 600.0)",
+    "float(model.predict(pcm)[WAKE_MODEL])",
+    "model.predict(pcm)",
+    "time.time()",
+    "self.emit({\"type\": \"wake\", \"score\": round(score, 3)})",
+    "round(score, 3)",
+    "self._capture(stream, noise)",
+    "model.reset()",
+    "time.time()",
+    "type(e)"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    null
+  ],
+  "excepts": [
+    "Exception",
+    "Exception"
+  ],
+  "globals": []
+}

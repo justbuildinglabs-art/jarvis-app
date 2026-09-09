@@ -1,0 +1,7 @@
+{
+  "empty": "<div class=\"spark spark-flat\">\n</div>",
+  "single": "<div class=\"spark spark-flat\">\n</div>",
+  "flat": "<svg class=\"spark\" viewBox=\"0 0 100 16\" preserveAspectRatio=\"none\">\n<path d=\"M0.0,14.0 L33.3,14.0 L66.7,14.0 L100.0,14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" vector-effect=\"non-scaling-stroke\">\n</path>\n<circle cx=\"100\" cy=\"14\" r=\"1.8\" fill=\"currentColor\">\n</circle>\n</svg>",
+  "rising": "<svg class=\"spark\" viewBox=\"0 0 100 16\" preserveAspectRatio=\"none\">\n<path d=\"M0.0,14.0 L20.0,12.0 L40.0,13.0 L60.0,7.0 L80.0,10.0 L100.0,2.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" vector-effect=\"non-scaling-stroke\">\n</path>\n<circle cx=\"100\" cy=\"2\" r=\"1.8\" fill=\"currentColor\">\n</circle>\n</svg>",
+  "negative": "<svg class=\"spark\" viewBox=\"0 0 100 16\" preserveAspectRatio=\"none\">\n<path d=\"M0.0,14.0 L50.0,8.0 L100.0,2.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" vector-effect=\"non-scaling-stroke\">\n</path>\n<circle cx=\"100\" cy=\"2\" r=\"1.8\" fill=\"currentColor\">\n</circle>\n</svg>"
+}

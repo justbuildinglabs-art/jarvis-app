@@ -1,0 +1,76 @@
+/* The top bar — clock, core mode, link and runner status. */
+
+/* --- top bar --------------------------------------------------------------- */
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.status-line {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-top: 10px;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.chip {
+  color: var(--ink-dim);
+}
+.chip.on {
+  color: var(--ember-hot);
+}
+.chip.dead {
+  color: var(--err);
+}
+
+.mode-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 500;
+}
+.mode-chip .status-dot {
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+.mode-idle { color: var(--ember); }
+.mode-working { color: var(--white-hot); }
+.mode-listening { color: var(--cobalt); }
+.mode-speaking { color: var(--warn); }
+.mode-error {
+  color: var(--err);
+  animation: blip 0.8s ease-in-out infinite;
+}
+
+.clock-wrap {
+  text-align: left;
+}
+
+.clock-date {
+  margin-top: 5px;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: var(--ink-faint);
+}
+
+.clock {
+  font-family: var(--font-display), sans-serif;
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  line-height: 0.9;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.clock .sec {
+  color: var(--ember);
+  font-size: 30px;
+  font-weight: 400;
+}

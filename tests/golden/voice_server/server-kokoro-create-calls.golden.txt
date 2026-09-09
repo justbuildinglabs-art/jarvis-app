@@ -1,0 +1,48 @@
+[
+  {
+    "in": "speak.gen",
+    "func": "kokoro.create",
+    "args": [
+      "chunk"
+    ],
+    "kwargs": {
+      "voice": "VOICE",
+      "speed": "SPEED",
+      "lang": "\"en-gb\""
+    },
+    "kwargs_literal": {
+      "voice": {
+        "<expr>": "VOICE"
+      },
+      "speed": {
+        "<expr>": "SPEED"
+      },
+      "lang": "en-gb"
+    },
+    "text_literal": {
+      "<expr>": "chunk"
+    }
+  },
+  {
+    "in": "warm_models",
+    "func": "kokoro.create",
+    "args": [
+      "\"Systems online.\""
+    ],
+    "kwargs": {
+      "voice": "VOICE",
+      "speed": "SPEED",
+      "lang": "\"en-gb\""
+    },
+    "kwargs_literal": {
+      "voice": {
+        "<expr>": "VOICE"
+      },
+      "speed": {
+        "<expr>": "SPEED"
+      },
+      "lang": "en-gb"
+    },
+    "text_literal": "Systems online."
+  }
+]

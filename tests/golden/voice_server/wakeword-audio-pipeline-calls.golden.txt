@@ -1,0 +1,68 @@
+{
+  "Model": [
+    {
+      "in": "WakeListener._run",
+      "func": "Model",
+      "args": [],
+      "kwargs": {
+        "wakeword_models": "[WAKE_MODEL]",
+        "inference_framework": "\"onnx\""
+      }
+    }
+  ],
+  "Model_kwargs_literal": [
+    {
+      "wakeword_models": {
+        "<expr>": "[WAKE_MODEL]"
+      },
+      "inference_framework": "onnx"
+    }
+  ],
+  "InputStream": [
+    {
+      "in": "WakeListener._run",
+      "func": "sd.InputStream",
+      "args": [],
+      "kwargs": {
+        "samplerate": "SR",
+        "channels": "1",
+        "dtype": "\"int16\"",
+        "blocksize": "FRAME"
+      }
+    }
+  ],
+  "stream.read": [
+    {
+      "in": "WakeListener._run",
+      "func": "stream.read",
+      "args": [
+        "FRAME"
+      ],
+      "kwargs": {}
+    },
+    {
+      "in": "WakeListener._capture",
+      "func": "stream.read",
+      "args": [
+        "FRAME"
+      ],
+      "kwargs": {}
+    }
+  ],
+  "predict": [
+    "model.predict(pcm)[WAKE_MODEL]"
+  ],
+  "reset": [
+    {
+      "in": "WakeListener._run",
+      "func": "model.reset",
+      "args": [],
+      "kwargs": {}
+    }
+  ],
+  "prints": [
+    "print(f\"wake word disabled: {self.error}\")",
+    "print(f\"wake word armed — '{WAKE_MODEL}' threshold={self.threshold}\")",
+    "print(f\"wake listener died: {self.error}\")"
+  ]
+}

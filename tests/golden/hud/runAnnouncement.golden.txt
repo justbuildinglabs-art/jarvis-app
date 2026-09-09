@@ -1,0 +1,127 @@
+[
+  {
+    "skill": "morning-report",
+    "status": "ok",
+    "summary": "Morning briefing is ready — five headlines. SAVED inbox/reports/morning/x.md",
+    "label": null,
+    "spoken": "morning report is done. Morning briefing is ready — five headlines."
+  },
+  {
+    "skill": "morning-report",
+    "status": "ok",
+    "summary": "",
+    "label": null,
+    "spoken": "morning report is done."
+  },
+  {
+    "skill": "morning-report",
+    "status": "ok",
+    "summary": "Done.",
+    "label": null,
+    "spoken": "morning report is done."
+  },
+  {
+    "skill": "plan-today",
+    "status": "ok",
+    "summary": "complete",
+    "label": null,
+    "spoken": "plan today is done."
+  },
+  {
+    "skill": "plan-today",
+    "status": "ok",
+    "summary": "All done!",
+    "label": null,
+    "spoken": "plan today is done."
+  },
+  {
+    "skill": "plan-today",
+    "status": "ok",
+    "summary": "ok",
+    "label": null,
+    "spoken": "plan today is done."
+  },
+  {
+    "skill": "inbox-brief",
+    "status": "ok",
+    "summary": "Three urgent threads, two warm replies (headless run).",
+    "label": null,
+    "spoken": "inbox brief is done. Three urgent threads, two warm replies."
+  },
+  {
+    "skill": "voice-ask",
+    "status": "ok",
+    "summary": "Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+    "label": "fable five launch",
+    "spoken": "Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue."
+  },
+  {
+    "skill": "voice-ask",
+    "status": "ok",
+    "summary": "",
+    "label": "fable five launch",
+    "spoken": "fable five launch ask is done."
+  },
+  {
+    "skill": "voice-ask",
+    "status": "ok",
+    "summary": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "label": "long one",
+    "spoken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+    "skill": "morning-report",
+    "status": "ok",
+    "summary": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "label": null,
+    "spoken": "morning report is done. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+  },
+  {
+    "skill": "morning-report",
+    "status": "error",
+    "summary": "[runner: hard timeout 20m — killed]",
+    "label": null,
+    "spoken": "morning report hit a snag — it ran past the time limit, so I stopped it."
+  },
+  {
+    "skill": "inbox-brief",
+    "status": "error",
+    "summary": "spawn error: ENOENT",
+    "label": null,
+    "spoken": "inbox brief hit a snag — I couldn't start the session for it."
+  },
+  {
+    "skill": "voice-ask",
+    "status": "error",
+    "summary": "bad intent json after 5 retries: empty",
+    "label": "weather",
+    "spoken": "weather ask hit a snag — the request didn't parse on my end."
+  },
+  {
+    "skill": "vault-cleanup",
+    "status": "error",
+    "summary": "",
+    "label": null,
+    "spoken": "vault cleanup hit a snag."
+  },
+  {
+    "skill": "vault-cleanup",
+    "status": "error",
+    "summary": "**Markdown** failure `text` (headless) that is quite long **Markdown** failure `text` (headless) that is quite long **Markdown** failure `text` (headless) that is quite long **Markdown** failure `text` (headless) that is quite long ",
+    "label": null,
+    "spoken": "vault cleanup hit a snag — Markdown failure text that is quite long Markdown failure text that is quite long Markdown failure text that is quite lo"
+  },
+  {
+    "skill": "voice-ask",
+    "status": "running",
+    "summary": "still going",
+    "label": "weather",
+    "spoken": "weather ask hit a snag — still going"
+  },
+  {
+    "skill": "plan-tomorrow",
+    "status": "ok",
+    "summary": "Tomorrow's note drafted at daily-notes/2026-09-10.md",
+    "spoken": "plan tomorrow is done. Tomorrow's note drafted at the report"
+  }
+]

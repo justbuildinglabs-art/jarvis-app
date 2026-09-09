@@ -1,0 +1,89 @@
+{
+  "main": {
+    "params": [
+      {
+        "name": "seconds",
+        "annotation": "float",
+        "default": null
+      }
+    ],
+    "async": true
+  },
+  "connect": [
+    {
+      "in": "main",
+      "func": "websockets.connect",
+      "args": [
+        "\"ws://127.0.0.1:4871/events\""
+      ],
+      "kwargs": {}
+    }
+  ],
+  "url_literal": "ws://127.0.0.1:4871/events",
+  "wait_for": [
+    {
+      "in": "main",
+      "func": "asyncio.wait_for",
+      "args": [
+        "ws.recv()"
+      ],
+      "kwargs": {
+        "timeout": "left"
+      }
+    }
+  ],
+  "main_guard": {
+    "test": "__name__ == \"__main__\"",
+    "run": "asyncio.run(main(float(sys.argv[1]) if len(sys.argv) > 1 else 15.0))",
+    "seconds_expr": "float(sys.argv[1]) if len(sys.argv) > 1 else 15.0"
+  },
+  "uses_sys_argv": true,
+  "string_constants": [
+    "EVENT",
+    "__main__",
+    "connected",
+    "done",
+    "ws://127.0.0.1:4871/events"
+  ],
+  "prints": [
+    "print(\"connected\", flush=True)",
+    "print(\"EVENT\", msg, flush=True)",
+    "print(\"done\", flush=True)"
+  ],
+  "skeleton": {
+    "qualname": "main",
+    "async": true,
+    "decorators": [],
+    "params": [
+      {
+        "name": "seconds",
+        "annotation": "float",
+        "default": null
+      }
+    ],
+    "ifs": [
+      "left <= 0"
+    ],
+    "loops": [
+      "True"
+    ],
+    "withs": [],
+    "calls": [
+      "websockets.connect(\"ws://127.0.0.1:4871/events\")",
+      "asyncio.get_running_loop()",
+      "loop.time()",
+      "loop.time()",
+      "asyncio.wait_for(ws.recv(), timeout=left)",
+      "ws.recv()"
+    ],
+    "yields": [],
+    "awaits": [
+      "asyncio.wait_for(ws.recv(), timeout=left)"
+    ],
+    "returns": [],
+    "excepts": [
+      "asyncio.TimeoutError"
+    ],
+    "globals": []
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "a1a1a1a1-1111-4111-8111-a1a1a1a1a1a1",
+    "skill": "inbox-brief",
+    "label": null,
+    "ts": "2026-09-09T15:29:00.000Z"
+  },
+  {
+    "id": "b2b2b2b2-2222-4222-8222-b2b2b2b2b2b2",
+    "skill": "voice-ask",
+    "label": "summarize week three",
+    "ts": "2026-09-09T15:29:30.000Z"
+  }
+]

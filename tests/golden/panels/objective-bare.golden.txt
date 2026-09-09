@@ -1,0 +1,18 @@
+<section class="objective boot-stagger " style="animation-delay:0.58s">
+<div class="obj-label">North Star · Road to 100K</div>
+<div class="big">—<span class="unit">SUBS</span>
+</div>
+<div class="progress">
+<i style="width:0%">
+</i>
+</div>
+<div class="sub">
+<span>target <b>100,000</b>
+</span>
+<span>this week <b>—</b>
+</span>
+<span>
+<b>0.0%</b>
+</span>
+</div>
+</section>

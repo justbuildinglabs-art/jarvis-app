@@ -1,0 +1,2 @@
+[2026-09-09T15:30:00.000Z] aabbccdd-exit1: running skill=vault-cleanup
+[2026-09-09T15:30:00.000Z] aabbccdd-exit1: completed exit=1 status=error

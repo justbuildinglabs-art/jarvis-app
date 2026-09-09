@@ -1,0 +1,8 @@
+{
+  "tier": 3,
+  "reply": "The inbox brief is already in the works — I'll dig into the rest of that and get back to you.",
+  "engine": "local",
+  "panels": [
+    "pipeline"
+  ]
+}

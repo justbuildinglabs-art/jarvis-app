@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-01",
+  "isToday": false,
+  "top3": [
+    {
+      "text": "Old item one",
+      "done": true
+    },
+    {
+      "text": "Old item two",
+      "done": true
+    },
+    {
+      "text": "Old item three",
+      "done": false
+    }
+  ],
+  "schedule": [
+    {
+      "time": "10:00",
+      "item": "Old meeting"
+    }
+  ],
+  "focus": "Old focus line."
+}

@@ -1,0 +1,6 @@
+[
+  "transcript",
+  "wake",
+  "wake_error",
+  "wake_timeout"
+]

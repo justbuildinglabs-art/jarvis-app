@@ -1,0 +1,107 @@
+/* Instrument chrome — corner brackets, tick rules, scanline.
+   
+   Density without boxing anything in. Position in the cascade matters: these
+   override panel rules above them. */
+
+/* --- instrument chrome (v3) --------------------------------------------------
+   Corner brackets and tick rules, borrowed from the flight-instrument idiom
+   rather than any particular fiction. Everything here is additive and uses
+   longhand animation properties only: .boot-stagger drives every panel from
+   opacity:0 via `boot-in ... forwards`, and an `animation` SHORTHAND anywhere
+   on those elements replaces it, leaving the panel permanently invisible with
+   no error. ---------------------------------------------------------------- */
+
+.block > .section-title::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 7px;
+  vertical-align: middle;
+  border: 1px solid var(--ember);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  opacity: 0.8;
+}
+
+/* bracket the corners of each panel without drawing a box around it */
+.block {
+  position: relative;
+}
+.block::before,
+.block::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  pointer-events: none;
+  border: 1px solid var(--line);
+  opacity: 0.75;
+}
+.block::before {
+  top: -3px;
+  left: -6px;
+  border-right: 0;
+  border-bottom: 0;
+}
+.block::after {
+  bottom: -3px;
+  right: -6px;
+  border-left: 0;
+  border-top: 0;
+}
+
+/* hairline tick rule under section titles — instrument density, not decoration */
+.section-title {
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--line) 0 1px,
+    transparent 1px 7px
+  );
+  opacity: 0.5;
+}
+
+/* faint scanline over the whole stage, generated rather than an image request */
+.stage::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: repeating-linear-gradient(
+    0deg,
+    hsl(0 0% 60% / 0.016) 0 1px,
+    transparent 1px 3px
+  );
+}
+
+/* concentric ring behind the graph — reads as an instrument bezel and gives
+   the node cloud a horizon to sit in */
+.stage::before {
+  content: "";
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: min(62vh, 62vw);
+  height: min(62vh, 62vw);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border: 1px solid hsl(0 0% 60% / 0.1);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px hsl(0 0% 60% / 0.04),
+    inset 0 0 90px hsl(0 0% 50% / 0.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage::after { display: none; }
+}

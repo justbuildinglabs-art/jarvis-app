@@ -1,0 +1,52 @@
+{
+  "empty_object": {
+    "title": "",
+    "url": "",
+    "video_id": "",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "published_at": "",
+    "status": "?"
+  },
+  "strings_for_numbers": {
+    "title": "42",
+    "url": "false",
+    "video_id": "",
+    "views": 18400,
+    "likes": null,
+    "comments": 0,
+    "published_at": "",
+    "status": "?"
+  },
+  "nulls": {
+    "title": "",
+    "url": "",
+    "video_id": "",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "published_at": "",
+    "status": "?"
+  },
+  "extra_fields_ignored": {
+    "title": "t",
+    "url": "",
+    "video_id": "",
+    "views": 1.75,
+    "likes": -3,
+    "comments": 0,
+    "published_at": "",
+    "status": "?"
+  },
+  "array_document": {
+    "title": "",
+    "url": "",
+    "video_id": "",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "published_at": "",
+    "status": "?"
+  }
+}

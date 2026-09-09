@@ -1,0 +1,62 @@
+/* The glow on whichever panel the voice reply is talking about. */
+
+/* --- P3 choreography — panel Jarvis is talking about glows ---------------- */
+
+/* NOTE: no `animation` on .voice-hot itself — .boot-stagger's boot-in uses
+   `forwards` from opacity:0, so replacing it would blank the panel.
+   The pulse lives on the ::before overlay instead. */
+
+.voice-hot {
+  position: relative; /* .objective lacks .block's relative — anchor ::before */
+}
+
+.voice-hot .sec-title,
+.voice-hot .obj-label {
+  color: hsl(0 0% 72%);
+  text-shadow: 0 0 12px hsl(0 0% 62% / 0.55);
+}
+
+.voice-hot::before {
+  content: "";
+  position: absolute;
+  inset: -10px -14px;
+  pointer-events: none;
+  border: 1px solid hsl(0 0% 62% / 0.35);
+  background: radial-gradient(ellipse at 50% 0%, hsl(0 0% 62% / 0.07), transparent 70%);
+  box-shadow: 0 0 24px hsl(0 0% 55% / 0.12) inset, 0 0 18px hsl(0 0% 55% / 0.1);
+  animation: voice-hot-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes voice-hot-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+.sec-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  /* Michroma stays on the headers — short, uppercase and letterspaced is
+     exactly where a display face works. Cyan here is the theme accent. */
+  font-family: var(--font-display), sans-serif;
+  font-size: 9.5px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 9px;
+}
+
+.sec-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  align-self: center;
+  background: linear-gradient(90deg, var(--line), transparent);
+}
+
+.sec-title .tick {
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  font-size: 7.5px;
+}

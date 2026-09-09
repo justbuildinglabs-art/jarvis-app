@@ -1,0 +1,122 @@
+{
+  "auto · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "auto · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "rules · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "rules · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "haiku · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "haiku · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "local · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "local · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "cli · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "cli · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "AUTO · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "AUTO · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "nonsense · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "nonsense · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  },
+  "(empty) · fallthrough utterance": {
+    "tier": 3,
+    "reply": "Working on it — I'll speak up when it lands.",
+    "engine": "rules",
+    "fallthrough": true
+  },
+  "(empty) · rules answers outright": {
+    "tier": 1,
+    "skill": "morning-report",
+    "reply": "On it — morning report coming up.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ]
+  }
+}

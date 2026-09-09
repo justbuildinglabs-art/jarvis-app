@@ -1,0 +1,11 @@
+[
+  {
+    "url": "http://127.0.0.1:1/stt",
+    "method": "POST",
+    "headers": {
+      "content-type": "audio/webm"
+    },
+    "bodyBytes": 1000,
+    "signal": true
+  }
+]

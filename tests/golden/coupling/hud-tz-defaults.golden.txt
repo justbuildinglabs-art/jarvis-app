@@ -1,0 +1,10 @@
+{
+  "defaults": {
+    "runner": "America/Chicago",
+    "config": "America/Chicago"
+  },
+  "override": {
+    "runner": "Asia/Tokyo",
+    "config": "Asia/Tokyo"
+  }
+}

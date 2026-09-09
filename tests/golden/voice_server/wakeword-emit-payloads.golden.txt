@@ -1,0 +1,76 @@
+[
+  {
+    "in": "WakeListener._run",
+    "source": "{\"type\": \"wake\", \"score\": round(score, 3)}",
+    "keys": [
+      "type",
+      "score"
+    ],
+    "shape": {
+      "type": "\"wake\"",
+      "score": "round(score, 3)"
+    },
+    "type": "wake"
+  },
+  {
+    "in": "WakeListener._capture",
+    "source": "{\"type\": \"wake_timeout\"}",
+    "keys": [
+      "type"
+    ],
+    "shape": {
+      "type": "\"wake_timeout\""
+    },
+    "type": "wake_timeout"
+  },
+  {
+    "in": "WakeListener._capture",
+    "source": "{\"type\": \"wake_timeout\"}",
+    "keys": [
+      "type"
+    ],
+    "shape": {
+      "type": "\"wake_timeout\""
+    },
+    "type": "wake_timeout"
+  },
+  {
+    "in": "WakeListener._capture",
+    "source": "{\"type\": \"wake_error\", \"error\": str(e)}",
+    "keys": [
+      "type",
+      "error"
+    ],
+    "shape": {
+      "type": "\"wake_error\"",
+      "error": "str(e)"
+    },
+    "type": "wake_error"
+  },
+  {
+    "in": "WakeListener._capture",
+    "source": "{\"type\": \"transcript\", \"text\": text, \"ms\": int((time.time() - t1) * 1000)}",
+    "keys": [
+      "type",
+      "text",
+      "ms"
+    ],
+    "shape": {
+      "type": "\"transcript\"",
+      "text": "text",
+      "ms": "int((time.time() - t1) * 1000)"
+    },
+    "type": "transcript"
+  },
+  {
+    "in": "WakeListener._capture",
+    "source": "{\"type\": \"wake_timeout\"}",
+    "keys": [
+      "type"
+    ],
+    "shape": {
+      "type": "\"wake_timeout\""
+    },
+    "type": "wake_timeout"
+  }
+]

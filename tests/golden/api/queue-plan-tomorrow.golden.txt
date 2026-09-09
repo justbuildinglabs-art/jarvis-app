@@ -1,0 +1,24 @@
+{
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": null,
+      "x-voice-engine": null
+    },
+    "body": {
+      "ok": true,
+      "id": "<UUID>",
+      "skill": "plan-tomorrow"
+    }
+  },
+  "intentFile": "<UUID>.json",
+  "intentRaw": "{\n  \"id\": \"<UUID>\",\n  \"skill\": \"plan-tomorrow\",\n  \"args\": {},\n  \"ts\": \"2026-09-09T15:30:00.000Z\",\n  \"source\": \"vault-hud\"\n}",
+  "intent": {
+    "id": "<UUID>",
+    "skill": "plan-tomorrow",
+    "args": {},
+    "ts": "2026-09-09T15:30:00.000Z",
+    "source": "vault-hud"
+  }
+}

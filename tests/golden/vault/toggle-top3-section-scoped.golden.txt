@@ -1,0 +1,5 @@
+{
+  "first": true,
+  "second": false,
+  "note": "## Schedule\n\n1. [ ] not a priority\n\n## Top 3 Priorities\n\n- [ ] bullet style is not counted\n1. [ ] first\ntext between\n2. [x] second\n\n## Notes\n\n3. [ ] not a priority either\n"
+}

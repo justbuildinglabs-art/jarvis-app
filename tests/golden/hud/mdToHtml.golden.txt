@@ -1,0 +1,21 @@
+<h2>Title one</h2>
+<h3>Two</h3>
+<h4>Three</h4>
+<h5>Four</h5>
+<p>##### Five is capped</p>
+<p>Plain paragraph with <strong>bold</strong>, <em>italic</em>, <code>code</code>, and a <a href="https://example.com/a?b=1&amp;c=2" target="_blank" rel="noreferrer">link</a>.</p>
+<p>Unsafe &lt;script&gt;alert(1)&lt;/script&gt; &amp; ampersand &gt; gt.</p>
+<ul>
+<li>bullet one</li>
+<li>bullet <strong>two</strong></li>
+<li>star bullet</li>
+<li>indented bullet</li>
+</ul>
+<p>text right after a list</p>
+<hr/>
+<hr/>
+<p>-- not a rule</p>
+<p>[not a link](ftp://x)</p>
+<p>**unclosed bold</p>
+<p>trailing spaces</p>
+<p>last line</p>

@@ -1,0 +1,69 @@
+{
+  "qualname": "WakeListener._capture",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "self",
+      "annotation": null,
+      "default": null
+    },
+    {
+      "name": "stream",
+      "annotation": null,
+      "default": null
+    },
+    {
+      "name": "noise",
+      "annotation": null,
+      "default": null
+    }
+  ],
+  "ifs": [
+    "rms >= speech_gate",
+    "started and silent >= TRAIL_SILENCE_FRAMES",
+    "not started and time.time() - t0 > NO_SPEECH_S",
+    "not started",
+    "text"
+  ],
+  "loops": [
+    "time.time() - t0 < MAX_UTTERANCE_S"
+  ],
+  "withs": [],
+  "calls": [
+    "max(noise * 3.0, 250.0)",
+    "time.time()",
+    "time.time()",
+    "stream.read(FRAME)",
+    "frames.append(pcm.copy())",
+    "pcm.copy()",
+    "float(np.sqrt(np.mean(pcm.astype(np.float32) ** 2)))",
+    "np.sqrt(np.mean(pcm.astype(np.float32) ** 2))",
+    "np.mean(pcm.astype(np.float32) ** 2)",
+    "pcm.astype(np.float32)",
+    "time.time()",
+    "self.emit({\"type\": \"wake_timeout\"})",
+    "self.emit({\"type\": \"wake_timeout\"})",
+    "np.concatenate(frames).astype(np.float32)",
+    "np.concatenate(frames)",
+    "time.time()",
+    "self.transcribe_pcm(audio)",
+    "self.emit({\"type\": \"wake_error\", \"error\": str(e)})",
+    "str(e)",
+    "self.emit(\n                {\"type\": \"transcript\", \"text\": text, \"ms\": int((time.time() - t1) * 1000)}\n            )",
+    "int((time.time() - t1) * 1000)",
+    "time.time()",
+    "self.emit({\"type\": \"wake_timeout\"})"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    null,
+    null,
+    null
+  ],
+  "excepts": [
+    "Exception"
+  ],
+  "globals": []
+}

@@ -1,0 +1,17 @@
+{
+  "in": "speak",
+  "func": "StreamingResponse",
+  "args": [
+    "gen()"
+  ],
+  "kwargs": {
+    "media_type": "\"audio/wav\"",
+    "headers": "{\"Cache-Control\": \"no-store\"}"
+  },
+  "kwargs_literal": {
+    "media_type": "audio/wav",
+    "headers": {
+      "Cache-Control": "no-store"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "panel_ids": [
+    "vitals",
+    "pipeline",
+    "diagnostics",
+    "priorities",
+    "schedule",
+    "objective",
+    "documents"
+  ],
+  "hud_hot_panel_literals": [
+    "pipeline",
+    "diagnostics",
+    "schedule",
+    "vitals",
+    "priorities",
+    "documents",
+    "objective"
+  ],
+  "hud_not_in_panel_ids": [],
+  "panel_ids_unused_by_hud": []
+}

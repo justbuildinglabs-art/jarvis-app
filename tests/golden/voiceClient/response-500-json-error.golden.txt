@@ -1,0 +1,9 @@
+{
+  "log": [
+    ">> ws#1 message {\"type\":\"transcript\",\"text\":\"trigger\"}",
+    "onListening(false)",
+    "fetch POST /api/voice/text {\"method\":\"POST\",\"headers\":{\"Content-Type\":\"application/json\"},\"body\":\"{\\\"transcript\\\":\\\"trigger\\\"}\"}",
+    "res(500).json()",
+    "onLog[err] voice command failed: router exploded"
+  ]
+}

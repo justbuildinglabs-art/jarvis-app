@@ -1,0 +1,126 @@
+{
+  "classes": [
+    {
+      "name": "WakeListener",
+      "bases": [],
+      "methods": [
+        {
+          "name": "__init__",
+          "params": [
+            {
+              "name": "self",
+              "annotation": null,
+              "default": null
+            },
+            {
+              "name": "transcribe_pcm",
+              "annotation": null,
+              "default": null
+            },
+            {
+              "name": "emit",
+              "annotation": null,
+              "default": null
+            },
+            {
+              "name": "threshold",
+              "annotation": null,
+              "default": "0.5"
+            }
+          ],
+          "async": false
+        },
+        {
+          "name": "start",
+          "params": [
+            {
+              "name": "self",
+              "annotation": null,
+              "default": null
+            }
+          ],
+          "async": false
+        },
+        {
+          "name": "_run",
+          "params": [
+            {
+              "name": "self",
+              "annotation": null,
+              "default": null
+            }
+          ],
+          "async": false
+        },
+        {
+          "name": "_capture",
+          "params": [
+            {
+              "name": "self",
+              "annotation": null,
+              "default": null
+            },
+            {
+              "name": "stream",
+              "annotation": null,
+              "default": null
+            },
+            {
+              "name": "noise",
+              "annotation": null,
+              "default": null
+            }
+          ],
+          "async": false
+        }
+      ],
+      "init_attrs": [
+        {
+          "attr": "self.transcribe_pcm",
+          "value": "transcribe_pcm"
+        },
+        {
+          "attr": "self.emit",
+          "value": "emit"
+        },
+        {
+          "attr": "self.threshold",
+          "value": "threshold"
+        },
+        {
+          "attr": "self.ok",
+          "value": "False"
+        },
+        {
+          "attr": "self.error",
+          "value": "None"
+        },
+        {
+          "attr": "self._thread",
+          "value": "threading.Thread(target=self._run, daemon=True, name=\"wake-listener\")"
+        }
+      ]
+    }
+  ],
+  "thread": [
+    {
+      "in": "WakeListener.__init__",
+      "func": "threading.Thread",
+      "args": [],
+      "kwargs": {
+        "target": "self._run",
+        "daemon": "True",
+        "name": "\"wake-listener\""
+      }
+    }
+  ],
+  "thread_kwargs_literal": [
+    {
+      "target": {
+        "<expr>": "self._run"
+      },
+      "daemon": true,
+      "name": "wake-listener"
+    }
+  ]
+}

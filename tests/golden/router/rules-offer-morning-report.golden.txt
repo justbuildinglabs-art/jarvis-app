@@ -1,0 +1,63 @@
+[
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yeah go ahead",
+    "result": {
+      "tier": 3,
+      "reply": "Working on it — I'll speak up when it lands.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "go ahead",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report running now.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "no",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "later",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report coming up.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  }
+]

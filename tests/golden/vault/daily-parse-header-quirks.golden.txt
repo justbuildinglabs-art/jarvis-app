@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-09",
+  "isToday": true,
+  "top3": [
+    {
+      "text": "first section item",
+      "done": false
+    },
+    {
+      "text": "still counted after h3",
+      "done": true
+    },
+    {
+      "text": "duplicate section accumulates",
+      "done": true
+    }
+  ],
+  "schedule": [
+    {
+      "time": "10:00",
+      "item": "first schedule"
+    },
+    {
+      "time": "11:00",
+      "item": "second schedule section also accumulates"
+    }
+  ],
+  "focus": ""
+}

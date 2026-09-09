@@ -1,0 +1,23 @@
+{
+  "payload": {
+    "transcript": "show me the morning report",
+    "tier": 2,
+    "skill": null,
+    "queued": null,
+    "reply": "Here it is — the voice ask from earlier. On screen now.",
+    "engine": "rules",
+    "panels": [
+      "documents"
+    ],
+    "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+    "reveal": "open",
+    "reveals": []
+  },
+  "intent": null,
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "show me the morning report",
+    "jarvis": "Here it is — the voice ask from earlier. On screen now.",
+    "tier": 2
+  }
+}

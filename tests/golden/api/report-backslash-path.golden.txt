@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "path": "inbox\\reports\\vault-cleanup\\2026-09-07-cleanup-55555555.md",
+    "content": "---\ndate: 2026-09-07\nskill: vault-cleanup\ntags: [cleanup, ops]\n---\n\n# Vault cleanup\n\nArchived 4 stale files.\n"
+  }
+}

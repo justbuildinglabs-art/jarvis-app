@@ -1,0 +1,43 @@
+{
+  "lowercase": {
+    "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "heads": [
+      "lowercase header"
+    ],
+    "links": [
+      null
+    ]
+  },
+  "uppercase": {
+    "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "heads": [
+      "uppercase header"
+    ],
+    "links": [
+      null
+    ]
+  },
+  "suffix": {
+    "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "heads": [
+      "suffix after Headlines"
+    ],
+    "links": [
+      null
+    ]
+  },
+  "singular": {
+    "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "heads": [],
+    "links": []
+  },
+  "twoSpaces": {
+    "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+    "heads": [
+      "two spaces after ##"
+    ],
+    "links": [
+      null
+    ]
+  }
+}

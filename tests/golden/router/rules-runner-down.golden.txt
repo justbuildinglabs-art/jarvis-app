@@ -1,0 +1,375 @@
+[
+  {
+    "transcript": "morning report",
+    "result": {
+      "tier": 1,
+      "skill": "morning-report",
+      "reply": "On it — morning report but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "inbox brief",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "Inbox Summary",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "plan today",
+    "result": {
+      "tier": 1,
+      "skill": "plan-today",
+      "reply": "On it — plan today but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "yes",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "sounds good",
+    "result": {
+      "tier": 1,
+      "skill": "inbox-brief",
+      "reply": "On it — inbox brief but heads up — the runner daemon looks down, so it'll sit in the queue until that's restarted.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "no",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "no thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "brief me",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Heads-up — the background runner looks offline. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 368
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "good morning",
+    "result": {
+      "tier": 2,
+      "reply": "Good morning. You're sitting at about 288 thousand followers across all platforms — up about 2 thousand this week. The latest video's pulling about 10 thousand views a day — 18 thousand so far. Big story in AI today: Anthropic posts its first profit. Biggest thing on today's board: Rewrite the router behind the suite. Heads-up — the background runner looks offline. Want me to run the daily inbox audit, or do you have anything else in mind?",
+      "engine": "rules",
+      "panels": [
+        "priorities",
+        "schedule",
+        "objective",
+        "vitals",
+        "documents"
+      ],
+      "deliverable": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+      "reveals": [
+        {
+          "kind": "link",
+          "target": "https://www.youtube.com/watch?v=fixture01",
+          "label": "latest deploy",
+          "at": 115
+        },
+        {
+          "kind": "doc",
+          "target": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+          "label": "morning report",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://example.com/anthropic-profit",
+          "label": "source",
+          "at": 194
+        },
+        {
+          "kind": "link",
+          "target": "https://mail.google.com",
+          "label": "inbox",
+          "at": 368
+        }
+      ]
+    }
+  },
+  {
+    "transcript": "hey",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "what's up",
+    "result": {
+      "tier": 2,
+      "reply": "Not much — the runner's mid-job and 2 goals still open. Say brief me if you want the rundown.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "thanks",
+    "result": {
+      "tier": 2,
+      "reply": "Anytime.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "ok",
+    "result": {
+      "tier": 2,
+      "reply": "Standing by.",
+      "engine": "rules"
+    }
+  },
+  {
+    "transcript": "is the runner alive",
+    "result": {
+      "tier": 2,
+      "reply": "The runner's heartbeat has gone stale — it looks down.",
+      "engine": "rules",
+      "panels": [
+        "diagnostics",
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "what's in the queue",
+    "result": {
+      "tier": 2,
+      "reply": "2 things in the queue: inbox brief, voice ask.",
+      "engine": "rules",
+      "panels": [
+        "pipeline"
+      ]
+    }
+  },
+  {
+    "transcript": "top 3",
+    "result": {
+      "tier": 2,
+      "reply": "2 still open: Rewrite the router behind the suite, and Reply to the sponsor email — $4,200 offer.",
+      "engine": "rules",
+      "panels": [
+        "priorities"
+      ]
+    }
+  },
+  {
+    "transcript": "schedule",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "what's next today",
+    "result": {
+      "tier": 2,
+      "reply": "Coming up at 1 PM — Edit session.",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "focus",
+    "result": {
+      "tier": 2,
+      "reply": "Today's focus is Land the characterization suite, then start the seams..",
+      "engine": "rules",
+      "panels": [
+        "schedule"
+      ]
+    }
+  },
+  {
+    "transcript": "last run",
+    "result": {
+      "tier": 2,
+      "reply": "The last run was voice ask — it finished fine. Fable 5 shipped this morning with a 1M-token context window and $200M in launch-week revenue (headless).",
+      "engine": "rules",
+      "panels": [
+        "pipeline",
+        "diagnostics"
+      ]
+    }
+  },
+  {
+    "transcript": "how many subscribers",
+    "result": {
+      "tier": 2,
+      "reply": "You're at 50 thousand YouTube subscribers — up about 805 this week.",
+      "engine": "rules",
+      "panels": [
+        "vitals"
+      ]
+    }
+  },
+  {
+    "transcript": "what's the mrr",
+    "result": {
+      "tier": 2,
+      "reply": "Revenue's sitting at about $4,200 a month — 42 percent of the way to ten K. Fair warning — that's still a simulated number.",
+      "engine": "rules",
+      "panels": [
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "how's the latest video",
+    "result": {
+      "tier": 2,
+      "reply": "The latest video — Fixture Upload — golden vault — is at 18 thousand views and 231 likes.",
+      "engine": "rules",
+      "panels": [
+        "vitals",
+        "objective"
+      ]
+    }
+  },
+  {
+    "transcript": "show me that",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "show me the morning report",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the voice ask from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/voice/2026-09-09-hey-jarvis-can-you-tell-me-about-the-fable-five-22222222.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "open the cleanup",
+    "result": {
+      "tier": 2,
+      "reply": "Here it is — the vault cleanup from earlier. On screen now.",
+      "engine": "rules",
+      "panels": [
+        "documents"
+      ],
+      "deliverable": "inbox/reports/vault-cleanup/2026-09-07-cleanup-55555555.md",
+      "reveal": "open"
+    }
+  },
+  {
+    "transcript": "tell me a joke",
+    "result": {
+      "tier": 3,
+      "reply": "I've queued that, but heads up — the runner daemon looks down, so it'll wait until that's restarted.",
+      "engine": "rules",
+      "fallthrough": true
+    }
+  },
+  {
+    "transcript": "",
+    "result": {
+      "tier": 3,
+      "reply": "I didn't catch that.",
+      "engine": "rules"
+    }
+  }
+]

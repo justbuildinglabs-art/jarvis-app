@@ -1,0 +1,174 @@
+/* The stage — the 3D core, its canvas, and the atmosphere over it.
+   
+   The scrims are gradients rather than boxes on purpose: text needs a legible
+   ground, but a panel with edges would frame the core and make it a widget. */
+
+/* --- stage + atmosphere ------------------------------------------------- */
+
+.stage {
+  position: fixed;
+  inset: 0;
+}
+
+.ember-core {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* dither core — square (shader has no aspect correction), centered, slightly high */
+.dither-core {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: min(74vh, 46vw); /* sized up to offset shader headroom — visual orb same as before */
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* graph core — fullscreen 3D node cloud + ring chrome */
+.graph-core {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* centerpiece lands LAST: panels cascade 0.05–0.5s, then the core
+     blooms out of black — overshoot brightness then settle, like ignition */
+  opacity: 0;
+  animation: core-ignite 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.65s forwards;
+}
+
+@keyframes core-ignite {
+  0% { opacity: 0; transform: scale(0.88); filter: blur(16px) brightness(2.2); }
+  55% { opacity: 1; filter: blur(3px) brightness(1.35); }
+  100% { opacity: 1; transform: none; filter: blur(0) brightness(1); }
+}
+
+.graph-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.bg-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 75% 70% at 50% 44%,
+    transparent 55%,
+    oklch(0.06 0.003 270 / 0.7) 100%
+  );
+}
+
+
+/* legibility scrims — gradients, not boxes; the core stays the protagonist */
+.scrim {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+.scrim-l {
+  inset: 0 auto 0 0;
+  width: 30vw;
+  background: linear-gradient(90deg, oklch(0.1 0.003 270 / 0.85), transparent);
+}
+.scrim-r {
+  inset: 0 0 0 auto;
+  width: 30vw;
+  background: linear-gradient(270deg, oklch(0.1 0.003 270 / 0.85), transparent);
+}
+.scrim-b {
+  inset: auto 0 0 0;
+  height: 32vh;
+  background: linear-gradient(0deg, oklch(0.1 0.003 270 / 0.9), transparent);
+}
+.scrim-t {
+  inset: 0 0 auto 0;
+  height: 14vh;
+  background: linear-gradient(180deg, oklch(0.1 0.003 270 / 0.75), transparent);
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* flat backdrop grid — graph-paper field across the whole stage. Major line
+   every 5 cells; a radial mask dissolves the lines the further out they go,
+   so the field is brightest around the core and fades to nothing at the
+   edges.
+   z-index 3 is deliberate: it rides ABOVE the scrims (z 2), whose dark
+   gradients cover ~60% of the width and would otherwise wash the grid out
+   to nothing, and below the HUD text (z 5), which stays fully legible. */
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  /* deliberately faint — the HUD content is the priority; the grid should
+     read as atmosphere behind it, never compete with the text on top */
+  background-image:
+    linear-gradient(90deg, rgba(120, 165, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(120, 165, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 165, 255, 0.075) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(120, 165, 255, 0.075) 1px, transparent 1px);
+  background-size: 220px 220px, 220px 220px, 44px 44px, 44px 44px;
+  background-position: 50% 50%;
+  -webkit-mask-image: radial-gradient(
+    ellipse 78% 74% at 50% 48%,
+    rgb(0 0 0) 0%,
+    rgb(0 0 0 / 0.5) 58%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 78% 74% at 50% 48%,
+    rgb(0 0 0) 0%,
+    rgb(0 0 0 / 0.5) 58%,
+    transparent 100%
+  );
+  animation: fade-in 1.6s ease 0.4s both;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* compass bezel — tick ring + degree scale surrounding the core. Static
+   white chrome like the rest of the instrument; two arc segments drift
+   slowly in opposite directions for life. */
+.compass {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(78vh, 46vw);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  animation: fade-in 1.2s ease 0.85s forwards;
+}
+
+.compass-num {
+  font-family: var(--font-mono), sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  fill: rgba(255, 255, 255, 0.38);
+}
+
+.compass-spin-a,
+.compass-spin-b {
+  transform-box: view-box;
+  transform-origin: center;
+}
+.compass-spin-a { animation: compass-spin 210s linear infinite; }
+.compass-spin-b { animation: compass-spin 150s linear infinite reverse; }
+
+@keyframes compass-spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,13 @@
+{
+  "log": [
+    ">> ws#3 close",
+    "setTimeout(5000ms)",
+    "tick 5000ms",
+    "WebSocket.new(ws://127.0.0.1:1/events) THROWS",
+    "setTimeout(10000ms)",
+    "tick 9999ms",
+    "tick 1ms",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#4",
+    ">> ws#4 open"
+  ]
+}

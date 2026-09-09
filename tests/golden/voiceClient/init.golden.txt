@@ -1,0 +1,15 @@
+{
+  "wsUrl": "ws://127.0.0.1:1/events",
+  "log": [
+    "window.addEventListener(pointerdown)",
+    "window.addEventListener(keydown)",
+    "fetch GET /api/speak {\"cache\":\"no-store\"}",
+    "WebSocket.new(ws://127.0.0.1:1/events) → ws#1",
+    "-- sync part done --",
+    "res(200).json()",
+    "onLog[ok] voice link armed — kokoro-test · local",
+    "-- init() again --",
+    "-- ws open --",
+    ">> ws#1 open"
+  ]
+}

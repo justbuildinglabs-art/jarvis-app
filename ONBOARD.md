@@ -54,15 +54,16 @@ given below, and explain how to start everything.
    is fake. What do you actually want on the wall — YouTube subs? GitHub
    stars? Sales? Anything you can script into that CSV works." → Help them
    sketch a small script (cron/Task Scheduler) appending rows; offer to
-   write it. Update `SOCIAL_DEFS` in `components/HUD.tsx` if their sources
-   aren't youtube/instagram.
+   write it. Update `SOCIAL_DEFS` in `components/hud/panels/Vitals.tsx` if
+   their sources aren't youtube/instagram.
 6. **Morning report focus.** "The morning-report skill researches your
-   field each day. What's your beat?" → Edit the `morning-report` prompt in
-   `runner/runner.js` (the research scope sentence). `node --check` after.
+   field each day. What's your beat?" → Edit the research-scope sentence in
+   `skills/definitions/morning-report.js`.
 7. **Email triage.** "Want the inbox-brief skill? It needs the Anthropic
-   Gmail connector enabled in your Claude account." → If no, remove
-   `inbox-brief` from `ALLOWED_SKILLS` (lib/skills.ts), `DECK_SKILLS`
-   (components/HUD.tsx), and the runner case — all three, see couplings.
+   Gmail connector enabled in your Claude account." → If no, delete
+   `skills/definitions/inbox-brief.js` and drop its import from
+   `skills/index.js`. That is the whole edit: the Ops Board button, the queue
+   allowlist and the voice aliases all derive from that one file.
 8. **Calendar.** "Want plan-today to pull your Google Calendar? Needs the
    Anthropic Google Calendar connector." → If no, note that plan-today
    still works, just without the schedule.
@@ -90,14 +91,14 @@ given below, and explain how to start everything.
     SKILL.md and ask: "I found these skills already on your machine — want
     any pinned to the ops board and voice layer?" Every one they choose has
     to be threaded through all of its coupling points (see the Skill roster
-    row in the Edit Manifest): add the name to `ALLOWED_SKILLS`
-    (lib/skills.ts) and to `DECK_SKILLS` (components/HUD.tsx), give it a
-    `deliverablePathFor()` path — `inbox/reports/<skill>/<date>-<id8>.md`
-    is a reasonable default — and add a `buildPrompt()` branch whose prompt
-    reads `${AUTONOMOUS_PREFIX}` + "Run the /<skill> skill. Write the result
-    at exactly ${deliverable} ... End your reply with: SAVED ${deliverable}"
-    so their own installed skill does the work, which headless `claude -p`
-    can invoke. Follow with `node --check runner/runner.js`. **Caution them
+    row in the Edit Manifest): copy an existing file in
+    `skills/definitions/`, give it an `id`, a `label`, `aliases`, a
+    `deliverable` path — `inbox/reports/<skill>/<date>-<id8>.md` is a
+    reasonable default — and a `prompt` that reads `${prefix}` + "Run the
+    /<skill> skill. Write the result at exactly ${deliverable} ... End your
+    reply with: SAVED ${deliverable}", so their own installed skill does the
+    work, which headless `claude -p` can invoke. Then import it in
+    `skills/index.js` and run `npm run check`. **Caution them
     each time:** the board flow — Paper Trail panel, document cards, spoken
     summary — only functions when the skill writes a markdown artifact to
     its vault path and opens its reply with a single conversational
@@ -156,20 +157,20 @@ server. That's the whole job.
 | What | File · symbol | How |
 |---|---|---|
 | Vault path | `lib/config.ts` `VAULT_ROOT` (reads env) | `VAULT_ROOT` in `~/.claude/.env` |
-| Timezone | `lib/config.ts` `HUD_TZ` + `runner/runner.js` `HUD_TZ` | `HUD_TZ` in `~/.claude/.env` (one var, both read it) |
+| Timezone | `lib/config.ts` `HUD_TZ` + `runner/lib/config.js` `HUD_TZ` | `HUD_TZ` in `~/.claude/.env` (one var, both read it) |
 | Your name | `lib/config.ts` `USER_NAME` | `HUD_USER_NAME` env |
-| Voice server URL | `lib/config.ts` `VOICE_SERVER_URL`; client WS in `lib/voiceClient.ts` | `VOICE_SERVER_URL` env + `NEXT_PUBLIC_VOICE_WS` in `.env.local` |
+| Voice server URL | `lib/config.ts` `VOICE_SERVER_URL`; client WS in `lib/voice/constants.ts` | `VOICE_SERVER_URL` env + `NEXT_PUBLIC_VOICE_WS` in `.env.local` |
 | Obsidian deep link | `components/ReportOverlay.tsx` `OBSIDIAN_VAULT` | `NEXT_PUBLIC_OBSIDIAN_VAULT` in `.env.local` |
-| Skill roster | `lib/skills.ts` `ALLOWED_SKILLS` ⟷ `runner/runner.js` `buildPrompt()`+`deliverablePathFor()` ⟷ `components/HUD.tsx` `DECK_SKILLS` | edit all three together |
-| Voice aliases for skills | `lib/router.ts` `SKILL_ALIASES` | regex per skill; must also accept the wording printed on the Ops Board buttons |
-| Spoken offers (**load-bearing**) | `lib/router.ts` `briefingOffer()` ⟷ `OFFER_SKILLS` keys ⟷ `pendingOffer()` regex | the offer sentence is parsed back verbatim when the user says "yes" — change all three together or "yes" stops working |
-| Morning-report beat | `runner/runner.js` `morning-report` case | edit the research-scope sentence; `node --check` after |
-| Telemetry panels | `components/HUD.tsx` `SOCIAL_DEFS` | match your metrics.csv sources |
-| TTS voice | `voice-server/server.py` via `KOKORO_VOICE`, `KOKORO_SPEED` | audition first |
-| STT vocab bias | `voice-server/server.py` `WHISPER_PROMPT` | list YOUR acronyms + skill names |
+| Skill roster | `skills/definitions/*.js` + `skills/index.js` | one file per skill; the runner, the Ops Board, the queue API and the voice aliases all derive from it |
+| Voice aliases for skills | each skill's `aliases` in `skills/definitions/` | regex per skill; must also accept the wording printed on its Ops Board button |
+| Spoken offers (**load-bearing**) | `lib/router/answers/briefing.ts` `briefingOffer()` ⟷ `lib/router/offer.ts` `OFFER_SKILLS` + `pendingOffer()` regex | the offer sentence is parsed back verbatim when the user says "yes" — change all three together or "yes" stops working |
+| Morning-report beat | `skills/definitions/morning-report.js` | edit the research-scope sentence in its `prompt` |
+| Telemetry panels | `components/hud/panels/Vitals.tsx` `SOCIAL_DEFS` | match your metrics.csv sources |
+| TTS voice | `voice-server/jarvis_voice/config.py` via `KOKORO_VOICE`, `KOKORO_SPEED` | audition first |
+| STT vocab bias | `voice-server/jarvis_voice/config.py` `WHISPER_PROMPT` | list YOUR acronyms + skill names |
 | Wake word | `voice-server/start-voice-server.vbs` `WAKE_WORD` | off by default (speaker bleed); headphones recommended |
-| Runner model | `runner/runner.js` `CLAUDE_MODEL` | `AGENTIC_OS_MODEL` env; per-ask override allowlist in `MODEL_ALLOWLIST` |
-| Rundown trigger phrases | `lib/router.ts` `BRIEFING_RE` | whole-utterance anchored — keep it that way |
+| Runner model | `runner/lib/config.js` `CLAUDE_MODEL` | `AGENTIC_OS_MODEL` env; per-ask override allowlist in `MODEL_ALLOWLIST` |
+| Rundown trigger phrases | `lib/router/patterns.ts` `BRIEFING_RE` | whole-utterance anchored — keep it that way |
 
 **Rules that hold no matter how far you customize**
 

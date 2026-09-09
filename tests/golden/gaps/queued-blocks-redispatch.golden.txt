@@ -1,0 +1,20 @@
+{
+  "first": {
+    "tier": 1,
+    "skill": "morning-report",
+    "queued": "<UUID>",
+    "reply": "On it — morning report coming up."
+  },
+  "second": {
+    "tier": 2,
+    "skill": null,
+    "queued": null,
+    "reply": "The morning report is already running — I'll let you know the moment it lands."
+  },
+  "explicitRerun": {
+    "tier": 1,
+    "skill": "morning-report",
+    "queued": "<UUID>",
+    "reply": "On it — morning report coming up."
+  }
+}

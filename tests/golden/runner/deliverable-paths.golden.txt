@@ -1,0 +1,29 @@
+{
+  "plan-today": "daily-notes/2026-09-09.md",
+  "plan-tomorrow": "daily-notes/2026-09-10.md",
+  "morning-report": "inbox/reports/morning/2026-09-09-morning-report-abcdef12.md",
+  "inbox-brief": "inbox/reports/inbox-briefs/2026-09-09-abcdef12.md",
+  "vault-cleanup": "inbox/reports/vault-cleanup/2026-09-09-cleanup-abcdef12.md",
+  "voice-ask": "inbox/voice/2026-09-09-summarize-my-week-in-three-bullets-abcdef12.md",
+  "unknown-skill": null,
+  "skill-missing": null,
+  "idVariants": {
+    "shortId": "inbox/reports/inbox-briefs/2026-09-09-ab.md",
+    "exactlyEight": "inbox/reports/inbox-briefs/2026-09-09-12345678.md",
+    "missingId": "inbox/reports/inbox-briefs/2026-09-09-x.md",
+    "emptyId": "inbox/reports/inbox-briefs/2026-09-09-x.md",
+    "numericId": "throws TypeError",
+    "planTodayIgnoresId": "daily-notes/2026-09-09.md"
+  },
+  "voiceAskPromptVariants": {
+    "long": "inbox/voice/2026-09-09-please-summarize-everything-that-happened-this-w-abcdef12.md",
+    "longSlugLength": 48,
+    "unicode": "inbox/voice/2026-09-09-hllo-wrld-caf-nave-abcdef12.md",
+    "punctuation": "inbox/voice/2026-09-09-whats-the-weather-today-now-1-done-abcdef12.md",
+    "missingPrompt": "inbox/voice/2026-09-09-ask-abcdef12.md",
+    "argsMissing": "inbox/voice/2026-09-09-ask-abcdef12.md",
+    "emptyPrompt": "inbox/voice/2026-09-09-ask-abcdef12.md",
+    "whitespacePrompt": "inbox/voice/2026-09-09-untitled-abcdef12.md",
+    "onlyPunctuation": "inbox/voice/2026-09-09-untitled-abcdef12.md"
+  }
+}

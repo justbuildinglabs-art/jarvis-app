@@ -1,0 +1,19 @@
+{
+  "rel": "inbox/reports/morning/2026-09-09-morning-report-deadbeef.md",
+  "heads": [
+    "Anthropic posts its first profit — $559M operating profit on $10.9B quarterly revenue. source",
+    "OpenAI eyes a $1T+ IPO as soon as September; Nvidia lining up ~$100B.",
+    "Google's Gemini crosses 1B monthly users and ships Gemini 3.7 Flash. Unrot and more",
+    "Open-weight push continues with no source link on this one at all",
+    "A fifth headline that the four-headline cap must drop. source",
+    "Sixth, star-bulleted, also past the cap. source"
+  ],
+  "links": [
+    "https://example.com/anthropic-profit",
+    "https://example.com/openai-ipo",
+    "https://example.com/gemini",
+    null,
+    "https://example.com/fifth",
+    "https://example.com/sixth"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "allowed_without_button": [
+    "voice-ask"
+  ],
+  "button_not_allowed": []
+}

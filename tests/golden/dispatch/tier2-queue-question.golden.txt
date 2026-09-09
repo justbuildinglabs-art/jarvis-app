@@ -1,0 +1,23 @@
+{
+  "payload": {
+    "transcript": "what's in the queue",
+    "tier": 2,
+    "skill": null,
+    "queued": null,
+    "reply": "2 things in the queue: inbox brief, voice ask.",
+    "engine": "rules",
+    "panels": [
+      "pipeline"
+    ],
+    "deliverable": null,
+    "reveal": null,
+    "reveals": []
+  },
+  "intent": null,
+  "memory": {
+    "ts": "2026-09-09T15:30:00.000Z",
+    "you": "what's in the queue",
+    "jarvis": "2 things in the queue: inbox brief, voice ask.",
+    "tier": 2
+  }
+}

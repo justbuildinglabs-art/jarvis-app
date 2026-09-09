@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": null,
+    "x-voice-engine": null
+  },
+  "body": {
+    "path": "system/voice/transcript",
+    "content": "# Voice Transcript\n\n*No exchanges yet — hold Space and say something.*"
+  }
+}

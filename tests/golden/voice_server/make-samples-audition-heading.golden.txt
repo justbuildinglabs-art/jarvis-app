@@ -1,0 +1,5 @@
+{
+  "default": "<h2>Kokoro voice audition — current: bm_george x1.00</h2>",
+  "voice+speed": "<h2>Kokoro voice audition — current: bm_lewis x1.08</h2>",
+  "speed-int": "<h2>Kokoro voice audition — current: bm_george x2.00</h2>"
+}

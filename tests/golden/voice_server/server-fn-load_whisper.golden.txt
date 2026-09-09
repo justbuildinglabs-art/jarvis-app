@@ -1,0 +1,26 @@
+{
+  "qualname": "load_whisper",
+  "async": false,
+  "decorators": [],
+  "params": [],
+  "ifs": [
+    "os.environ.get(\"WHISPER_DEVICE\", \"auto\") != \"cpu\""
+  ],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "os.environ.get(\"WHISPER_DEVICE\", \"auto\")",
+    "WhisperModel(WHISPER_MODEL, device=\"cuda\", compute_type=\"float16\")",
+    "WhisperModel(WHISPER_MODEL, device=\"cpu\", compute_type=\"int8\")"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [
+    "m, \"cuda\"",
+    "WhisperModel(WHISPER_MODEL, device=\"cpu\", compute_type=\"int8\"), \"cpu\""
+  ],
+  "excepts": [
+    "Exception"
+  ],
+  "globals": []
+}

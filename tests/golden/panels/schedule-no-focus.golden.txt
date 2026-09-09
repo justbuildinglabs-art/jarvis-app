@@ -1,0 +1,24 @@
+<section class="block boot-stagger  " style="animation-delay:0.34s">
+<div class="sec-title">
+<a class="sec-link" href="https://calendar.google.com/calendar/u/0/r/day" target="_blank" rel="noreferrer">Timeline ↗</a>
+<span class="tick">TODAY</span>
+</div>
+<div class="sched">
+<div class="sched-row  ">
+<span class="t">09:00</span>
+<span class="i">Deep work (locked)</span>
+</div>
+<div class="sched-row  ">
+<span class="t">13:00</span>
+<span class="i">Edit session</span>
+</div>
+<div class="sched-row  ">
+<span class="t">16:30</span>
+<span class="i">Weekly sync (Google Meet)</span>
+</div>
+<div class="sched-row  ">
+<span class="t">20:00</span>
+<span class="i">Stream: building in public</span>
+</div>
+</div>
+</section>

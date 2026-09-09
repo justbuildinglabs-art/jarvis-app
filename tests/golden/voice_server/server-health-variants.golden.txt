@@ -1,0 +1,92 @@
+{
+  "wake-disabled-cpu": {
+    "ok": true,
+    "engine": "kokoro",
+    "voice": "bm_george",
+    "device": "cpu",
+    "stt": {
+      "ok": true,
+      "model": "small.en",
+      "device": "cpu"
+    },
+    "wake": {
+      "enabled": false,
+      "ok": false,
+      "model": "hey_jarvis_v0.1",
+      "threshold": 0.5,
+      "error": null
+    }
+  },
+  "wake-armed-cuda": {
+    "ok": true,
+    "engine": "kokoro",
+    "voice": "bm_george",
+    "device": "cuda",
+    "stt": {
+      "ok": true,
+      "model": "small.en",
+      "device": "cuda"
+    },
+    "wake": {
+      "enabled": true,
+      "ok": true,
+      "model": "hey_jarvis_v0.1",
+      "threshold": 0.5,
+      "error": null
+    }
+  },
+  "wake-enabled-but-dead": {
+    "ok": true,
+    "engine": "kokoro",
+    "voice": "bm_george",
+    "device": "cpu",
+    "stt": {
+      "ok": true,
+      "model": "small.en",
+      "device": "cuda"
+    },
+    "wake": {
+      "enabled": true,
+      "ok": false,
+      "model": "hey_jarvis_v0.1",
+      "threshold": 0.5,
+      "error": "PortAudioError: Error querying device -1"
+    }
+  },
+  "wake-enabled-not-started-yet": {
+    "ok": true,
+    "engine": "kokoro",
+    "voice": "bm_george",
+    "device": "cpu",
+    "stt": {
+      "ok": true,
+      "model": "small.en",
+      "device": "cpu"
+    },
+    "wake": {
+      "enabled": true,
+      "ok": false,
+      "model": "hey_jarvis_v0.1",
+      "threshold": 0.5,
+      "error": null
+    }
+  },
+  "wake-armed-custom-threshold": {
+    "ok": true,
+    "engine": "kokoro",
+    "voice": "bm_george",
+    "device": "cuda",
+    "stt": {
+      "ok": true,
+      "model": "small.en",
+      "device": "cuda"
+    },
+    "wake": {
+      "enabled": true,
+      "ok": true,
+      "model": "hey_jarvis_v0.1",
+      "threshold": 0.7,
+      "error": null
+    }
+  }
+}

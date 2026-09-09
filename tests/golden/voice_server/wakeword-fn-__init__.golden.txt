@@ -1,0 +1,38 @@
+{
+  "qualname": "WakeListener.__init__",
+  "async": false,
+  "decorators": [],
+  "params": [
+    {
+      "name": "self",
+      "annotation": null,
+      "default": null
+    },
+    {
+      "name": "transcribe_pcm",
+      "annotation": null,
+      "default": null
+    },
+    {
+      "name": "emit",
+      "annotation": null,
+      "default": null
+    },
+    {
+      "name": "threshold",
+      "annotation": null,
+      "default": "0.5"
+    }
+  ],
+  "ifs": [],
+  "loops": [],
+  "withs": [],
+  "calls": [
+    "threading.Thread(target=self._run, daemon=True, name=\"wake-listener\")"
+  ],
+  "yields": [],
+  "awaits": [],
+  "returns": [],
+  "excepts": [],
+  "globals": []
+}

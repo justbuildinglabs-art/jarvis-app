@@ -1,0 +1,10 @@
+{
+  "voiceAskEmptyPrompt": null,
+  "voiceAskWhitespacePrompt": null,
+  "voiceAskArgsMissing": null,
+  "voiceAskPromptMissing": null,
+  "unknownSkill": null,
+  "skillMissing": null,
+  "planTodayArgsMissingEqualsWithArgs": true,
+  "nullDeliverableIsInterpolatedVerbatim": true
+}
