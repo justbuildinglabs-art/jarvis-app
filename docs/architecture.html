@@ -398,16 +398,17 @@ footer::before, footer::after { content: ""; height: 1px; background: var(--line
 <section class="boot d7">
   <h2><span class="n">06</span> Where to look in the code</h2>
   <div class="files">
-    <div><code>lib/router.ts</code><span>engines, tiers, spoken briefing</span></div>
-    <div><code>lib/tts.ts</code> · <code>lib/stt.ts</code><span>one swappable function each</span></div>
-    <div><code>lib/vault.ts</code><span>every file the HUD reads</span></div>
-    <div><code>lib/skills.ts</code><span>allowed skills + intent writer</span></div>
-    <div><code>lib/voiceMemory.ts</code><span>conversation ring (JSONL)</span></div>
-    <div><code>components/HUD.tsx</code><span>panels, callouts, choreography</span></div>
-    <div><code>components/GraphCore.tsx</code><span>the orb</span></div>
-    <div><code>voice-server/server.py</code><span>Kokoro + whisper + wake word</span></div>
+    <div><code>skills/</code><span>one file per skill — prompt, path, aliases, deck label</span></div>
+    <div><code>lib/router/</code><span>engine chain, rules, tier-2 answers, briefing</span></div>
+    <div><code>lib/vault/</code><span>every file the HUD reads; storage.ts is the only fs</span></div>
+    <div><code>lib/voice/</code><span>stt → dispatch → speech → tts, plus memory + client</span></div>
+    <div><code>components/hud/</code><span>panels, callouts, choreography</span></div>
+    <div><code>components/GraphCore.tsx</code> · <code>components/cores/</code><span>the orb and its shaders</span></div>
+    <div><code>app/styles/</code><span>one CSS partial per surface; numbering is the cascade</span></div>
+    <div><code>runner/lib/</code><span>config, pool, execute — the daemon's parts</span></div>
+    <div><code>voice-server/jarvis_voice/</code><span>Kokoro + whisper + wake word</span></div>
     <div><code>app/api/*</code><span>voice, queue, state, report, speak</span></div>
-    <div><code>scripts/test-router.ts</code><span>router test sweep (npm test)</span></div>
+    <div><code>tests/</code><span>~390 goldens pinning behavior (npm run check)</span></div>
   </div>
 </section>
 

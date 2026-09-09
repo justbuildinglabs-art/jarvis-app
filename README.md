@@ -37,6 +37,22 @@ it come up at login, ask Claude to "make Jarvis start on boot" and it will
 install the startup shortcuts (`start-hud.vbs`, `runner/start-runner.vbs`,
 `voice-server/start-voice-server.vbs`).
 
+## Working on it
+
+```bash
+npm run check
+```
+
+One gate: a production build, the router sweep, ~390 golden tests, the Python
+contract suite, and `tsc --noEmit`. The goldens pin current behavior, so a red
+one means behavior changed — see `tests/README.md`.
+
+Layout: `skills/` is one file per skill (prompt, deliverable path, voice
+aliases and Ops Board label together). `lib/router/`, `lib/vault/` and
+`lib/voice/` each hold one subsystem; `components/hud/panels/` holds the HUD
+panels; `app/styles/` is one CSS partial per surface, numbered in cascade
+order; `runner/lib/` and `voice-server/jarvis_voice/` hold the two daemons.
+
 ## How the pieces fit
 
 **Illustrated version: [`docs/architecture.html`](docs/architecture.html)** —
