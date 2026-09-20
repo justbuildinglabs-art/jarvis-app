@@ -11,7 +11,7 @@ degrade to a silent HUD when it is not running.
     POST /stt            raw audio body (webm/opus/wav) -> {"text": ...}
     WS   /events         wake-word and barge-in events for the HUD
 
-Run: .venv/bin/python server.py   (or start-voice-server.vbs on Windows)
+Run: .venv/bin/python server.py   (or start-voice-server.cmd on Windows)
 
 This file is the entry point only. The server lives in the jarvis_voice
 package beside it — config, platform, runtime, audio, events, app — so that

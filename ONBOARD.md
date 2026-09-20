@@ -11,7 +11,7 @@ Manifest at the end.
 
 **Step 0 — identify the platform without mentioning it.** Determine the OS
 before you ask anything, then quietly shape everything around it: shell
-syntax, path separators, whether to use `.vbs` launchers or nohup/launchd/
+syntax, path separators, whether to use `.cmd` launchers or nohup/launchd/
 systemd, and which voice packages apply (Windows or Linux with an NVIDIA
 card gets `onnxruntime-gpu` plus the `nvidia-*` wheels; Mac, or anything
 without NVIDIA, gets plain `onnxruntime` — mention that voice will run on
@@ -106,11 +106,12 @@ given below, and explain how to start everything.
     state may queue and then do nothing. Say nothing at all if the directory
     turns up empty.
 13. **Autostart.** "Want Jarvis to start at login — HUD, runner, and
-    voice-server?" → Windows: shortcuts to `start-hud.vbs`,
-    `runner/start-runner.vbs`, `voice-server/start-voice-server.vbs` in
-    `shell:startup` (run `npx next build` first so the HUD launcher uses
-    the fast production server). Mac/Linux: offer launchd plists / systemd
-    units. If they decline: tell them "spin up Jarvis" in any `claude`
+    voice-server?" → Windows: register `start-hud.cmd`,
+    `runner/start-runner.cmd`, and `voice-server/start-voice-server.cmd`
+    as Task Scheduler tasks ("Run whether user is logged on or not",
+    trigger "At log on"), which runs them with no visible window (run
+    `npx next build` first so the HUD launcher uses the fast production
+    server). Mac/Linux: offer launchd plists / systemd units. If they decline: tell them "spin up Jarvis" in any `claude`
     session here starts everything on demand.
 
 ### Acceptance checks (run these, show results)
@@ -168,7 +169,7 @@ server. That's the whole job.
 | Telemetry panels | `components/hud/panels/Vitals.tsx` `SOCIAL_DEFS` | match your metrics.csv sources |
 | TTS voice | `voice-server/jarvis_voice/config.py` via `KOKORO_VOICE`, `KOKORO_SPEED` | audition first |
 | STT vocab bias | `voice-server/jarvis_voice/config.py` `WHISPER_PROMPT` | list YOUR acronyms + skill names |
-| Wake word | `voice-server/start-voice-server.vbs` `WAKE_WORD` | off by default (speaker bleed); headphones recommended |
+| Wake word | `voice-server/start-voice-server.cmd` `WAKE_WORD` | off by default (speaker bleed); headphones recommended |
 | Runner model | `runner/lib/config.js` `CLAUDE_MODEL` | `AGENTIC_OS_MODEL` env; per-ask override allowlist in `MODEL_ALLOWLIST` |
 | Rundown trigger phrases | `lib/router/patterns.ts` `BRIEFING_RE` | whole-utterance anchored — keep it that way |
 

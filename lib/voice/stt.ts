@@ -33,7 +33,7 @@ async function localSttUp(): Promise<boolean> {
 export async function transcribe(audio: Buffer, mime: string): Promise<string> {
   if (!(await localSttUp())) {
     throw new VoiceConfigError(
-      "no STT engine: the voice-server stt on :4871 is down (voice-server\\start-voice-server.vbs)"
+      "no STT engine: the voice-server stt on :4871 is down (voice-server\\start-voice-server.cmd)"
     );
   }
   try {

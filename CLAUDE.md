@@ -68,7 +68,7 @@ centerpiece can occupy half a core.
 ## Adapt to the platform, silently
 
 Work out which OS you are on and reshape every command, path, and launcher
-accordingly without asking. The `.vbs` files are a Windows convenience;
+accordingly without asking. The `.cmd` files are a Windows convenience;
 Mac and Linux use the underlying commands directly (nohup, launchd,
 systemd). Any machine lacking an NVIDIA GPU runs voice in CPU mode on plain
 `onnxruntime` — slower, but complete.
@@ -79,26 +79,29 @@ Any phrasing that means "start it" or "boot it up" should trigger this
 sequence. Work through it in order and skip whatever is already live:
 
 1. **Voice server** — poll `http://127.0.0.1:4871/health`. If it doesn't
-   answer, start `voice-server\start-voice-server.vbs` on Windows, or
+   answer, start `voice-server\start-voice-server.cmd` on Windows, or
    `voice-server/.venv/bin/python voice-server/server.py` detached
    elsewhere. A missing venv means voice was never installed: say so, point
    at the README section, and carry on — a silent HUD is still a working HUD.
 2. **Runner** — read the heartbeat at `<vault>/system/runner-status.json`
    and treat anything older than 2 minutes as dead. Revive it with
-   `runner\start-runner.vbs` or a detached `node runner/runner.js`.
+   `runner\start-runner.cmd` or a detached `node runner/runner.js`.
 3. **HUD** — poll `http://localhost:4870`. If nothing answers, start
-   `start-hud.vbs` on Windows or a detached
+   `start-hud.cmd` on Windows or a detached
    `npx next build && npx next start -p 4870`. Launching DETACHED matters:
-   use the `.vbs` wrappers, `Start-Process`, or `nohup`, because an ordinary
+   use the `.cmd` wrappers, `Start-Process`, or `nohup`, because an ordinary
    background shell job dies the moment this Claude session ends.
 4. **Hand it over** — tell them to visit `http://localhost:4870` and hold
    Space to speak, and mention that the browser won't emit any audio until
    it receives one click or keypress inside the tab (autoplay policy).
 
-Should they want it running at login: on Windows, drop shortcuts to the
-three `.vbs` files into `shell:startup` (reachable via
-`explorer shell:startup`); on Mac use launchd plists; on Linux use systemd
-user units. Wire it up for them rather than describing it.
+Should they want it running at login: on Windows, register each of the
+three `.cmd` files as a Task Scheduler task (Create Task -> "Run whether
+user is logged on or not", trigger "At log on"), which is what makes them
+run with no visible window. Do not go back to VBScript launchers: a script
+that spawns a hidden detached process trips antivirus heuristics and gets
+the repo's zip download flagged. On Mac use launchd plists; on Linux use
+systemd user units. Wire it up for them rather than describing it.
 
 ## Shape of the system
 

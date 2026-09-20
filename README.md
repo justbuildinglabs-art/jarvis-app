@@ -34,8 +34,8 @@ into something real:
 **"spin up Jarvis"**. Whatever isn't already up — voice server, runner, HUD —
 gets started detached, so closing the terminal doesn't take it down. To have
 it come up at login, ask Claude to "make Jarvis start on boot" and it will
-install the startup shortcuts (`start-hud.vbs`, `runner/start-runner.vbs`,
-`voice-server/start-voice-server.vbs`).
+wire up the launchers (`start-hud.cmd`, `runner/start-runner.cmd`,
+`voice-server/start-voice-server.cmd`) — see [Start at login](#start-at-login).
 
 ## Working on it
 
@@ -150,7 +150,7 @@ python -m venv .venv
 Fetch `kokoro-v1.0.onnx` (~325MB) and `voices-v1.0.bin` (~28MB) from the
 [kokoro-onnx releases](https://github.com/thewh1teagle/kokoro-onnx/releases)
 and drop both into `voice-server/`. Launch it with
-`voice-server\start-voice-server.vbs` to run hidden, or
+`voice-server\start-voice-server.cmd` to run detached, or
 `.venv/Scripts/python server.py` to watch it. Expect roughly 250ms per
 sentence of synthesis and 130ms of transcription on a GPU; a CPU does the
 same work about four times slower.
@@ -184,6 +184,41 @@ own voice and retriggers.
   Number keys 1–5 pin the core into a given mode, and B steps through the
   backgrounds.
 
+## Start at login
+
+The three `.cmd` launchers each start their process **detached** in a
+minimized window, so closing the terminal (or ending a Claude session)
+doesn't take them down:
+
+```
+start-hud.cmd                      HUD on :4870
+runner\start-runner.cmd            runner daemon
+voice-server\start-voice-server.cmd  Kokoro TTS + STT on :4871
+```
+
+Run `npx next build` first so the HUD launcher picks the fast production
+server instead of dev mode.
+
+To have them come up at login **with no visible window**, use Task
+Scheduler rather than a startup shortcut — it runs the process genuinely
+hidden and restarts it if it dies:
+
+1. Open Task Scheduler → **Create Task** (not "Basic Task").
+2. General → check **Run whether user is logged on or not**, which is what
+   makes it windowless.
+3. Triggers → **New** → Begin the task: **At log on**.
+4. Actions → **New** → Program/script: the full path to the `.cmd` file.
+5. Settings → check **If the task fails, restart every** 1 minute.
+
+Repeat for each of the three. Or just say "make Jarvis start on boot" in a
+`claude` session here and it will do it for you.
+
+> Earlier versions shipped `.vbs` launchers. They were dropped because a
+> VBScript that spawns a hidden, detached process is indistinguishable from
+> a malware dropper to antivirus heuristics — Microsoft Defender flagged the
+> repo's zip download, and Chrome surfaced that as "Virus detected". The
+> `.cmd` files do the same job without tripping the scanners.
+
 ## Security
 
 There is deliberately **no authentication** here — it is a localhost tool,
@@ -193,7 +228,7 @@ a machine you share with people you don't trust.
 
 ## Mac and Linux
 
-The whole stack is Node and Python, so it runs anywhere. The two `.vbs`
+The whole stack is Node and Python, so it runs anywhere. The three `.cmd`
 files are purely a Windows nicety — substitute `node runner/runner.js &` and
 `python voice-server/server.py &`, or wire up launchd or systemd. On Apple
 Silicon, install plain `onnxruntime` for CPU inference, or pin
