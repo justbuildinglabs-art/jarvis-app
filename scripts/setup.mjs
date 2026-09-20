@@ -314,7 +314,7 @@ if (manual.length) {
 
 console.log(`
 Start everything:
-  ${IS_WIN ? "start-hud.vbs" : "npx next build && npx next start -p 4870"}
+  ${IS_WIN ? "start-hud.cmd" : "npx next build && npx next start -p 4870"}
   node runner/runner.js${WANT_VOICE ? `\n  ${venvBin("python")} voice-server/server.py` : ""}
 
 Then open http://localhost:4870 and hold Space to talk.

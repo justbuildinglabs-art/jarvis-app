@@ -7,6 +7,6 @@
   },
   "body": {
     "ok": false,
-    "error": "no STT engine: the voice-server stt on :4871 is down (voice-server\\start-voice-server.vbs)"
+    "error": "no STT engine: the voice-server stt on :4871 is down (voice-server\\start-voice-server.cmd)"
   }
 }

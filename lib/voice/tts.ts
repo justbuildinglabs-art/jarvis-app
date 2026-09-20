@@ -54,6 +54,6 @@ export async function speak(text: string): Promise<SpeechStream> {
     throw new Error(`kokoro ${res.status}`);
   }
   throw new VoiceConfigError(
-    "no TTS engine: the voice-server on :4871 is down (voice-server\\start-voice-server.vbs)"
+    "no TTS engine: the voice-server on :4871 is down (voice-server\\start-voice-server.cmd)"
   );
 }

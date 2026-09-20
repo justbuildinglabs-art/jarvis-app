@@ -8,7 +8,7 @@
  * split is the whole architecture: the web app never blocks on a model, and
  * the daemon never needs to know a browser exists — they meet at the queue.
  *
- * Run it: `node runner/runner.js` (or start-runner.vbs, hidden, at login).
+ * Run it: `node runner/runner.js` (or start-runner.cmd, hidden, at login).
  * No dependencies beyond Node 20+ and the skill registry.
  *
  * ADDING A SKILL: write one file in skills/definitions/ and register it in

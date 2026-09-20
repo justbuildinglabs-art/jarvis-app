@@ -7,6 +7,6 @@
   },
   "body": {
     "ok": false,
-    "error": "no TTS engine: the voice-server on :4871 is down (voice-server\\start-voice-server.vbs)"
+    "error": "no TTS engine: the voice-server on :4871 is down (voice-server\\start-voice-server.cmd)"
   }
 }
